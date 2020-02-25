@@ -1,2 +1,1 @@
-# Personal Portfolio Website
-# Buiding reference  :Traversy Media 
+This is a personal portfolio website
