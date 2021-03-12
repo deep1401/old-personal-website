@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title> - Articles</title>
+    <description>Deep Gandhi</description>
+    <link>
+    http://localhost:4000</link>
+    
+      
+      <item>
+        <title>2020:Year in Review</title>
+        
+          <description>&lt;h2 id=&quot;the-beginning&quot;&gt;The Beginning&lt;/h2&gt;
+
+</description>
+        
+        <pubDate>Fri, 20 Nov 2020 15:30:00 +0530</pubDate>
+        <link>
+        http://localhost:4000/year-in-review</link>
+        <guid isPermaLink="true">http://localhost:4000/year-in-review</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>Motivation for this Blog</title>
+        
+          <description>&lt;h2 id=&quot;why-is-writing-necessary-a-part-of-tech&quot;&gt;Why is writing necessary a part of tech?&lt;/h2&gt;
+
+</description>
+        
+        <pubDate>Sun, 05 Jul 2020 15:30:00 +0530</pubDate>
+        <link>
+        http://localhost:4000/motivation-for-this-blog</link>
+        <guid isPermaLink="true">http://localhost:4000/motivation-for-this-blog</guid>
+      </item>
+      
+    
+  </channel>
+</rss>

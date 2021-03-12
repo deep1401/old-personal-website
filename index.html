@@ -1,355 +1,39 @@
-<!DOCTYPE html>
-<html class="no-js" lang="en">
+---
+layout: default
+current: home
+class: 'home-template'
+navigation: True
+---
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Deep Gandhi</title>
-	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-	<link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
-    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">
-</head>
+<!-- < default -->
+<!-- The tag above means: insert everything in this file
+into the {body} of the default.hbs template -->
 
-<body>
-    <div id="mobile-menu-open" class="shadow-large">
-        <i class="fa fa-bars" aria-hidden="true"></i>
+<!-- The big featured header, it uses blog cover image as a BG if available -->
+<header class="site-header outer {% if page.cover or site.cover %}" style="background-image:  url({{ site.baseurl }}{% if page.cover %}{{ page.cover }}{% elsif site.cover %}{{ site.cover }}{% endif %}) {% else %}no-cover{% endif %}">
+    <div class="inner">
+        <div class="site-header-content">
+            <h1 class="site-title">
+                {% if site.logo %}
+                    <img class="site-logo" src="{{ site.baseurl }}{{ site.logo }}" alt="{{ site.title }}"/>
+                {% else %}
+                    {{ site.title }}
+                {% endif %}
+            </h1>
+            <h2 class="site-description">{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}</h2>
+        </div>
+        {% include site-nav.html %}
     </div>
-    <!-- End #mobile-menu-toggle -->
-    <header>
-        <div id="mobile-menu-close">
-            <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
+</header>
+
+<!-- The main content area -->
+<main id="site-main" class="site-main outer" role="main">
+    <div class="inner">
+
+        <div class="post-feed">
+            <!-- The tag below includes the markup for each post - partials/post-card.hbs -->
+            {%  include post-card.html %}
         </div>
-        <ul id="menu" class="shadow">
-            <li>
-                 <a href="#about">About</a>
-            </li>
-            <li>
-                <a href="#experience">Experience</a>
-            </li>
-            <li>
-                <a href="#education">Education</a>
-            </li>
-            <li>
-                <a href="#projects">Projects</a>
-            </li>
-            <li>
-                <a href="#skills">Skills</a>
-            </li>
-	   
-            <li>
-                <a href="#contact-Final">Contact</a>
-            </li>
-
-        </ul>
-    </header>
-    <!-- End header -->
-
-    <div id="lead">
-        <div id="lead-content">
-            <h1>Deep Gandhi</h1>
-            <h2>Software Developer <br> Data Science Enthusiast</h2>
-            <a href="https://drive.google.com/file/d/1h9OvsYR9ON78hNYRcyTXv0Ftf1ZebH3S/view?usp=sharing" class="btn-rounded-white">View Resume</a><br>
-		<br>
-	    <a href="https://deep14010.github.io" class="btn-rounded-white">View Blog</a><br>
-        </div>
-        <!-- End #lead-content -->
-
-        <div id="lead-overlay"></div>
-
-        <div id="lead-down">
-            <span>
-                <i class="fa fa-chevron-down" aria-hidden="true"></i>
-            </span>
-        </div>
-        <!-- End #lead-down -->
-    </div>
-    <!-- End #lead -->
-
-    <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <h2 class="heading">About Me</h2>
-                </div>
-                <div class="col-md-8">
-                    <p>
-                        I am a Computer Science Undergrad Student based in Mumbai with interest in Software Development and Data Science. <br>
-                        I love to solve problems by using coding and analytical skills. <br>
-                        I'm highly self motivated, quick learner and driven to complete a task. <br>
-                        I like challenging jobs and I am flexible enough to go through any kind of situation. <br>
-                        I generally work in teams as they help me think out of the box! <br>
-                        Check out my projects on <a href="https://github.com/deep1401">GitHub</a> and for genuine conversational opportunities, you can connect with me on <a href="https://www.linkedin.com/in/deep-gandhi-abaa01150/">LinkedIn</a> .
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End #about -->
-
-    <div id="experience" class="background-alt">
-        <h2 class="heading">Experience</h2>
-        <div id="experience-timeline">
-            <div data-date="March 2020 – May 2020">
-                <h3>Levyne</h3>
-                <h4>Machine Learning Engineer (Intern)</h4>
-                <p> <ul>
-                    <li>Technologies: Python, REST, fast.ai, scikit-learn, Pandas, NumPy</li>
-                    <li>Worked with the R&D department of the company for developing the Machine Learning backend for their AR E-Commerce website </li>
-                    <li>Created a Recommendation system on a novel PyTorch based Neural Network approach considering user bias</li>
-                    <li>Created an unsupervised learning model for user clustering</li>
-                </ul></p>
-            </div>
-            <div data-date="January 2020 – March 2020">
-                <h3>Margosatree Technologies</h3>
-                <h4>Data Science Intern</h4>
-                <p>
-                    <ul>
-                        <li>Technologies:Python, REST, fast.ai, scikit-learn, Pandas, NumPy, Flask</li>
-                        <li>Project based internship for developing various products of their clients</li>
-                        <li>Developed a medicine manufacturing analysis system for the client.</li>
-                        <li>Worked on the Flask backend of the same</li>
-                    </ul>
-                </p>
-            </div>
-            <div data-date="January 2019 – September 2019">
-                <h3>Feople Org</h3>
-                <h4>Data Science Intern</h4>
-                <p>
-                    <ul>
-                        <li>Leading the analytics team for client side operations. </li>
-                        <li>Project based internship for developing various products of their clients</li>
-                        <li>Clients included up and coming restaurants and my job was to ensure how to increase revenue and determine the correct prices based on sales and customer footfall.</li>
-
-                    </ul>
-                </p>
-            </div>
-        </div>
-    </div>
-    <!-- End #experience -->
-
-    <div id="education">
-        <h2 class="heading">Education</h2>
-        <div class="education-block">
-            <h3>Dwarkadas J. Sanghvi College of Engineering, Mumbai</h3>
-            <span class="education-date">Aug 2018 - Jun 2022</span>
-            <h4>B.E. in Computer Engineering</h4>
-            <p>
-                Coursework: Data Structures, Analysis of Algorithms, Digital Logic Design, Computer Organization and Architecture,
-                Open Source Technologies Lab, Operating Systems, JAVA.
-            </p>
-        </div>
-        <!-- End .education-block -->
 
     </div>
-    <!-- End #education -->
-
-    <div id="projects" class="background-alt">
-        <h2 class="heading">Projects</h2>
-        <div class="container">
-            <div class="row">
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/youtube.png" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Youtube Genie</h3>
-                        <p>
-                            A chrome extension which helps you navigate to the part of video having the content you are looking for.
-                            All the user has to do is type in what answer do they need from the video content.The project uses NLTK and scikit learn for response generation.
-                        </p>
-                        <a href="https://github.com/deep1401/Youtube_Genie">View on GitHub</a>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/imageseg.png"/>
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Automated Itinerary Generator</h3>
-                        <p>
-                            Generate itinerary for a user travelling to a particular city/town automatically using HERE API and K-Means Clustering of the
-                            located objects. A webapp was created for the same and a chatbot was published on Telegram (@touristguide_bot) for the same purpose. <br>
-                            <b>Technologies </b>: HTML, CSS, Flask,pandas,numpy,scikit-learn,telegram-bot.
-                        </p>
-                        <a href="https://github.com/deep1401/TravelRecommender">View on GitHub</a>
-                        |
-                        <a href="https://touristbot-jd.herokuapp.com/">View Demo</a>
-
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/musico.jpg" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Musico</h3>
-                        <p>
-                            Neural Network based Music Genre Classifier using a novel approach to audio based Machine Learning and achieving better results than current papers. The network uses a Resnet34 architecture for building the CNN with the help of fine tuning and transfer learning.
-                            Other architectures used for testing were VGG16, Resnet50 and AlexNet.
-                        </p>
-                        <a href="https://github.com/deep1401/musico">View on GitHub</a>
-
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/leadprio.jpg"/>
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Lead Prioritization Engine</h3>
-                        <p>
-                            Built a Lead Prioritization Engine which can be plugged into a website and thus,
-                            it would provide valuable business insights and improve lead conversion ratios by 45% using smart consumer filtering.
-                            Also includes a Bayesian Popularity Recommendation System for E-commerce websites.
-                            Fraud detection for detecting suspicious transactions on the website.
-                        </p>
-                        <a href="https://github.com/deep1401/Lead-prioritization-engine">View on GitHub</a>
-
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/vidalytics.jpg" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Vidalytics: A Video Analytics Solution</h3>
-                        <p>
-                          A video analytics solutions for all the content creating companies which generates important
-                          keywords based on the video uploaded and then provides useful social media links after data mining
-                          for marketing the content and also conduct EDA for target markets.
-                        </p>
-                        <a href="https://github.com/deep1401/24-DigitalChaos-VIDALYTICS">View on GitHub</a>
-                        |
-                        <a href="https://www.youtube.com/watch?v=Fqq0us2Nn0A&feature=youtu.be">View Demo</a>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/fight.jpg" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Fight Club</h3>
-                        <p>
-                          We created a portal where the UFC players can compare each and every move from their fights in each and every round.Here,the authorities can store medical records of the players on a protected Blockchain ledger.
-                          A doping test is conducted using an ensemble of SVM+Naive Bayes Classifier
-                        </p>
-                        <a href="https://github.com/deep1401/LOC-2020">View on GitHub</a>
-
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-            </div>
-        </div>
-    </div>
-    <!-- End #projects -->
-
-    <div id="skills">
-        <h2 class="heading">Skills</h2>
-        <ul>
-            <li>Python</li>
-            <li>R</li>
-            <li>C++</li>
-            <li>JAVA</li>
-            <li>Solidity</li>
-            <li>MySQL</li>
-            <li>PyTorch</li>
-            <li>fast.ai</li>
-            <li>Pandas</li>
-            <li>NumPy</li>
-            <li>SciPy</li>
-            <li>Sklearn</li>
-            <li>ggplot</li>
-            <li>dplyr</li>
-            <li>Shiny</li>
-            <li>Plumber</li>
-            <li>Matplotlib</li>
-            <li>Bokeh</li>
-            <li>Seaborn</li>
-            <li>Altair</li>
-            <li>Streamlit</li>
-        </ul>
-    </div>
-    <!-- End #skills -->
-
-
-    <div id="contact-Final">
-
-        <center><h2>Get in Touch</h2></center>
-        <div id="contact-form">
-            <form action="https://formspree.io/xlepeovl" method="POST">
-                <label> Your email:
-                        <input type="text" name="_replyto">
-                </label>
-                <label> </label>Your message:
-                        <textarea name="message"></textarea>
-                </label>
-
-                <!-- your other form fields go here -->
-
-                <button type="submit">Send</button>
-            </form>
-        </div>
-        <!-- End #contact-form -->
-    </div>
-    <!-- End #contact -->
-
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-5 copyright">
-                    <p>
-                        Copyright &copy; 2020 Deep Gandhi
-                    </p>
-                </div>
-                <div class="col-sm-2 top">
-                    <span id="to-top">
-                        <i class="fa fa-chevron-up" aria-hidden="true"></i>
-                    </span>
-                </div>
-                <div class="col-sm-5 social">
-                    <ul>
-                        <li>
-                            <a href="https://github.com/deep1401" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com/in/deep-gandhi-abaa01150/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://www.facebook.com/profile.php?id=100007224436514" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="mailto:thisisdeepgandhi@gmail.com" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- End footer -->
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="js/scripts.min.js"></script>
-</body>
-
-</html>
+</main>

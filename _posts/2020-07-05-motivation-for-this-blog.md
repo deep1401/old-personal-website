@@ -1,0 +1,55 @@
+---
+layout: post
+current: post
+cover: assets/images/motivation-blog.jpg
+navigation: True
+title: Motivation for this Blog
+date: 2020-07-05 10:00:00
+tags: [Getting started]
+class: post-template
+subclass: "post"
+author: Deep Gandhi
+---
+
+## Why is writing necessary a part of tech?
+
+Recently, a friend of mine started his own [blog](https://jashmehta3300.github.io) and me being curious asked him why?
+At that point he showed me some famous blogs by [Anish Athalye](https://www.anishathalye.com) and [Rachel Thomas](https://www.fast.ai/topics/).
+Both of these, are people that we admire and follow a lot and then he explained to me the importance of blogging by mentioning a quote from Rachel Thomas
+
+> You are best positioned to help people one step behind you. The material is still fresh in your mind. Many experts have forgotten what it was like to be a beginner (or an intermediate) and have forgotten why the topic is hard to understand when you first hear it. The context of your particular background, your particular style, and your knowledge level will give a different twist to what you’re writing about.
+
+## An introduction to me and my journey till now!
+
+So since you are here, you might know that my name is Deep Gandhi. I am currently a Computer Engineering undergrad at D.J.
+Sanghvi College of Engineering. However for me, engineering has not been just a degree but more of a self-exploration period.
+Finding out what I love to do and then doing that as long as I can.
+Someone once rightly said:
+
+> it's a truly lucky man who knows what he wants to do in this world, because that man will never work a day in his life.
+
+I guess that's what we're all looking for in life, tech, etc.
+
+Okay, enough philosophy now!
+
+## Let's talk tech?
+
+So my interests primarily lie in the field of Data Science. That is one of the major reasons why I made up my mind to start this blog.
+I have a lot of juniors and peers as well who are interested in getting into this field but Data Science being a lucrative field,
+people often run scams in the name of courses and a lot of my contemporaries have fallen for these scams and wasted a lot of
+money.
+My belief is that if we're trying to teach ourselves programming then we should find a way to learn everything for free. It's an
+open source world after all :P
+But, my point here isn't to be a know-it-all but to write blogs so that my juniors know things that **I wish I knew last year**.
+You know so they don't waste their time and make the same mistakes. After all, it's all about helping the person right behind you!
+
+So I'm gonna end it here and I promise to keep it to the point in the upcoming ones :P (hope so)
+My blogs are going to be about a lot of topics and I'll just list down some of them below:
+
+- Projects that I build
+- My journey through this amazing tech world
+- My GRE prep
+
+and many more to come....
+
+That's all for now!
