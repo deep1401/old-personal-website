@@ -54,7 +54,20 @@ subclass: "post page"
         </font>
     </p>
 
-4.  <p style="margin-top: 20px">
+4.  <p style="margin-top: 30px">
+            <strong>
+               Federated Learning for Brain Tumor Segmentation on Cloud
+            </strong>
+    </p>
+    <p>
+        <font size="3">
+            <b>Deep Gandhi</b>, Jash Mehta, Nemil Shah, Dr.Ramchandra Mangrulkar.
+            <br>
+            <i>Chapter under review for the book "Computing Technologies and Applications: Paving Path Towards Society 5.0" </i>
+        </font>
+    </p>
+
+5.  <p style="margin-top: 20px">
             <strong>
                 Native Language Processing and Sentiment Analysis for Hindi     
             </strong>
