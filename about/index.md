@@ -24,7 +24,7 @@ My major motivation for writing the blog was this quote by Rachel Thomas:
 
 ## Motivation for the blog?
 
-Click [here](https://deep1401.github.io/2020-07-05-premier-post) to read the article I wrote to answer this.
+Click [here](https://deep1401.github.io/motivation-for-this-blog) to read the article I wrote to answer this.
 
 ## Where can you find me?
 
