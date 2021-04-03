@@ -37,5 +37,5 @@ Click [here](https://deep1401.github.io/motivation-for-this-blog) to read the ar
 
 - Built with [Jekyll](http://jekyllrb.com){:target="\_blank" rel="noopener"}
 - Developed on GitHub and hosted for free on [GitHub Pages](https://pages.github.com){:target="\_blank" rel="noopener"}
-- Coded with [Vim](https://www.vim.org/){:target="\_blank" rel="noopener"} and [Visual Studio Code](https://code.visualstudio.com/){:target="\_blank" rel="noopener"}
-- Designed and developed while listening to music like [Vancouver Sleep Clinic](https://open.spotify.com/artist/77BznF1Dr1k5KyEZ6Nn3jB?si=7DaAuXk8T2uOOGmhSb9kEg){:target="\_blank" rel="noopener"}
+- Coded with [Visual Studio Code](https://code.visualstudio.com/){:target="\_blank" rel="noopener"}
+- Designed and developed while listening to [Indie Music](https://music.youtube.com/playlist?list=PL4OVgQTA1ZK_LnUcACfK_nBufpgKpsUf0){:target="\_blank" rel="noopener"}
