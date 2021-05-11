@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
   <link href="http://localhost:4000/tag/personal/feed.xml" rel="self" type="application/atom+xml" />
   <link href="http://localhost:4000/" rel="alternate" type="text/html" />
-  <updated>2021-04-26T17:31:24+05:30</updated>
+  <updated>2021-05-11T15:46:37+05:30</updated>
   <id>http://localhost:4000/tag/personal/feed.xml</id>
 
   
@@ -49,46 +49,42 @@
       <published>2020-11-20T15:30:00+05:30</published>
       <updated>2020-11-20T15:30:00+05:30</updated>
       <id>http://localhost:4000/year-in-review</id>
-      <content type="html" xml:base="http://localhost:4000/year-in-review">&lt;h2 id=&quot;the-beginning&quot;&gt;The Beginning&lt;/h2&gt;
+      <content type="html" xml:base="http://localhost:4000/year-in-review">## The Beginning
 
-&lt;blockquote&gt;
-  &lt;p&gt;Early warning, this is not a success blog post.&lt;/p&gt;
-&lt;/blockquote&gt;
+&gt; Early warning, this is not a success blog post.
 
-&lt;p&gt;2020 has been a completely unpredictable year for me. It started when I was completely clueless about my life
-and now 11 months later, I can safely say that I’m a little less clueless about this year. It all started in January,
-I didn’t know what I really wanted to do with my life and I just kept learning random technologies to find out what I really want to specialise in.&lt;/p&gt;
+2020 has been a completely unpredictable year for me. It started when I was completely clueless about my life
+and now 11 months later, I can safely say that I'm a little less clueless about this year. It all started in January,
+I didn't know what I really wanted to do with my life and I just kept learning random technologies to find out what I really want to specialise in.
 
-&lt;h2 id=&quot;what-happened-after-that-the-gsoc-debacle&quot;&gt;What happened after that? (The GSoC debacle)&lt;/h2&gt;
+## What happened after that? (The GSoC debacle)
 
-&lt;p&gt;Well, it kept going on like this and then came February. GSoC projects and organisations were announced. Me and my friends talked to some seniors who had already been part of the cohort the previous year and decided to try out in the open source world this year. I was a bit naive and new to the GSoC world and thus, I shortlisted only one organisation (CERN), I know this was a bit ambitious (code for very ambitious). However, I really liked the &lt;a href=&quot;https://github.com/rucio/rucio&quot;&gt;Rucio&lt;/a&gt; project and the Native Language Processing project. Being a newbie, I had never worked on such an advanced NLP project. All I had ever tried in NLP was a basic sentiment analysis tutorial. So, I learnt the necessary concepts and completed the evaluation tasks assigned to me. The mentors at Rucio were really helpful and solved all my stupid doubts at any time of the day. So, being very excited I put together a decent solution to all the tasks assigned in just 7 days.&lt;/p&gt;
+Well, it kept going on like this and then came February. GSoC projects and organisations were announced. Me and my friends talked to some seniors who had already been part of the cohort the previous year and decided to try out in the open source world this year. I was a bit naive and new to the GSoC world and thus, I shortlisted only one organisation (CERN), I know this was a bit ambitious (code for very ambitious). However, I really liked the [Rucio](https://github.com/rucio/rucio) project and the Native Language Processing project. Being a newbie, I had never worked on such an advanced NLP project. All I had ever tried in NLP was a basic sentiment analysis tutorial. So, I learnt the necessary concepts and completed the evaluation tasks assigned to me. The mentors at Rucio were really helpful and solved all my stupid doubts at any time of the day. So, being very excited I put together a decent solution to all the tasks assigned in just 7 days.
 
-&lt;p&gt;Just after this, the whole country went under lockdown and I was stuck at a relative’s house in another city. Unknown to the fact that I might be there for a very long time, the date of the final proposal submission came close and as I had described my solution to just be above mediocre, I was hesitant to submit it. But, some of my friends encouraged me to submit it and thus, I did. Not long after that, I got the review of my evaluation task and it was a very good review. That was exactly the confidence boost I needed amidst the chaos going on all around the world. Later, I found out that my solution was not in the top 3 solutions received and thus, I wasn’t selected for the GSoC program that year.&lt;/p&gt;
+Just after this, the whole country went under lockdown and I was stuck at a relative's house in another city. Unknown to the fact that I might be there for a very long time, the date of the final proposal submission came close and as I had described my solution to just be above mediocre, I was hesitant to submit it. But, some of my friends encouraged me to submit it and thus, I did. Not long after that, I got the review of my evaluation task and it was a very good review. That was exactly the confidence boost I needed amidst the chaos going on all around the world. Later, I found out that my solution was not in the top 3 solutions received and thus, I wasn't selected for the GSoC program that year.
 
-&lt;p&gt;However, the upside to this was that looking at the top 3 solutions, I actually felt excited to learn all the concepts and methodologies used by the very able developers and researchers. That was the first time I realized this could be the field to explore in depth as I had wanted since the beginning of the year.&lt;/p&gt;
+However, the upside to this was that looking at the top 3 solutions, I actually felt excited to learn all the concepts and methodologies used by the very able developers and researchers. That was the first time I realized this could be the field to explore in depth as I had wanted since the beginning of the year.
 
-&lt;h2 id=&quot;what-now-the-cfg-experience&quot;&gt;What Now? (The CFG experience)&lt;/h2&gt;
+## What Now? (The CFG experience)
 
-&lt;p&gt;Now, I got back home in the month of June. I had already started doing &lt;a href=&quot;https://github.com/fastai/numerical-linear-algebra/blob/master/README.md&quot;&gt;Linear Algebra&lt;/a&gt; and &lt;a href=&quot;https://www.fast.ai/2019/07/08/fastai-nlp/&quot;&gt;NLP&lt;/a&gt; courses by &lt;a href=&quot;https://www.fast.ai&quot;&gt;fast.ai&lt;/a&gt;. This was the time when I got the notification that I had been shortlisted for the Code for Good hackathon organized by &lt;a href=&quot;https://careers.jpmorgan.com/us/en/students/programs/code-for-good&quot;&gt;JP Morgan Chase &amp;amp; Co.&lt;/a&gt;. This was indeed good news because right from the lockdown, I hadn’t gotten any exciting projects to work on and hackathons are a plethora for good projects and great networking opportunities. The Code for Good hackathon was just that. With the very helpful mentors and NGOs as our clients, we started this 12 hour hackathon to build a solution for the client. The rigorous experience and the pressure of committing to the deadlines reminded me of all the hackathon fun we have during such periods, getting the modules to work right until the last minute. This was just that and reminded me that CS was indeed the right choice for me. We managed to get to the final round, however we couldn’t bag the winning prize. Despite of that, I had the most amazing time during the lockdown period with some really awesome people as teammates.
-ps. I integrated some NLP features for the final product too. I was having fun learning that now :)&lt;/p&gt;
+Now, I got back home in the month of June. I had already started doing [Linear Algebra](https://github.com/fastai/numerical-linear-algebra/blob/master/README.md) and [NLP](https://www.fast.ai/2019/07/08/fastai-nlp/) courses by [fast.ai](https://www.fast.ai). This was the time when I got the notification that I had been shortlisted for the Code for Good hackathon organized by [JP Morgan Chase &amp; Co.](https://careers.jpmorgan.com/us/en/students/programs/code-for-good). This was indeed good news because right from the lockdown, I hadn't gotten any exciting projects to work on and hackathons are a plethora for good projects and great networking opportunities. The Code for Good hackathon was just that. With the very helpful mentors and NGOs as our clients, we started this 12 hour hackathon to build a solution for the client. The rigorous experience and the pressure of committing to the deadlines reminded me of all the hackathon fun we have during such periods, getting the modules to work right until the last minute. This was just that and reminded me that CS was indeed the right choice for me. We managed to get to the final round, however we couldn't bag the winning prize. Despite of that, I had the most amazing time during the lockdown period with some really awesome people as teammates.
+ps. I integrated some NLP features for the final product too. I was having fun learning that now :)
 
-&lt;h2 id=&quot;what-next-the-high-school-return&quot;&gt;What Next? (The High School Return)&lt;/h2&gt;
+## What Next? (The High School Return)
 
-&lt;p&gt;While all this was happening, I had started preparing for the GRE (Graduate Record Examination) in order to support my profile for grad school application which is essentially a couple of years away. I could say that I had some extra motivation now as I had some idea about the specialization that I wanted to get into after my undergrad. I started preparing quite rigorously during the end time and would read and solve various Verbal and Quant questions in order to increase my accuracy. After learning almost 1800 words and going back to the high school level math exercises, I felt that JEE pressure again after quite some time. After all, this was a competitive exam and I have been taught since the 11th grade that if you don’t ace a competitive exam, you’re essentially a failure in life (which is not true btw). So, I gave it my all and gave the exam around September. I was really happy with my score and it felt like this is it.&lt;/p&gt;
+While all this was happening, I had started preparing for the GRE (Graduate Record Examination) in order to support my profile for grad school application which is essentially a couple of years away. I could say that I had some extra motivation now as I had some idea about the specialization that I wanted to get into after my undergrad. I started preparing quite rigorously during the end time and would read and solve various Verbal and Quant questions in order to increase my accuracy. After learning almost 1800 words and going back to the high school level math exercises, I felt that JEE pressure again after quite some time. After all, this was a competitive exam and I have been taught since the 11th grade that if you don't ace a competitive exam, you're essentially a failure in life (which is not true btw). So, I gave it my all and gave the exam around September. I was really happy with my score and it felt like this is it.
 
-&lt;h2 id=&quot;oh-wait-i-skipped-one-important-thing&quot;&gt;Oh wait (I skipped one important thing)&lt;/h2&gt;
+## Oh wait (I skipped one important thing)
 
-&lt;p&gt;So, the thing I forgot to write about is that before the lockdown, my professors presented me and a peer of mine with an opportunity to contribute a chapter for a technical journal. Being a newbie, I was completely scared and that’s why I accepted the invite. Now the lockdown happened and we found out in around July that the editors liked our abstract and we had to start writing the final chapter to submit for further review. Thus, began a month of rigorous research. Although, the project we were writing the chapter on was completely built but, the writing part was more daunting to us as we’d never done it before. After a month of reading numerous articles, some very deep mathematical theory and whatnot, we were able to finish the chapter which is under review right now. But, this experience like everything else mentioned above was important to me. This helped me grow not only as a programmer but also as a student.&lt;/p&gt;
+So, the thing I forgot to write about is that before the lockdown, my professors presented me and a peer of mine with an opportunity to contribute a chapter for a technical journal. Being a newbie, I was completely scared and that's why I accepted the invite. Now the lockdown happened and we found out in around July that the editors liked our abstract and we had to start writing the final chapter to submit for further review. Thus, began a month of rigorous research. Although, the project we were writing the chapter on was completely built but, the writing part was more daunting to us as we'd never done it before. After a month of reading numerous articles, some very deep mathematical theory and whatnot, we were able to finish the chapter which is under review right now. But, this experience like everything else mentioned above was important to me. This helped me grow not only as a programmer but also as a student.
 
-&lt;h2 id=&quot;whats-your-point&quot;&gt;What’s your point?&lt;/h2&gt;
+## What's your point?
 
-&lt;p&gt;I have read a lot of posts blaming this year and so I wanted to write a version of mine. I wouldn’t ever blame the year 2020 as it has been kind of a turning point for me and helped me discover and experience some of the memories that I’m going to cherish forever. Right from playing some board games (believe me I was an expert at those) to building some great projects and learning some amazing concepts, this has been an amazing year. The biggest thing I’m going to take away from 2020 is:&lt;/p&gt;
+I have read a lot of posts blaming this year and so I wanted to write a version of mine. I wouldn't ever blame the year 2020 as it has been kind of a turning point for me and helped me discover and experience some of the memories that I'm going to cherish forever. Right from playing some board games (believe me I was an expert at those) to building some great projects and learning some amazing concepts, this has been an amazing year. The biggest thing I'm going to take away from 2020 is:
 
-&lt;blockquote&gt;
-  &lt;p&gt;Wherever you are in life, you always gotta keep learning!&lt;/p&gt;
-&lt;/blockquote&gt;
+&gt; Wherever you are in life, you always gotta keep learning!
 
-&lt;p&gt;Have an amazing year or what’s left of it and also an amazing 2021!&lt;/p&gt;</content>
+Have an amazing year or what's left of it and also an amazing 2021!</content>
 
       
       
