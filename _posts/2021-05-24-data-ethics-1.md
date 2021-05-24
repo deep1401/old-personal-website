@@ -1,7 +1,7 @@
 ---
 layout: post
 current: post
-cover: assets/images/gre-cover.jpg
+cover: assets/images/advanced.jpg
 navigation: True
 title: Is it really true or did you read it online?
 date: 2021-05-24 17:00:00
