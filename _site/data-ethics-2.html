@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Document Settings -->
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+		<!-- Base Meta -->
+		<!-- dynamically fixing the title for tag/author pages -->
+
+
+
+		<title>
+			Is it really fair or did you automate it?
+		</title>
+		<meta name="HandheldFriendly" content="True" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- Styles'n'Scripts -->
+		<link rel="stylesheet" type="text/css" href="/assets/built/screen.css" />
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="/assets/built/screen.edited.css"
+		/>
+		<link rel="stylesheet" type="text/css" href="/assets/built/syntax.css" />
+		<!-- highlight.js -->
+		<link
+			rel="stylesheet"
+			href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"
+		/>
+		<style>
+			.hljs {
+				background: none;
+			}
+		</style>
+
+		<!--[if IE]>
+			<style>
+				p,
+				ol,
+				ul {
+					width: 100%;
+				}
+				blockquote {
+					width: 100%;
+				}
+			</style>
+		<![endif]-->
+
+		<!-- This tag outputs SEO meta+structured data and other important settings -->
+		<meta
+	name="description"
+	content="Deep Gandhi"
+/>
+<link
+	rel="shortcut icon"
+	href="http://localhost:4000/assets/images/favicon.png"
+	type="image/png"
+/>
+<link rel="icon" href="http://localhost:4000/assets/images/blog-icon.png" />
+<link
+	rel="canonical"
+	href="http://localhost:4000/data-ethics-2"
+/>
+<meta name="referrer" content="no-referrer-when-downgrade" />
+
+
+<!--title below is coming from _includes/dynamic_title-->
+<meta property="og:site_name" content="Deep Gandhi" />
+<meta property="og:type" content="website" />
+<meta
+	property="og:title"
+	content="Is it really fair or did you automate it?"
+/>
+<meta
+	property="og:description"
+	content="The following article is an overview of my understanding of the Lesson 2: Bias &amp; Fairness taught by Rachel Thomas. It also represents my notes for the course and also an attempt at a blog post series to increase awareness about various concepts in fairness and ethics. Fairness and Bias"
+/>
+<meta
+	property="og:url"
+	content="http://localhost:4000/data-ethics-2"
+/>
+<meta
+	property="og:image"
+	content="http://localhost:4000/assets/images/fairness.jpeg"
+/>
+<meta
+	property="article:publisher"
+	content="https://www.facebook.com/deepgandhi1401"
+/>
+<meta
+	property="article:author"
+	content="https://www.facebook.com/deepgandhi1401"
+/>
+<meta
+	property="article:published_time"
+	content="2021-05-26T22:30:00+05:30"
+/>
+<meta
+	property="article:modified_time"
+	content="2021-05-26T22:30:00+05:30"
+/>
+<meta
+	property="article:tag"
+	content="Data Ethics"
+/>
+<meta name="twitter:card" content="summary_large_image" />
+<meta
+	name="twitter:title"
+	content="Is it really fair or did you automate it?"
+/>
+<meta
+	name="twitter:description"
+	content="The following article is an overview of my understanding of the Lesson 2: Bias &amp; Fairness taught by Rachel Thomas. It also represents my notes for the course and also an attempt at a blog post series to increase awareness about various concepts in fairness and ethics. Fairness and Bias"
+/>
+<meta name="twitter:url" content="http://localhost:4000/" />
+<meta
+	name="twitter:image"
+	content="http://localhost:4000/assets/images/fairness.jpeg"
+/>
+<meta name="twitter:label1" content="Written by" />
+<meta name="twitter:data1" content="Deep Gandhi" />
+<meta name="twitter:label2" content="Filed under" />
+<meta
+	name="twitter:data2"
+	content="Data Ethics"
+/>
+<meta name="twitter:site" content="@deepgandhi_07" />
+<meta name="twitter:creator" content="@deepgandhi_07" />
+<meta property="og:image:width" content="1400" />
+<meta property="og:image:height" content="933" />
+
+<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "Website",
+		"publisher": {
+			"@type": "Organization",
+			"name": "Deep Gandhi",
+			"logo": "http://localhost:4000/assets/images/blog-icon.png"
+		},
+		"url": "http://localhost:4000/data-ethics-2",
+		"image": {
+			"@type": "ImageObject",
+			"url": "http://localhost:4000/assets/images/fairness.jpeg",
+			"width": 2000,
+			"height": 666
+		},
+		"mainEntityOfPage": {
+			"@type": "WebPage",
+			"@id": "http://localhost:4000/data-ethics-2"
+		},
+		"description": "The following article is an overview of my understanding of the Lesson 2: Bias &amp; Fairness taught by Rachel Thomas. It also represents my notes for the course and also an attempt at a blog post series to increase awareness about various concepts in fairness and ethics. Fairness and Bias"
+	}
+</script>
+
+<!-- <script type="text/javascript" src="https://demo.ghost.io/public/ghost-sdk.min.js?v=724281a32e"></script>
+    <script type="text/javascript">
+    ghost.init({
+    	clientId: "ghost-frontend",
+    	clientSecret: "f84a07a72b17"
+    });
+    </script> -->
+
+<meta name="generator" content="Jekyll 3.6.2" />
+<link
+	rel="alternate"
+	type="application/rss+xml"
+	title="Is it really fair or did you automate it?"
+	href="/feed.xml"
+/>
+
+	</head>
+	<body
+		class="post-template"
+	>
+		<div class="site-wrapper">
+			<!-- All the main content gets inserted here, index.hbs, post.hbs, etc -->
+			<!-- default -->
+
+<!-- The tag above means: insert everything in this file
+into the {body} of the default.hbs template -->
+
+<header class="site-header outer">
+    <div class="inner">
+        <nav class="site-nav">
+	<div class="site-nav-left">
+		 
+		<a class="site-nav-logo" href="http://localhost:4000/"
+			><img src="/assets/images/blog-icon.png" alt="Deep Gandhi"
+		/></a>
+		   <ul class="nav" role="menu">
+	<li class="nav-home" role="menuitem"><a href="/">Blog</a></li>
+	<li class="nav-getting-started" role="menuitem">
+		<a href="https://deep1401.github.io/projects/">Projects</a>
+	</li>
+	<li class="nav-try-ghost" role="menuitem">
+		<a href="https://deep1401.github.io/experience/">Experience</a>
+	</li>
+	<li class="nav-about" role="menuitem">
+		<a href="https://deep1401.github.io/about/">About</a>
+	</li>
+	<li class="nav-try-ghost" role="menuitem">
+		<a href="/resume/Deep_Resume_April.pdf" target="_blank">Resume</a>
+	</li>
+</ul>
+ 
+	</div>
+	<div class="site-nav-right">
+		<div class="social-links">
+			
+			<a
+				class="social-link social-link-fb"
+				href="https://github.com/deep1401"
+				target="_blank"
+				rel="noopener"
+				><img src="https://img.icons8.com/material-sharp/24/ffffff/github.png" />
+</a
+			>
+			 
+			<a
+				class="social-link social-link-fb"
+				href="https://www.linkedin.com/in/deep1401/"
+				target="_blank"
+				rel="noopener"
+				><img
+	src="https://img.icons8.com/fluent-systems-filled/24/ffffff/linkedin.png"
+/>
+</a
+			>
+			 
+			<a
+				class="social-link social-link-fb"
+				href="https://facebook.com/deepgandhi1401"
+				target="_blank"
+				rel="noopener"
+				><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z"/></svg>
+</a
+			>
+			 
+			<a
+				class="social-link social-link-tw"
+				href="https://twitter.com/deepgandhi_07"
+				target="_blank"
+				rel="noopener"
+				><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M30.063 7.313c-.813 1.125-1.75 2.125-2.875 2.938v.75c0 1.563-.188 3.125-.688 4.625a15.088 15.088 0 0 1-2.063 4.438c-.875 1.438-2 2.688-3.25 3.813a15.015 15.015 0 0 1-4.625 2.563c-1.813.688-3.75 1-5.75 1-3.25 0-6.188-.875-8.875-2.625.438.063.875.125 1.375.125 2.688 0 5.063-.875 7.188-2.5-1.25 0-2.375-.375-3.375-1.125s-1.688-1.688-2.063-2.875c.438.063.813.125 1.125.125.5 0 1-.063 1.5-.25-1.313-.25-2.438-.938-3.313-1.938a5.673 5.673 0 0 1-1.313-3.688v-.063c.813.438 1.688.688 2.625.688a5.228 5.228 0 0 1-1.875-2c-.5-.875-.688-1.813-.688-2.75 0-1.063.25-2.063.75-2.938 1.438 1.75 3.188 3.188 5.25 4.25s4.313 1.688 6.688 1.813a5.579 5.579 0 0 1 1.5-5.438c1.125-1.125 2.5-1.688 4.125-1.688s3.063.625 4.188 1.813a11.48 11.48 0 0 0 3.688-1.375c-.438 1.375-1.313 2.438-2.563 3.188 1.125-.125 2.188-.438 3.313-.875z"/></svg>
+</a
+			>
+			
+		</div>
+		
+	</div>
+</nav>
+
+    </div>
+</header>
+
+<!-- Everything inside the #post tags pulls data from the post -->
+<!-- #post -->
+
+<main id="site-main" class="site-main outer" role="main">
+    <div class="inner">
+
+        <article class="post-full  tag-data-ethics post ">
+
+            <header class="post-full-header">
+                <section class="post-full-meta">
+                    <time class="post-full-meta-date" datetime="26 May 2021">26 May 2021</time>
+                    
+                        <span class="date-divider">/</span>
+                        
+                            
+                               <a href='/tag/data-ethics/'>DATA ETHICS</a>
+                            
+                        
+                    
+                </section>
+                <h1 class="post-full-title">Is it really fair or did you automate it?</h1>
+            </header>
+
+            
+            <figure class="post-full-image" style="background-image: url(/assets/images/fairness.jpeg)">
+            </figure>
+            
+
+            <section class="post-full-content">
+                <div class="kg-card-markdown">
+                    <blockquote>
+  <p>The following article is an overview of my understanding of the <a href="https://ethics.fast.ai/syllabus/#lesson-2-bias--fairness">Lesson 2: Bias &amp; Fairness</a> taught by <a href="https://rachel.fast.ai">Rachel Thomas</a>. It also represents my notes for the course and also an attempt at a blog post series to increase awareness about various concepts in fairness and ethics.</p>
+</blockquote>
+
+<h2 id="fairness-and-bias">Fairness and Bias</h2>
+
+<p>Fairness has been talked about since a long time in the field of Computer Science or any other policy related fields where third party decisions influence the lives of other people. However, it has always been the case that fairness has always been described broadly as being impartial to people and in a real world scenario, such a vague definition wouldn’t yield much results. Bias is a term which has always been used in juxtaposed with fairness. So it would be wise to understand bias first and then move on to fairness.</p>
+
+<h2 id="applications--biases">Applications &amp; Biases</h2>
+
+<p>Starting off with some examples of bias which exist in products seems like a good idea and that’s what we’ll be doing!</p>
+
+<h4 id="representation-bias-in-facial-recognition">Representation Bias in Facial Recognition</h4>
+
+<p>Gender and ethnicity have been the most talked about subjects when we consider algorithmic bias. Right from the existing <a href="https://pop.inquirer.net/107105/google-translate-gender-bias">gender bias</a> in Google Translate to the <a href="http://proceedings.mlr.press/v81/buolamwini18a/buolamwini18a.pdf">infamous research</a> regarding facial recognition technology by <a href="https://www.media.mit.edu/people/joyab/overview/">Joy Buolamwini</a> and <a href="https://ai.stanford.edu/~tgebru/">Timnit Gebru</a>, gender and ethnicity have been at the forefront whenever the community has tried to deal with bias. So, in this section we’ll be discussing the facial recognition results and why it was a better approach than the other ones.</p>
+
+<figure>
+<img style="float:right" src="/assets/images/gebru-facial.png" alt="gebru-facial" />
+<figcaption style="font-size: 12px;"><a href="http://gendershades.org/overview.html">Source</a></figcaption>
+</figure>
+<p><br /></p>
+
+<p>The research conducted across various facial recognition technologies could be considered sort of bi-directional as it considered both gender as well as ethnicity and looked at the real accuracies of them. As it can be observed in the figure, there were glaring gaps in how this model actually behaved on various categories and it is conspicuous that darker females achieved the worst accuracy which would mean that the bias was quite high than realized and there are a lot of reasons for this algorithmic bias which we’ll be discussing further in detail.</p>
+
+<p><em>The question isn’t just about removing bias but also identifying how the tech is used</em></p>
+
+<h4 id="bias-in-recidivism-software">Bias in Recidivism software</h4>
+
+<p>Recidivism means calculating the probability of a convicted criminal to reoffend. This has been an important problem while dealing with detention sentences and also to lower the crime rates, a lot of places came up with using computer software in order to predict the risk of an individual to commit further crime and then sentence them accordingly. However in a report published by <a href="https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing">ProPublica</a>, a lot of biases started popping up. A seasoned white criminal being rated as low risk when a African-American child with just a misdemeanor in her record was labelled as high risk and put in jail was one of the many such “bizarre” incidences that the report sheds a light on.</p>
+
+<figure>
+<img style="float:right" src="/assets/images/recidivism.png" alt="recidivism" />
+<figcaption style="font-size: 12px;"><a href="https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing">Source: ProPublica analysis of data from Broward County, Fla.</a></figcaption>
+</figure>
+<p><br /></p>
+
+<p>As mentioned in the report, “Overall Northpointe’s assessment tool correctly predicts recidivism 61 percent of the time. But blacks are almost twice as likely as whites to be labeled a higher risk but not actually re-offend. It makes the opposite mistake among whites: They are much more likely than blacks to be labeled lower risk but go on to commit other crimes.”</p>
+
+<p>Upon further research it was also found that this “complicated” software was no better at predicting reoffense risk than a linear classifier with 3 variables. This is very serious as it could invalidate a lot of sentences issued using the same software. The most interesting thing in this case was that while evaluating every case, ‘race’ was never an input into the software. This would mean that even in the presence of sensitive data, machine learning excels at finding latent variables and deriving the said bias from those variables. We’ll also discuss this a thought experiment about this later!</p>
+
+<h4 id="predictive-policing">Predictive Policing</h4>
+
+<p>Predictive policing is a process in which police are allocated all over the city in such a way that the crime rate is minimized. In principle, this should be an optimisation problem. However, it resulted in being much more than that. As discussed by <a href="https://arxiv.org/pdf/1706.09847.pdf">(D. Ensign et al.)</a>, predictive policing software gives rise to a number of issues.</p>
+
+<p>Since, it has to be trained on previous incidents data, there is a chance of inducing historical bias. This would mean that the model would also learn the exploitation of certain communities and assign more police officers in that area, just based on the historical record data. This causes the rise of feedback loops. This means that in case of predictive policing, the next round of data that you’re going to receive for re-training is controlled by the model itself. This can be understood easily by an analogy to the <a href="https://en.wikipedia.org/wiki/Stanford_prison_experiment">Stanford Prison Experiment</a>. Just like the experiment, officers deployed in exploited areas might cause psychological distress to the people living there and thus, increase the chances of a crime occurring in that region. Thus, this doesn’t help curb the crime rate at all and instead introduces new factors to influence the crime rate.</p>
+
+<p>This predictive policing failure could be concisely summarized by a quote from <a href="https://www.linkedin.com/in/suresh-venkatasubramanian-233b751/">Suresh Venkatasubramanian </a>:</p>
+
+<blockquote>
+  <p>“Predictive Policing is aptly named: it is predicting future policing, not future crime”</p>
+</blockquote>
+
+<h2 id="different-sources-of-bias-and-their-causes">Different sources of bias and their causes</h2>
+
+<figure>
+<img style="float:right" src="/assets/images/bias-sources.png" alt="bias-sources" />
+<figcaption style="font-size: 12px;"><a href="https://arxiv.org/pdf/1901.10002.pdf">Source</a></figcaption>
+</figure>
+<p><br /></p>
+
+<p>As proposed by <a href="https://arxiv.org/pdf/1901.10002.pdf">(Harini Suresh and John Guttag, 2019)</a>, the whole KDD process (or a pipeline) of any Machine Learning process leads to various different kinds of biases at different stages which can be observed in the diagram and so now, we’ll have a look at each of them separately and how they occur.</p>
+
+<ul>
+  <li>
+    <p><strong>Histrorical Bias</strong>: This occurs in the data generation process. It occurs when the data being collected represents a version of the world which is significantly different from the society in which it is to be deployed. This data assumes that right from the time of the data being generated, there have been no changes in the world, which might be true in an ideal scenario, however, that’s not the case in the real word and this could cause a lot of problems.</p>
+  </li>
+  <li>
+    <p><strong>Representation Bias</strong>: This is often created during the data selection part. As observed in the facial recognition software, the data under-represents and even fails to generalize over any sub-group of population which is going to use the software.</p>
+  </li>
+  <li>
+    <p><strong>Measurement Bias</strong>: This occurs during the feature selection phase. This bias generally happens when the selected features may leave out crucial data and thus, create a situation where these selected features then act as the latent variables to create bias as observed in the recidivism software.</p>
+  </li>
+  <li>
+    <p><strong>Aggregation Bias</strong>: This occurs when various models trained on separate populations are aggregated to form as a whole. This is probably done in order to solve the problem that ‘one model cannot handle such heterogenous population’. However, aggregation leads to distinct population being inappropriately combined.</p>
+  </li>
+  <li>
+    <p><strong>Evaluation Bias</strong>: This evidently occurs during the evaluation phase when the evaluation sets do not represent the entire population. This leads to no detection of any existing bias and the subgroup present heavily in the evaluation set is what the model then optimizes on and is biased towards that same model. This is also the reason why Kaggle has separate ‘public’ and ‘private’ leaderboards in order to check if the model is really good or is it just overfit on the eval data.</p>
+  </li>
+  <li>
+    <p><strong>Deployment Bias</strong>: This could be a completely human induced bias (even though every bias is indirectly a human induced bias). This occurs when the system is used in such a way that the results are misinterpreted and thus, cause more harm than they help the others.</p>
+  </li>
+</ul>
+
+<h2 id="case-studies-on-specific-biases">Case Studies on Specific Biases</h2>
+
+<p>Before diving into different case studies about bias, I’d like to highlight a question which was asked during the lecture. The person asked that while discussing biases, we often highlight physical constructs such as race and gender upon which these biases occur. However, are there any other kinds of biases which aren’t as apparent as these constructs?</p>
+
+<p>The answer to this was very interesting and also unclear at the same time. Since, these softwares are built using models which are considered to be a ‘black-box’ to a certain point, no one can surely point out what bias is being settled into the model actually. However, there could be a case that the models learn social constructs such as language, country of origin,etc. and are partial towards these. Even though, these aren’t taken into consideration during deployment, but there could be a case where these factors act as latent factors and insert an undetectable bias. It is also interesting that all of these supposed “attributes” are socially constructed. This means that if you consider historical data, white people from a certain country wouldn’t have been considered white 200 years ago and thus, historic bias along with the origin country would act up and create bias in this case. This is why dealing with bias is considered to be a very complicated task. A possible solution to this problem is to talk to domain experts for which the solution is being built, as much as one can.</p>
+
+<p>Along with this, there were suggestions to reconsider the term ‘tech industry’. This was well presented in the <a href="https://medium.com/humane-tech/there-is-no-technology-industry-44774dfb3ed7">blog post</a> by [Anil Dash]. He suggests that the industry has become too big to just consider it as a community of software engineers and thus, help with proper policy making for the same.The need for the same was also observed in many cases such as the <a href="https://www.reuters.com/article/us-amazon-com-jobs-automation-insight-idUSKCN1MK08G">Amazon incident</a>. Proper monitoring and policy making can prevent such fiascos.</p>
+
+<h4 id="1-machine-learning-and-moral-hazard">1. Machine Learning and Moral Hazard</h4>
+
+<p>This case study is an overview of the <a href="https://scholar.harvard.edu/files/sendhil/files/aer.p20171084.pdf">research study</a> conducted by <a href="https://www.chicagobooth.edu/faculty/directory/m/sendhil-mullainathan">Sendhil Mullainathan</a> and <a href="https://publichealth.berkeley.edu/people/ziad-obermeyer/">Ziad Obermeyer</a>. In this research study, the authors tried to find out the leading factors which could predict the possibility of stroke in a patient. To conduct this study, they used historical EHR (Electronic Health Record) data of patients.</p>
+
+<p>At the end of the research, they found out and listed the various factors which were figured out in the process. The top 2 factors responsible to predict a stroke were ‘Prior Stroke’ and ‘Cardiovascular Disease’. These factors made a lot of sense intuitively as these are also the factors the doctors generally ask the patients for. However,upon listing further, there occurred some abnormalities in the factors.</p>
+
+<p>The next 4 important factors after these 2 were ‘Accidental Injury’, ‘Benign Breast Lump’, ‘Colonoscopy’ and ‘Sinusitis’. It doesn’t take a medical expert to figure out that these factors aren’t correlated much to having a stroke. Then why did the model mention these factors among the most important? Upon conducting further analysis of the data, the authors found that in the actual experiment, they didn’t measure the probability of having a stroke. What they instead measured was ‘have symptoms, go to doctor, get tests, AND receive diagnosis of stroke’. This was a classic case of Measurement Bias. This also led to an important corollary that simply quantifying how well algorithms predict ‘y’ is not enough to gauge the quality of the said algorithms.</p>
+
+<h4 id="2-aggregation-bias-on-healthcare">2. Aggregation Bias on Healthcare</h4>
+
+<p>It has been proven by <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3830901/">(Spanakis and Golden,2013)</a> that diabetes patients have different complications across various ethnicities. It has also been observed in <a href="https://pubmed.ncbi.nlm.nih.gov/22238408/">(Herman and Cohen, 2012)</a> that the HbA1c (which are used to monitor diabetes) differ in complex ways across various ethnicities and gender. Thus, taking these cases in mind, it would probably seem that a universal model wouldn’t be a smart way to eliminate bias completely as aggregation bias would distort the results across ethnicities and thus, defeat the whole meaning of building the product altogether.</p>
+
+<h2 id="alright-i-still-dont-understand-why-algorithmic-bias-matters">Alright, I still don’t understand why Algorithmic Bias matters?</h2>
+
+<p><strong>It’s not just the data! Machine learning can amplify bias.</strong> As proposed by <a href="https://arxiv.org/pdf/1901.09451.pdf">(De-Arteaga et al.,2019)</a>,it was observed that the algorithms were clearly amplifying bias in an already biased dataset. For example, the proportion of females in an occupation dataset who were surgeons was 14.6%. This was already very bad. However, on trying to predict the occupations using the model, it was found out that the true positive rate was 11.6%. This clearly shows that the model detected the bias in the data and amplified it further. Thus, this is another example of why algorithmic bias should be an important factor to us.</p>
+
+<p>Other than this, algorithms are used very differently than human decision makers. It has generally been the case that people assume that the algorithms in place are <strong>objective or error-free</strong>. Thus, even if an option is provided for human override, they don’t utilise it. Along with this, most of the times, algorithms replace people as cost-cutting measures. Thus, due to this <strong>no appeals process</strong> is in place to challenge the decision of these algorithms as it would require extensive manpower. Thus, this results in worsening of the situation further. These algorithms are also used <strong>at scale</strong>. However, they aren’t necessarily designed/trained with data which represents the real world population and thus, aren’t able to function properly at scale with the existing diversities. Along with this, the algorithmic systems are <strong>cheap</strong> as they’re meant to replace the human workforce. Thus, utilising high-quality datasets and good fairness practices is out of question at such times.
+A great quote by <a href="https://mathbabe.org">Cathy O’Neil</a> in her book <a href="https://weaponsofmathdestructionbook.com">Weapons of Math Destruction</a> summarizes this as:</p>
+
+<blockquote>
+  <p>“The privileged are processed by people, the poor are processed by algorithms”</p>
+</blockquote>
+
+<h2 id="humans-are-biased-why-does-algorithmic-bias-matter">Humans are biased, why does algorithmic bias matter?</h2>
+
+<p>As we observed earlier, algorithmic bias matters so much because it can create feedback loops (such as the one in predictive policing). Along with this, Machine Learning can amplify that existing bias. In the real world, even though it may seem similar but humans and algorithms are utilised completely differently. Since, technology grants additional power to human beings, an additional responsibility also comes with it.</p>
+
+<p>On observing more intricately, we find that computers do exactly what we tell them to do. Even in Machine Learning, we define what success is. This success is generally achieved in the form of <strong>minimizing an error function</strong>. But who gets to decide that error function? Isn’t it completely subjective?</p>
+
+<p>For example, when someone gets tested for Cancer, which would be considered worse? a false positive or a false negative? The right answer in this case might be a false positive, since the person can get further tests done and find out that they don’t actually have cancer. However, the situation might be much worse if your model gives out improper false negatives. (This also depends, if you keep on predicting positive for every case you get, then the model should probably be thrown out.)</p>
+
+<p>Conversely, if you think about your email inbox spam classifier. Which would be considered worse? a false positive or a false negative? A False Positive here would signify that an email which wasn’t spam got classified as spam and was sent to the spam folder. This could be a crucial email. On the other hand, a false negative just puts an unnecessary email in your primary folder and thus, this doesn’t cause as much harm as the other one. (Again, depends on the proportion.)</p>
+
+<p>Considering both these examples and the complexity of all existing systems, how can it be expected to just get optimum results by minimizing an error function which is completely context depdendent? And how would one even go about automating that process too?</p>
+
+<p>If the above two examples seem really simple, let’s consider a thought experiment of a similar ‘Which is worse’ scenario on our criminal recidivism system. Which would be worse in that case?</p>
+
+<p>A False Positive would denote that a person who is not likely to reoffend would be sent to jail and thus, their chance to rebuild and correct their mistakes gets taken away. A False Negative means potentially putting a criminal on the street.</p>
+
+<p>How would one even decide what to optimize in such cases?</p>
+
+<h2 id="is-introducing-fairness-really-that-difficult">Is introducing fairness really that difficult?</h2>
+
+<p>Before going into this, a very good point was discussed. A student questioned that if no safeguards are set to ensure fairness, wouldn’t this wreak havoc in the whole system? However, similarly, if we have a system of receiving 100% accurate data, wouldn’t this prevent the underprivileged from getting access to healthcare and other such necessities?</p>
+
+<h4 id="carcorp-conundrum">CarCorp Conundrum</h4>
+
+<p>This case study was mentioned by <a href="https://arxiv.org/pdf/1901.02547.pdf">(Passi and Barocas,2019)</a> and is really good example of the whole data science process and how fairness would fit into that. In this case study, a 6 month ethnographic field study was conducted which included the involvement of a lot of data scientists, business analysts, product managers as well as executives. The case study revolves around a company called CarCorp which collects special financing data of people who need auto loans but have bad credit scores (300-600) or even limited credit scores. The company then sells this data to auto dealers, who use this data as a leads generation directory. Now, the company (CarCorp) wanted to improve the quality of leads that they were providing and thus, announced this ethnographic study.</p>
+
+<p>Initially, they pondered upon the basic questions such as ‘What makes a lead high quality?’. The possible factors to this were the buyer’s salary, whether the car the buyer wanted was in stock at the dealer’s showroom and how did the buyer plan on financing the vehicle along with if the dealer supported that process of financing.</p>
+
+<p>However, the roadblock in building such quality of leads was that dealers didn’t want to share financing data. Along with this, the company found that the credit scores were segmented into various ranges such as 476-525, 526-575, etc. This resulted in the resources being diverted to predicting the credit score as the company estimated that this would be the ideal indicator of quality and thus, the problem was reduced to predicting if a particular client had a credit score above or below 500.In addition to this, the company also considered using high quality datasets with extremely accurate values. However, these datasets were very expensive and not really affordable for operations. Due to this, the whole project failed.</p>
+
+<p>As we observe here, the whole problem started with a good approach to the solution, but in the end got reduced to a basic classification problem and thus, the thought of considering fairness went out of the window (since credit scores aren’t really the epitome of unbiased indicators).</p>
+
+<p>On discussing during the lecture, what could’ve done to consider bias and fairness in this scenario, a lot of good solutions were proposed. One of them answered that the ‘quality’ in itself was a subjective metric. The first important thing that they should’ve done would be to ensure that the definition of quality is in alignment among all the people involved. If that’s not the case then using machine learning to predict quality just becomes another example of what Pinboard creator <a href="https://idlewords.com">Maciej Cegłowski</a> had proposed i.e. <strong><em>Machine Learning is just money laundering for bias</em></strong></p>
+
+<p>The other solution was that the business model should’ve been changed to how to sell more cars to more people. For doing this, instead of using opaque, biased systems like credit scores, the company could’ve looked for customers. The basic question to ask here was “Do you have $x in down payment and can you afford $y per month?”.</p>
+
+<h2 id="what-are-the-solutions-to-these-problems">What are the solutions to these problems?</h2>
+
+<p>In order to solve various biases and ensure fairness at all points in a pipeline process of the product, the following questions must be asked about the AI</p>
+
+<ul>
+  <li>
+    <p><strong>Should we even be doing this?</strong> <br />
+As an engineer, the first thought that comes to my mind whenever I see a problem is “What can we build to fix this?” However, sometimes the answer to this question would be NOTHING. This was the concept which was also proposed by <a href="https://dl.acm.org/doi/10.1145/1978942.1979275">(Baumer and Silberman, 2011)</a>. Sometimes trying to solve some problems leads to other problems such as the one mentioned by <a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/widm.1278">(Wang et al., 2019)</a> where facial features could be used to detect ethnicity of the person. Some of these “solutions” could be a double ended sword i.e. it could be bad if they’re wrong and even worse if they’re right and one such example of those would be <a href="https://qz.com/1078901/a-stanford-scientist-says-he-built-a-gaydar-using-the-lamest-ai-to-prove-a-point/">this</a>.</p>
+  </li>
+  <li>
+    <p><strong>What bias is in the data?</strong> <br />
+This is an important question to identify as well as solve. As discussed extensively before, identifying bias in the data is a crucial step to building a product.</p>
+  </li>
+  <li>
+    <p><strong>Can the code and data be audited?</strong> <br />
+Building upon her undergrad specialization as an electronic engineer, <a href="https://arxiv.org/pdf/1803.09010.pdf">(Timnit Gebru et al.,2020)</a> proposed a system to maintain kind of a datasheet for the data being used in a product. This datasheet would look like a part description sheet of an electric component where every aspect of the data being used is extensively stated. It would include questions such as <em>Who was involved in the data collection process (e.g., students, crowdworkers, contractors) and how were they compensated (e.g., how much were crowdworkers paid)?</em> This kind of an open auditing mechanism would also help in identifying biases in the data. The prototype for the same datasheet can be found <a href="https://arxiv.org/pdf/1803.09010.pdf">here</a>. Along with this, the auditing of code is important to prevent various other measurement and aggregation biases.</p>
+  </li>
+  <li>
+    <p><strong>What are the error rates for different sub-groups?</strong> <br />
+This is important as observed in the facial recognition example as well as while explaining the evaluation bias example. Thus, <strong><em>correct</em></strong> error rates for every <strong><em>sub-group</em></strong> need to be kept on track.</p>
+  </li>
+  <li>
+    <p><strong>What is the accuracy of a simple rule-based alternative?</strong> <br />
+As observed during the criminal recidivism example, the complicated model had lesser accuracy than a simple linear classifier. So, it would also be wise to look at simple rule-based alternatives in order to keep it simple. It is as the quote says: <strong><em>Don’t use BERT when regex can do the job!</em></strong>.</p>
+  </li>
+  <li>
+    <p><strong>What processes are in place to handle appeals or mistakes?</strong> <br />
+An appeal system is necessary to deal with errors happening in the automated product. Appeals system could also work for a lot of systems such as the ones with completely automated ones which cannot handle clerical errors. At such times, human contact is often craved and even necessary to deal with these errors taking place and also finding out the gaps in the system.</p>
+  </li>
+  <li>
+    <p><strong>How diverse is the team that built it?</strong> <br />
+Team diversity is a significant aspect when deciding on product building as biases can only be eliminated if the people building the product understand the issues. These issues can be uncovered often in case of diverse teams and extensive testing of the product among these people.</p>
+  </li>
+</ul>
+
+<p><br />
+<em>This is the end of my article. This is the first time that I’ve written about bias and fairness and so if you feel I’ve offended you in some way or have made a mistake which needs to be corrected, please feel free to <a href="mailto:thisisdeepgandhi@gmail.com"><strong>reach out</strong></a>. Thanks for reading, hope you liked it!</em></p>
+
+                </div>
+            </section>
+
+            <!-- Email subscribe form at the bottom of the page -->
+            
+
+            <footer class="post-full-footer">
+                <!-- Everything inside the #author tags pulls data from the author -->
+                <!-- #author-->
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                <!-- /author  -->
+            </footer>
+
+            <!-- If you use Disqus comments, just uncomment this block.
+            The only thing you need to change is "test-apkdzgmqhj" - which
+            should be replaced with your own Disqus site-id. -->
+            
+                <section class="post-full-comments">
+                    <div id="disqus_thread"></div>
+                    <script>
+                        var disqus_config = function () {
+                            this.page.url = 'http://localhost:4000/data-ethics-2';
+                            this.page.identifier = '/data-ethics-2';
+                            this.page.title = 'Is it really fair or did you automate it?';
+                        };
+                        (function() {
+                            var d = document, s = d.createElement('script');
+                            s.src = 'https://deep1401.disqus.com/embed.js';
+                            s.setAttribute('data-timestamp', +new Date());
+                            (d.head || d.body).appendChild(s);
+                        })();
+                    </script>
+                </section>
+            
+
+        </article>
+
+    </div>
+</main>
+
+<!-- Links to Previous/Next posts -->
+<aside class="read-next outer">
+    <div class="inner">
+        <div class="read-next-feed">
+            
+                
+                
+                
+                
+                    <article class="read-next-card"
+                        
+                            style="background-image: url(/assets/images/blog-cover.jpg)"
+                        
+                    >
+                        <header class="read-next-card-header">
+                            <small class="read-next-card-header-sitetitle">&mdash; Deep Gandhi &mdash;</small>
+                            
+                                <h3 class="read-next-card-header-title"><a href="/tag/data-ethics/">Data ethics</a></h3>
+                            
+                        </header>
+                        <div class="read-next-divider"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 14.5s2 3 5 3 5.5-2.463 5.5-5.5S21 6.5 18 6.5c-5 0-7 11-12 11C2.962 17.5.5 15.037.5 12S3 6.5 6 6.5s4.5 3.5 4.5 3.5"/></svg>
+</div>
+                        <div class="read-next-card-content">
+                            <ul>
+                                
+                                
+                                  
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                            <li><a href="/data-ethics-1">Is it really true or did you read it online?</a></li>
+                                        
+                                    
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                            </ul>
+                        </div>
+                        <footer class="read-next-card-footer">
+                            <a href="/tag/data-ethics/">
+                                
+                                    See all 1 posts  →
+                                
+                            </a>
+                        </footer>
+                    </article>
+                
+            
+
+            <!-- If there's a next post, display it using the same markup included from - partials/post-card.hbs -->
+            
+
+            <!-- If there's a previous post, display it using the same markup included from - partials/post-card.hbs -->
+            
+                
+
+    <article class="post-card post-template">
+        
+            <a class="post-card-image-link" href="/data-ethics-1">
+                <div class="post-card-image" style="background-image: url(/assets/images/advanced.jpg)"></div>
+            </a>
+        
+        <div class="post-card-content">
+            <a class="post-card-content-link" href="/data-ethics-1">
+                <header class="post-card-header">
+                    
+                        
+                            
+                                <span class="post-card-tags">Data ethics</span>
+                            
+                        
+                    
+
+                    <h2 class="post-card-title">Is it really true or did you read it online?</h2>
+                </header>
+                <section class="post-card-excerpt">
+                    
+                        <p></p>
+                    
+                </section>
+            </a>
+            <footer class="post-card-meta">
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                <span class="reading-time">
+                    
+                    
+                      1 min read
+                    
+                </span>
+            </footer>
+        </div>
+    </article>
+
+            
+
+        </div>
+    </div>
+</aside>
+
+<!-- Floating header which appears on-scroll, included from includes/floating-header.hbs -->
+<div class="floating-header">
+    <div class="floating-header-logo">
+        <a href="http://localhost:4000/">
+            
+                <img src="/assets/images/favicon.png" alt="Deep Gandhi icon" />
+            
+            <span>Deep Gandhi</span>
+        </a>
+    </div>
+    <span class="floating-header-divider">&mdash;</span>
+    <div class="floating-header-title">Is it really fair or did you automate it?</div>
+    <div class="floating-header-share">
+        <div class="floating-header-share-label">Share this <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <path d="M7.5 15.5V4a1.5 1.5 0 1 1 3 0v4.5h2a1 1 0 0 1 1 1h2a1 1 0 0 1 1 1H18a1.5 1.5 0 0 1 1.5 1.5v3.099c0 .929-.13 1.854-.385 2.748L17.5 23.5h-9c-1.5-2-5.417-8.673-5.417-8.673a1.2 1.2 0 0 1 1.76-1.605L7.5 15.5zm6-6v2m-3-3.5v3.5m6-1v2"/>
+</svg>
+</div>
+        <a class="floating-header-share-tw" href="https://twitter.com/share?text=Is+it+really+fair+or+did+you+automate+it%3F&amp;url=https://deep1401.github.iodata-ethics-2"
+            onclick="window.open(this.href,'share-twitter', newwindow);return false;">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M30.063 7.313c-.813 1.125-1.75 2.125-2.875 2.938v.75c0 1.563-.188 3.125-.688 4.625a15.088 15.088 0 0 1-2.063 4.438c-.875 1.438-2 2.688-3.25 3.813a15.015 15.015 0 0 1-4.625 2.563c-1.813.688-3.75 1-5.75 1-3.25 0-6.188-.875-8.875-2.625.438.063.875.125 1.375.125 2.688 0 5.063-.875 7.188-2.5-1.25 0-2.375-.375-3.375-1.125s-1.688-1.688-2.063-2.875c.438.063.813.125 1.125.125.5 0 1-.063 1.5-.25-1.313-.25-2.438-.938-3.313-1.938a5.673 5.673 0 0 1-1.313-3.688v-.063c.813.438 1.688.688 2.625.688a5.228 5.228 0 0 1-1.875-2c-.5-.875-.688-1.813-.688-2.75 0-1.063.25-2.063.75-2.938 1.438 1.75 3.188 3.188 5.25 4.25s4.313 1.688 6.688 1.813a5.579 5.579 0 0 1 1.5-5.438c1.125-1.125 2.5-1.688 4.125-1.688s3.063.625 4.188 1.813a11.48 11.48 0 0 0 3.688-1.375c-.438 1.375-1.313 2.438-2.563 3.188 1.125-.125 2.188-.438 3.313-.875z"/></svg>
+
+        </a>
+        <a class="floating-header-share-fb" href="https://www.facebook.com/sharer/sharer.php?u=https://deep1401.github.iodata-ethics-2"
+            onclick="window.open(this.href, 'share-facebook', newwindow);return false;">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z"/></svg>
+
+        </a>
+    </div>
+    <progress class="progress" value="0">
+        <div class="progress-container">
+            <span class="progress-bar"></span>
+        </div>
+    </progress>
+</div>
+
+
+<!-- /post -->
+
+<!-- The #contentFor helper here will send everything inside it up to the matching #block helper found in default.hbs -->
+
+
+			<!-- Previous/next page links - displayed on every page -->
+			
+
+			<!-- The footer at the very bottom of the screen -->
+			<footer class="site-footer outer">
+				<div class="site-footer-content inner">
+					<section class="copyright">
+						<a href="http://localhost:4000/">Deep Gandhi</a>
+						&copy; 2021
+					</section>
+					<section class="poweredby">
+						Proudly published with <a href="https://jekyllrb.com/">Jekyll</a> &
+						<a href="https://pages.github.com/" target="_blank" rel="noopener"
+							>GitHub Pages</a
+						>
+						using
+						<a
+							href="https://github.com/jekyller/jasper2"
+							target="_blank"
+							rel="noopener"
+							>Jasper2</a
+						>
+					</section>
+					<nav class="site-footer-nav">
+						<a href="/">Latest Posts</a>
+						<a
+							href="https://facebook.com/deepgandhi1401"
+							target="_blank"
+							rel="noopener"
+							>Facebook</a
+						> <a
+							href="https://twitter.com/deepgandhi_07"
+							target="_blank"
+							rel="noopener"
+							>Twitter</a
+						>
+						<a
+							href="https://github.com/deep1401"
+							target="_blank"
+							rel="noopener"
+							>Github</a
+						>
+						<a
+							href="https://www.linkedin.com/in/deep1401/"
+							target="_blank"
+							rel="noopener"
+							>LinkedIn</a
+						>
+					</nav>
+				</div>
+			</footer>
+		</div>
+
+		<!-- The big email subscribe modal content -->
+		
+
+		<!-- highlight.js -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.10.0/components/prism-abap.min.js"></script>
+		<script>
+			$(document).ready(function () {
+				$('pre code').each(function (i, block) {
+					hljs.highlightBlock(block);
+				});
+			});
+		</script>
+
+		<!-- jQuery + Fitvids, which makes all video embeds responsive -->
+		<script
+			src="https://code.jquery.com/jquery-3.2.1.min.js"
+			integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+			crossorigin="anonymous"
+		></script>
+		<script
+			type="text/javascript"
+			src="/assets/js/jquery.fitvids.js"
+		></script>
+		<script
+			type="text/javascript"
+			src="https://demo.ghost.io/assets/js/jquery.fitvids.js?v=724281a32e"
+		></script>
+
+		<!-- Paginator increased to "infinit" in _config.yml -->
+		<!-- if paginator.posts  -->
+		<!-- <script>
+        var maxPages = parseInt('');
+    </script>
+    <script src="/assets/js/infinitescroll.js"></script> -->
+		<!-- /endif -->
+
+		
+
+		<!-- Add Google Analytics  -->
+		<!-- Google Analytics Tracking code -->
+<script>
+	(function (i, s, o, g, r, a, m) {
+		i['GoogleAnalyticsObject'] = r;
+		(i[r] =
+			i[r] ||
+			function () {
+				(i[r].q = i[r].q || []).push(arguments);
+			}),
+			(i[r].l = 1 * new Date());
+		(a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+		a.async = 1;
+		a.src = g;
+		m.parentNode.insertBefore(a, m);
+	})(
+		window,
+		document,
+		'script',
+		'//www.google-analytics.com/analytics.js',
+		'ga'
+	);
+
+	ga('create', 'UA-149584643-1', 'auto');
+	ga('send', 'pageview');
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-185424615-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-185424615-1');
+</script> -->
+
+
+		<!-- The #block helper will pull in data from the #contentFor other template files. In this case, there's some JavaScript which we only want to use in post.hbs, but it needs to be included down here, after jQuery has already loaded. -->
+		 <script>
+
+// NOTE: Scroll performance is poor in Safari
+// - this appears to be due to the events firing much more slowly in Safari.
+//   Dropping the scroll event and using only a raf loop results in smoother
+//   scrolling but continuous processing even when not scrolling
+$(document).ready(function () {
+    // Start fitVids
+    var $postContent = $(".post-full-content");
+    $postContent.fitVids();
+    // End fitVids
+
+    var progressBar = document.querySelector('progress');
+    var header = document.querySelector('.floating-header');
+    var title = document.querySelector('.post-full-title');
+
+    var lastScrollY = window.scrollY;
+    var lastWindowHeight = window.innerHeight;
+    var lastDocumentHeight = $(document).height();
+    var ticking = false;
+
+    function onScroll() {
+        lastScrollY = window.scrollY;
+        requestTick();
+    }
+
+    function onResize() {
+        lastWindowHeight = window.innerHeight;
+        lastDocumentHeight = $(document).height();
+        requestTick();
+    }
+
+    function requestTick() {
+        if (!ticking) {
+            requestAnimationFrame(update);
+        }
+        ticking = true;
+    }
+
+    function update() {
+        var trigger = title.getBoundingClientRect().top + window.scrollY;
+        var triggerOffset = title.offsetHeight + 35;
+        var progressMax = lastDocumentHeight - lastWindowHeight;
+
+        // show/hide floating header
+        if (lastScrollY >= trigger + triggerOffset) {
+            header.classList.add('floating-active');
+        } else {
+            header.classList.remove('floating-active');
+        }
+
+        progressBar.setAttribute('max', progressMax);
+        progressBar.setAttribute('value', lastScrollY);
+
+        ticking = false;
+    }
+
+    window.addEventListener('scroll', onScroll, {passive: true});
+    window.addEventListener('resize', onResize, false);
+
+    update();
+});
+</script>
+ 
+
+		<!-- Ghost outputs important scripts and data with this tag - it should always be the very last thing before the closing body tag -->
+		<!-- ghost_foot -->
+	</body>
+</html>
