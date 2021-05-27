@@ -11,11 +11,11 @@ subclass: "post"
 author: Deep Gandhi
 ---
 
-> The following article is an overview of my understanding of the [Lesson 2: Bias & Fairness](https://ethics.fast.ai/syllabus/#lesson-2-bias--fairness) taught by [Rachel Thomas](https://rachel.fast.ai). It also represents my notes for the course and also an attempt at a blog post series to increase awareness about various concepts in fairness and ethics.
+> The following article is an overview of my understanding of the [Lesson 2: Bias & Fairness](https://ethics.fast.ai/syllabus/#lesson-2-bias--fairness) taught by [Rachel Thomas](https://rachel.fast.ai). It also represents my notes for the course and is also an attempt at a blog post series to increase awareness about various concepts in fairness and ethics.
 
 ## Fairness and Bias
 
-Fairness has been talked about since a long time in the field of Computer Science or any other policy related fields where third party decisions influence the lives of other people. However, it has always been the case that fairness has always been described broadly as being impartial to people and in a real world scenario, such a vague definition wouldn't yield much results. Bias is a term which has always been used in juxtaposed with fairness. So it would be wise to understand bias first and then move on to fairness.
+Fairness has been talked about since a long time in the field of Computer Science or any other policy related fields where third party decisions influence the lives of other people. However, it has always been the case that fairness has always been described broadly as being impartial to people and in a real world scenario, such a vague definition wouldn't yield much results. Bias is a term which is often used in juxtaposition with fairness. So it would be wise to understand bias first and then move on to fairness.
 
 ## Applications & Biases
 
@@ -31,13 +31,13 @@ Gender and ethnicity have been the most talked about subjects when we consider a
 </figure>
 <br>
 
-The research conducted across various facial recognition technologies could be considered sort of bi-directional as it considered both gender as well as ethnicity and looked at the real accuracies of them. As it can be observed in the figure, there were glaring gaps in how this model actually behaved on various categories and it is conspicuous that darker females achieved the worst accuracy which would mean that the bias was quite high than realized and there are a lot of reasons for this algorithmic bias which we'll be discussing further in detail.
+The research conducted across various facial recognition technologies could be considered sort of bi-directional as it considered both gender as well as ethnicity and looked at the real accuracies of them. As it can be observed in the figure, there were glaring gaps in how this model actually behaved on various categories and it is conspicuous that darker females achieved the worst accuracy which would mean that the bias was quite higher than realized and there are a lot of reasons for this algorithmic bias which we'll be discussing further in detail.
 
 _The question isn't just about removing bias but also identifying how the tech is used_
 
 #### Bias in Recidivism software
 
-Recidivism means calculating the probability of a convicted criminal to reoffend. This has been an important problem while dealing with detention sentences and also to lower the crime rates, a lot of places came up with using computer software in order to predict the risk of an individual to commit further crime and then sentence them accordingly. However in a report published by [ProPublica](https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing), a lot of biases started popping up. A seasoned white criminal being rated as low risk when a African-American child with just a misdemeanor in her record was labelled as high risk and put in jail was one of the many such "bizarre" incidences that the report sheds a light on.
+Recidivism means calculating the probability of a convicted criminal to reoffend. Since this has been an important problem while dealing with detention sentences and also to lower the crime rates, a lot of places came up with using computer software in order to predict the risk of an individual to commit further crime and then sentence them accordingly. However in a report published by [ProPublica](https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing), a lot of biases started popping up. A seasoned white criminal being rated as low risk when a African-American child with just a misdemeanor in her record was labelled as high risk and put in jail was one of the many such "bizarre" incidences that the report sheds light on.
 
 <figure>
 <img  style="float:right" src="/assets/images/recidivism.png" alt="recidivism">
@@ -47,7 +47,7 @@ Recidivism means calculating the probability of a convicted criminal to reoffend
 
 As mentioned in the report, "Overall Northpointe’s assessment tool correctly predicts recidivism 61 percent of the time. But blacks are almost twice as likely as whites to be labeled a higher risk but not actually re-offend. It makes the opposite mistake among whites: They are much more likely than blacks to be labeled lower risk but go on to commit other crimes."
 
-Upon further research it was also found that this "complicated" software was no better at predicting reoffense risk than a linear classifier with 3 variables. This is very serious as it could invalidate a lot of sentences issued using the same software. The most interesting thing in this case was that while evaluating every case, 'race' was never an input into the software. This would mean that even in the presence of sensitive data, machine learning excels at finding latent variables and deriving the said bias from those variables. We'll also discuss this a thought experiment about this later!
+Upon further research it was also found that this "complicated" software was no better at predicting reoffense risk than a linear classifier with 3 variables. This is very serious as it could invalidate a lot of sentences issued using the same software. The most interesting thing in this case was that while evaluating every case, 'race' was never an input into the software. This would mean that even in the presence of sensitive data, machine learning excels at finding latent variables and deriving the said bias from those variables. We'll also discuss a thought experiment about this later!
 
 #### Predictive Policing
 
@@ -87,7 +87,7 @@ Before diving into different case studies about bias, I'd like to highlight a qu
 
 The answer to this was very interesting and also unclear at the same time. Since, these softwares are built using models which are considered to be a 'black-box' to a certain point, no one can surely point out what bias is being settled into the model actually. However, there could be a case that the models learn social constructs such as language, country of origin,etc. and are partial towards these. Even though, these aren't taken into consideration during deployment, but there could be a case where these factors act as latent factors and insert an undetectable bias. It is also interesting that all of these supposed "attributes" are socially constructed. This means that if you consider historical data, white people from a certain country wouldn't have been considered white 200 years ago and thus, historic bias along with the origin country would act up and create bias in this case. This is why dealing with bias is considered to be a very complicated task. A possible solution to this problem is to talk to domain experts for which the solution is being built, as much as one can.
 
-Along with this, there were suggestions to reconsider the term 'tech industry'. This was well presented in the [blog post](https://medium.com/humane-tech/there-is-no-technology-industry-44774dfb3ed7) by [Anil Dash]. He suggests that the industry has become too big to just consider it as a community of software engineers and thus, help with proper policy making for the same.The need for the same was also observed in many cases such as the [Amazon incident](https://www.reuters.com/article/us-amazon-com-jobs-automation-insight-idUSKCN1MK08G). Proper monitoring and policy making can prevent such fiascos.
+Along with this, there were suggestions to reconsider the term 'tech industry'. This was well presented in the [blog post](https://medium.com/humane-tech/there-is-no-technology-industry-44774dfb3ed7) by [Anil Dash](https://anildash.com). He suggests that the industry has become too big to consider it just as a community of software engineers and thus, help with proper policy making for the same.The need for the same was also observed in many cases such as the [Amazon incident](https://www.reuters.com/article/us-amazon-com-jobs-automation-insight-idUSKCN1MK08G). Proper monitoring and policy making can prevent such fiascos.
 
 #### 1. Machine Learning and Moral Hazard
 
@@ -116,15 +116,15 @@ As we observed earlier, algorithmic bias matters so much because it can create f
 
 On observing more intricately, we find that computers do exactly what we tell them to do. Even in Machine Learning, we define what success is. This success is generally achieved in the form of **minimizing an error function**. But who gets to decide that error function? Isn't it completely subjective?
 
-For example, when someone gets tested for Cancer, which would be considered worse? a false positive or a false negative? The right answer in this case might be a false positive, since the person can get further tests done and find out that they don't actually have cancer. However, the situation might be much worse if your model gives out improper false negatives. (This also depends, if you keep on predicting positive for every case you get, then the model should probably be thrown out.)
+For example, when someone gets tested for Cancer, which would be considered worse? A false Positive or a false negative? The right answer in this case might be a false positive, since the person can get further tests done and find out that they don't actually have cancer. However, the situation might be much worse if your model gives out improper false negatives. (This also depends, if you keep on predicting positive for every case you get, then the model should probably be thrown out.)
 
-Conversely, if you think about your email inbox spam classifier. Which would be considered worse? a false positive or a false negative? A False Positive here would signify that an email which wasn't spam got classified as spam and was sent to the spam folder. This could be a crucial email. On the other hand, a false negative just puts an unnecessary email in your primary folder and thus, this doesn't cause as much harm as the other one. (Again, depends on the proportion.)
+Conversely, if you think about your email inbox spam classifier. Which would be considered worse? A false positive or a false Negative? a false Positive here would signify that an email which wasn't spam got classified as spam and was sent to the spam folder. This could be a crucial email. On the other hand, a false negative just puts an unnecessary email in your primary folder and thus, this doesn't cause as much harm as the other one. (Again, depends on the proportion.)
 
 Considering both these examples and the complexity of all existing systems, how can it be expected to just get optimum results by minimizing an error function which is completely context depdendent? And how would one even go about automating that process too?
 
 If the above two examples seem really simple, let's consider a thought experiment of a similar 'Which is worse' scenario on our criminal recidivism system. Which would be worse in that case?
 
-A False Positive would denote that a person who is not likely to reoffend would be sent to jail and thus, their chance to rebuild and correct their mistakes gets taken away. A False Negative means potentially putting a criminal on the street.
+A false positive would denote that a person who is not likely to reoffend would be sent to jail and thus, their chance to rebuild and correct their mistakes gets taken away. A false Negative means potentially putting a criminal on the street.
 
 How would one even decide what to optimize in such cases?
 
@@ -148,7 +148,7 @@ The other solution was that the business model should've been changed to how to 
 
 ## What are the solutions to these problems?
 
-In order to solve various biases and ensure fairness at all points in a pipeline process of the product, the following questions must be asked about the AI
+In order to solve various biases and ensure fairness at all points in a pipeline process of the product, the following questions must be asked about the AI:
 
 - **Should we even be doing this?** <br/>
   As an engineer, the first thought that comes to my mind whenever I see a problem is "What can we build to fix this?" However, sometimes the answer to this question would be NOTHING. This was the concept which was also proposed by [(Baumer and Silberman, 2011)](https://dl.acm.org/doi/10.1145/1978942.1979275). Sometimes trying to solve some problems leads to other problems such as the one mentioned by [(Wang et al., 2019)](https://onlinelibrary.wiley.com/doi/abs/10.1002/widm.1278) where facial features could be used to detect ethnicity of the person. Some of these "solutions" could be a double ended sword i.e. it could be bad if they're wrong and even worse if they're right and one such example of those would be [this](https://qz.com/1078901/a-stanford-scientist-says-he-built-a-gaydar-using-the-lamest-ai-to-prove-a-point/).
@@ -160,7 +160,7 @@ In order to solve various biases and ensure fairness at all points in a pipeline
   Building upon her undergrad specialization as an electronic engineer, [(Timnit Gebru et al.,2020)](https://arxiv.org/pdf/1803.09010.pdf) proposed a system to maintain kind of a datasheet for the data being used in a product. This datasheet would look like a part description sheet of an electric component where every aspect of the data being used is extensively stated. It would include questions such as _Who was involved in the data collection process (e.g., students, crowdworkers, contractors) and how were they compensated (e.g., how much were crowdworkers paid)?_ This kind of an open auditing mechanism would also help in identifying biases in the data. The prototype for the same datasheet can be found [here](https://arxiv.org/pdf/1803.09010.pdf). Along with this, the auditing of code is important to prevent various other measurement and aggregation biases.
 
 - **What are the error rates for different sub-groups?** <br/>
-  This is important as observed in the facial recognition example as well as while explaining the evaluation bias example. Thus, **_correct_** error rates for every **_sub-group_** need to be kept on track.
+  As observed in the facial recognition example and evaluation bias, we find out that this is quite important. Thus, **_correct_** error rates for every **_sub-group_** need to be kept on track.
 
 - **What is the accuracy of a simple rule-based alternative?** <br/>
   As observed during the criminal recidivism example, the complicated model had lesser accuracy than a simple linear classifier. So, it would also be wise to look at simple rule-based alternatives in order to keep it simple. It is as the quote says: **_Don't use BERT when regex can do the job!_**.
