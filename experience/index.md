@@ -13,14 +13,14 @@ subclass: "post page"
 
 1.  <p style="margin-top: 30px">
             <strong>
-                Application of Deep Learning in Cartography using UNET and GAN.
+                <a href="https://www.routledge.com/Design-of-Intelligent-Applications-using-Machine-Learning-and-Deep-Learning/Mangrulkar-Michalas-Shekokar-Narvekar-Chavan/p/book/9780367679798">Application of Deep Learning in Cartography using UNET and GAN.</a>
             </strong>
     </p>
     <p>
         <font size="3">
             <b>Deep Gandhi</b>, Govind Thakur, Prof.Pranit Bari, Prof. Khushali Deulkar
             <br>
-            <a href="https://www.routledge.com/Design-of-Intelligent-Applications-using-Machine-Learning-and-Deep-Learning/Mangrulkar-Michalas-Shekokar-Narvekar-Chavan/p/book/9780367679798"><i>Chapter 18 </i></a><i> of "Design of Intelligent Applications using Machine Learning and Deep Learning Techniques" (Taylor and Francis) </i>
+            <i>Chapter 18 of "Design of Intelligent Applications using Machine Learning and Deep Learning Techniques" (Taylor and Francis) </i>
             <br>
             ISBN: 9780367679798
             
@@ -29,15 +29,14 @@ subclass: "post page"
 
 2.  <p style="margin-top: 20px">
             <strong>
-                Music Genre Classification using Transfer Learning on log-based MEL spectrograms    
+                <a href="https://ieeexplore.ieee.org/document/9418035">Music Genre Classification using Transfer Learning on log-based MEL spectrograms </a>
             </strong>
     </p>
     <p>
         <font size="3">
             Jash Mehta, <b>Deep Gandhi</b>, Govind Thakur, Prof.Pratik Kanani.
             <br>
-            <i>Accepted for publication at 5<sup>th</sup> International Conference on Computing Methodologies and Communication</i>
-            <br>IEEE XPLORE ISBN 978-0-7381-1204-6
+            <i>Proceedings 5<sup>th</sup> International Conference on Computing Methodologies and Communication</i>
         </font>
     </p>
 
@@ -50,7 +49,7 @@ subclass: "post page"
         <font size="3">
             <b>Deep Gandhi</b>, Jash Mehta, Prof.Pranit Bari.
             <br>
-            <i>Under review at International Conference on Communication, Information and Computing Methodology(ICCICT-2021) </i>
+            <i>Under review at 4th International Conference on Computational Intelligence and Data Engineering (ICCIDE-2021) </i>
         </font>
     </p>
 
@@ -63,20 +62,34 @@ subclass: "post page"
         <font size="3">
             <b>Deep Gandhi</b>, Jash Mehta, Nemil Shah, Dr.Ramchandra Mangrulkar.
             <br>
-            <i>Chapter under review for the book "Computing Technologies and Applications: Paving Path Towards Society 5.0" </i>
+            <i>Accepted for publication as chapter 17 for the book "Cloud Computing Technologies for Smart Agriculture and Healthcare" </i>
         </font>
     </p>
 
 5.  <p style="margin-top: 20px">
-            <strong>
-                Native Language Processing and Sentiment Analysis for Hindi     
-            </strong>
+                <strong>
+                    Low Resource Language Processing and Sentiment Analysis for Hindi Text     
+                </strong>
     </p>
     <p>
         <font size="3">
             <b>Deep Gandhi</b>, Jash Mehta, Naitik Rathod, Prof.Sudhir Bagul.
             <br>
-            <i>Ongoing Research Project </i>
+            <i>Under review at "The 6th Workshop on Representation Learning for NLP (RepL4NLP), ACL 2021" </i>
+        </font>
+
+    </p>
+
+6.  <p style="margin-top: 20px">
+                <strong>
+                    Detection of Spear Phishing using Natural Language Processing     
+                </strong>
+    </p>
+    <p>
+        <font size="3">
+            <b>Deep Gandhi</b>, Jash Mehta, Dr.Ramchandra Mangrulkar.
+            <br>
+            <i>Provisional Acceptance for the book "Cyber Security Threats and Challenges facing Human Life, CRC Press (Taylor and Francis)" </i>
         </font>
 
     </p>
@@ -94,17 +107,13 @@ subclass: "post page"
     </p>
     <p>
         <font size="3">
-            (Jan 2020 - Present)
+            (Jan 2020 - Jan 2021)
             <br>
             <i>Python Developer | Freelance</i>
         </font>
     </p>
     <p>
-            <ul>
-                <li>Worked with a team of three engineers to build an automation software along with react dashboard and electron app for Syscon Automation company.</li>
-                <li>Write modern, performant, maintainable code for a diverse array of client and internal projects.</li>
-                <li>Stack: MERN, Flask, Electron, Pandas, fastai</li>
-            </ul>
+        Worked with a team of three engineers to build an automation software along with react dashboard and electron app for Syscon Automation company.Was also responsible for a few other projects in the domain of Machine Learning and DevOps.Wrote modern, performant, maintainable code for a diverse array of client and internal projects.
     </p>
 2.  <p style="margin-top: 35px">
         <font size="5">
@@ -121,12 +130,7 @@ subclass: "post page"
         </font>
     </p>
     <p>
-            <ul>
-                <li>Worked with the R&D department of the company for developing the Machine Learning backend for their AR E-Commerce website</li>
-                <li>Created a Recommendation system on a novel PyTorch based Neural Network approach considering user bias</li>
-                <li>Created a chatbot for user interaction using NLTK</li>
-                <li>Created an unsupervised learning model for user clustering</li>
-            </ul>
+        Worked with the R&D department of the company for developing the Machine Learning backend for their AR E-Commerce website. Created a Recommendation system using fast.ai . Created a chatbot for user interaction using NLTK. Developed the complete lead generation and user analysis platform for the company. Created an unsupervised learning model for user clustering.
     </p>
 
 3.  <p style="margin-top: 35px">
@@ -140,12 +144,9 @@ subclass: "post page"
         <font size="3">
             (Jan 2019 - Sept 2019)
             <br>
-            <i>Tech Lead | Internship (Community)</i>
+            <i>Data Analyst | Part-Time</i>
         </font>
     </p>
     <p>
-            <ul>
-                <li>Worked on the analytics for sales of various food industry clients</li>
-                <li>Developed a recommendation engine and helped devise the pricing strategy for a restaurant client</li>
-            </ul>
+        Feople is a non-profit organisation focused towards building products related to FnB. I assisted various FnB clients with their pricing strategy. I was the tech lead and was personally responsible for the development of a recommender system and pricing of a restaurant client using various Machine Learning techniques.
     </p>
