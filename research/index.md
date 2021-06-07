@@ -35,7 +35,7 @@ subclass: "post page"
     <font size="3">
         Jash Mehta, <b>Deep Gandhi</b>, Govind Thakur, Prof.Pratik Kanani.
         <br>
-        <i>Proceedings of 5<sup>th</sup> International Conference on Computing Methodologies and Communication (Scopus Indexed), pp. 1109–1115, IEEE, 2021.
+        <i>Proceedings of 5<sup>th</sup> International Conference on Computing Methodologies and Communication (Scopus Indexed), pp. 1101–1107, IEEE, 2021.
     </i>
     </font>
     </p>
