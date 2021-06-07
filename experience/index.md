@@ -18,10 +18,10 @@ subclass: "post page"
     </font>
     </p>
     <p>
-    <font size="3">
+    <font size="4">
         (Jan 2021 - June 2021)
         <br>
-        <i>Undergraduate Student Researcher</i>
+        <b><i>Undergraduate Student Researcher</i></b>
     </font>
     </p>
     <p>
@@ -36,10 +36,10 @@ subclass: "post page"
     </font>
     </p>
     <p>
-    <font size="3">
+    <font size="4">
         (Jan 2020 - Jan 2021)
         <br>
-        <i>Python Developer | Freelance</i>
+        <b><i>Python Developer | Freelance</i></b>
     </font>
     </p>
     <p>
@@ -53,10 +53,10 @@ subclass: "post page"
     </font>
     </p>
     <p>
-    <font size="3">
+    <font size="4">
         (Feb 2020 - May 2020)
         <br>
-        <i>Machine Learning Engineer | Internship</i>
+       <b> <i>Machine Learning Engineer | Internship</i></b>
     </font>
     </p>
     <p>
@@ -71,10 +71,10 @@ subclass: "post page"
     </font>
     </p>
     <p>
-    <font size="3">
+    <font size="4">
         (Jan 2019 - Sept 2019)
         <br>
-        <i>Data Analyst | Part-Time</i>
+      <b>  <i>Data Analyst | Part-Time</i></b>
     </font>
     </p>
     <p>
@@ -145,8 +145,23 @@ subclass: "post page"
     involved in any kind of substance abuse which is calculated
     using an Ensemble model of SVM+Naive Bayes Classifier.
     </p>
-
 4.  <p style="margin-top: 35px">
+    <font size="5">
+    <a href="https://github.com/deep1401/24-DigitalChaos-VIDALYTICS" target="_blank">
+    <strong> Vidalytics </strong>
+    </a>
+    </font>
+    </p>
+    <p>
+    <font size="3">
+    Azure, Web, Computer Vision
+    </font>
+    </p>
+    <p>
+    A video analytics solutions for all the content creating companies which generates important keywords based on the video uploaded and then provides useful social media links after data mining for marketing the content and also conduct EDA for target markets.
+    </p>
+
+5.  <p style="margin-top: 35px">
     <font size="5">
     <a href="https://github.com/deep1401/TravelRecommender" target="_blank">
     <strong> Tourist Guide </strong>
@@ -165,4 +180,3 @@ subclass: "post page"
 
 <font size = "4">
 <i>This is just an overview of some of the projects I've worked on and the others can be found on my <a href="https://github.com/deep1401/">Github profile</a>
-</font>
