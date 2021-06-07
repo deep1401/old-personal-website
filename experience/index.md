@@ -25,7 +25,7 @@ subclass: "post page"
     </font>
     </p>
     <p>
-        Advised by <a href="https://rammangrulkar.github.io/resume/Ramchandra_Mangrulkar.pdf">Dr. Ramchandra Mangrulkar </a> for Semester 6. Worked along with him to complete 2 research projects and contribute them as chapters in the domains of Natural Language Processing and Federated Learning.  
+        Advised by <a href="https://rammangrulkar.github.io/about/">Dr. Ramchandra Mangrulkar </a> for Semester 6. Worked along with him to complete 2 research projects and contribute them as chapters in the domains of Natural Language Processing and Federated Learning.  
     </p>
 
 2.  <p style="margin-top: 35px">
