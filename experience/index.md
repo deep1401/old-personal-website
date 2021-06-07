@@ -9,96 +9,26 @@ subclass: "post page"
 ---
 
 <br/>
-## Research Experience
-
-1.  <p style="margin-top: 30px">
-    <strong>
-        <a href="https://www.routledge.com/Design-of-Intelligent-Applications-using-Machine-Learning-and-Deep-Learning/Mangrulkar-Michalas-Shekokar-Narvekar-Chavan/p/book/9780367679798">Application of Deep Learning in Cartography using UNET and Generative Adversarial Network.</a>
-    </strong>
-    </p>
-    <p>
-    <font size="3">
-        <b>Deep Gandhi</b>, Govind Thakur, Prof.Pranit Bari, Prof. Khushali Deulkar
-        <br>
-        <i>Chapter 18 of "Design of Intelligent Applications using Machine Learning and Deep Learning Techniques" (Taylor and Francis) </i>
-        <br>
-        ISBN: 9780367679798     
-    </font>
-    </p>
-
-2.  <p style="margin-top: 20px">
-    <strong>
-        <a href="https://ieeexplore.ieee.org/document/9418035">Music Genre Classification using Transfer Learning on log-based MEL spectrograms </a>
-    </strong>
-    </p>
-    <p>
-    <font size="3">
-        Jash Mehta, <b>Deep Gandhi</b>, Govind Thakur, Prof.Pratik Kanani.
-        <br>
-        <i>Proceedings of 5<sup>th</sup> International Conference on Computing Methodologies and Communication (Scopus Indexed), pp. 1109–1115, IEEE, 2021.
-    </i>
-    </font>
-    </p>
-
-3.  <p style="margin-top: 30px">
-    <strong>
-        Comparison of Sequential and Non-Sequential Models for Spanish to English Machine Translation.
-    </strong>
-    </p>
-    <p>
-    <font size="3">
-        <b>Deep Gandhi</b>, Jash Mehta, Prof.Pranit Bari.
-        <br>
-        <i>Under review at 4th International Conference on Computational Intelligence and Data Engineering (ICCIDE-2021) </i>
-    </font>
-    </p>
-
-4.  <p style="margin-top: 30px">
-    <strong>
-        Federated Learning for Brain Tumor Segmentation on Cloud
-    </strong>
-    </p>
-    <p>
-    <font size="3">
-        <b>Deep Gandhi</b>, Jash Mehta, Nemil Shah, Dr.Ramchandra Mangrulkar.
-        <br>
-        <i>Accepted for publication as chapter 17 for the book "Cloud Computing Technologies for Smart Agriculture and Healthcare" </i>
-    </font>
-    </p>
-
-5.  <p style="margin-top: 20px">
-    <strong>
-        Low Resource Language Processing and Sentiment Analysis for Hindi Text     
-    </strong>
-    </p>
-    <p>
-    <font size="3">
-        <b>Deep Gandhi</b>, Jash Mehta, Naitik Rathod, Prof.Sudhir Bagul.
-        <br>
-        <i>Under review at "The 6th Workshop on Representation Learning for NLP (RepL4NLP), ACL 2021" </i>
-    </font>
-
-    </p>
-
-6.  <p style="margin-top: 20px">
-    <strong>
-        Detection of Spear Phishing using Natural Language Processing     
-    </strong>
-    </p>
-    <p>
-    <font size="3">
-        <b>Deep Gandhi</b>, Jash Mehta, Dr.Ramchandra Mangrulkar.
-        <br>
-        <i>Provisional Acceptance for the book "Cyber Security Threats and Challenges facing Human Life, CRC Press (Taylor and Francis)" </i>
-    </font>
-
-    </p>
-
-<br />
-
-## Industry Experience
-
+## Experience
 1.  <p style="margin-top: 35px">
+    <font size="5">
+        <a href="https://scholar.google.com/citations?user=nLuft7kAAAAJ&hl=en" target="_blank">
+            <strong> Dwarkadas J. Sanghvi College of Engineering </strong>
+        </a>
+    </font>
+    </p>
+    <p>
+    <font size="3">
+        (Jan 2021 - June 2021)
+        <br>
+        <i>Undergraduate Student Researcher</i>
+    </font>
+    </p>
+    <p>
+        Advised by <a href="https://rammangrulkar.github.io/resume/Ramchandra_Mangrulkar.pdf">Dr. Ramchandra Mangrulkar </a> for Semester 6. Worked along with him to complete 2 research projects and contribute them as chapters in the domains of Natural Language Processing and Federated Learning.  
+    </p>
+
+2.  <p style="margin-top: 35px">
     <font size="5">
         <a href="http://www.margosatree.com/" target="_blank">
             <strong> Margosatree Technologies </strong>
@@ -115,7 +45,7 @@ subclass: "post page"
     <p>
         Worked with a team of three engineers to build an automation software along with react dashboard and electron app for Syscon Automation company.Was also responsible for a few other projects in the domain of Machine Learning and DevOps.Wrote modern, performant, maintainable code for a diverse array of client and internal projects.
     </p>
-2.  <p style="margin-top: 35px">
+3.  <p style="margin-top: 35px">
     <font size="5">
         <a href="https://levyne.com" target="_blank">
             <strong> Levyne </strong>
@@ -133,7 +63,7 @@ subclass: "post page"
         Worked with the R&D department of the company for developing the Machine Learning backend for their AR E-Commerce website. Created a Recommendation system using fast.ai . Created a chatbot for user interaction using NLTK. Developed the complete lead generation and user analysis platform for the company. Created an unsupervised learning model for user clustering.
     </p>
 
-3.  <p style="margin-top: 35px">
+4.  <p style="margin-top: 35px">
     <font size="5">
         <a href="https://www.linkedin.com/company/feopleorg/" target="_blank">
             <strong> Feople </strong>
@@ -150,3 +80,89 @@ subclass: "post page"
     <p>
         Feople is a non-profit organisation focused towards building products related to FnB. I assisted various FnB clients with their pricing strategy. I was the tech lead and was personally responsible for the development of a recommender system and pricing of a restaurant client using various Machine Learning techniques.
     </p>
+
+<br/>
+
+## Projects
+
+1.  <p style="margin-top: 35px">
+    <font size="5">
+        <a href="https://github.com/deep1401/Lead-Prioritization-Engine" target="_blank">
+            <strong> Lead Prioritization Engine </strong>
+        </a>
+    </font>
+    </p>
+    <p>
+    <font size="3">
+    Neural Networks, Web
+    </font>
+    </p>
+    <p>
+    This is an online service created by team Chernobyl for
+    start-ups which is aimed at aiding product-based startups become
+    more data-driven, it features a plug-in compatible, real-time,
+    neural network based product recommendation system.
+    </p>
+
+2.  <p style="margin-top: 35px">
+    <font size="5">
+    <a href="https://github.com/deep1401/Youtube_Genie" target="_blank">
+    <strong> Youtube Genie </strong>
+    </a>
+    </font>
+    </p>
+    <p>
+    <font size="3">
+    NLP, Chome Extension
+    </font>
+    </p>
+    <p>
+    A chrome extension which helps you navigate to the part of video
+    which has the content you are looking for. It is similar to a
+    search bar for youtube videos! (for finding the content inside
+    the videos) I am at the start of this project so I will be
+    adding new features soon
+    </p>
+
+3.  <p style="margin-top: 35px">
+    <font size="5">
+    <a href="https://github.com/deep1401/LOC-2020" target="_blank">
+    <strong> Fight Club </strong>
+    </a>
+    </font>
+    </p>
+    <p>
+    <font size="3">
+    Analytics, ML, Web
+    </font>
+    </p>
+    <p>
+    A portal where the UFC players can compare each and every move
+    from their fights. This also consists of a admin portal in which
+    the authorities can store medical records of the players on a
+    protected Blockchain ledger with PoW difficulty level 4 where
+    blood data of the players is used to determine if they are
+    involved in any kind of substance abuse which is calculated
+    using an Ensemble model of SVM+Naive Bayes Classifier.
+    </p>
+
+4.  <p style="margin-top: 35px">
+    <font size="5">
+    <a href="https://github.com/deep1401/TravelRecommender" target="_blank">
+    <strong> Tourist Guide </strong>
+    </a>
+    </font>
+    </p>
+    <p>
+    <font size="3">
+    ML, Telegram Bot, Web
+    </font>
+    </p>
+    <p>
+    A <a href="https://t.me/touristguide_bot">telegram bot</a> which generates an automated itinerary using
+    various clustering techniques
+    </p>
+
+<font size = "4">
+<i>This is just an overview of some of the projects I've worked on and the others can be found on my <a href="https://github.com/deep1401/">Github profile</a>
+</font>
