@@ -18,11 +18,10 @@ subclass: "post page"
     </p>
     <p>
     <font size="3">
-        <b>Deep Gandhi</b>, Govind Thakur, Prof.Pranit Bari, Prof. Khushali Deulkar
-        <br>
-        <i>Chapter 18 of "Design of Intelligent Applications using Machine Learning and Deep Learning Techniques" (Taylor and Francis) </i>
-        <br>
-        ISBN: 9780367679798     
+    <b>Deep Gandhi</b>, Govind Thakur, Prof.Pranit Bari, Prof. Khushali Deulkar
+    <br>
+    <i>Chapter 18 of "Design of Intelligent Applications using Machine Learning and Deep Learning Techniques" (Taylor and Francis) </i>
+    <br>     
     </font>
     </p>
 
