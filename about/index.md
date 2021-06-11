@@ -28,10 +28,10 @@ Click [here](https://deep1401.github.io/motivation-for-this-blog) to read the ar
 
 ## Where can you find me?
 
-- [Twitter](https://twitter.com/deepgandhi_07){:target="\_blank" rel="noopener"}
 - [Github](https://github.com/deep1401){:target="\_blank" rel="noopener"}
 - [LinkedIn](https://www.linkedin.com/in/deep1401){:target="\_blank" rel="noopener"}
-- [Instagram](https://www.instagram.com/deepgandhi_07/){:target="\_blank" rel="noopener"}
+- [Google Scholar](https://scholar.google.com/citations?user=GFYjqB8AAAAJ&hl=en&oi=ao){:target="\_blank" rel="noopener"}
+- [ORCiD](https://orcid.org/0000-0001-7940-112X){:target="\_blank" rel="noopener"}
 
 ## How was this blog made?
 
