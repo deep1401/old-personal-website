@@ -1,7 +1,7 @@
 ---
 layout: post
 current: post
-cover: assets/images/motivation-blog.jpg
+cover: assets/images/spt.jpg
 navigation: True
 title: Motivation for this Blog
 date: 2020-07-05 10:00:00
