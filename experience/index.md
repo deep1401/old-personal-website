@@ -12,6 +12,24 @@ subclass: "post page"
 ## Experience
 1.  <p style="margin-top: 35px">
     <font size="5">
+        <a href="https://www.jpmorganchase.com" target="_blank">
+            <strong> JP Morgan Chase & Co. </strong>
+        </a>
+    </font>
+    </p>
+    <p>
+    <font size="4">
+        (Jun 2021 - Aug 2021)
+        <br>
+        <b><i>Summer Intern</i></b>
+    </font>
+    </p>
+    <p>
+        Working in the Corporate and Investment Banking Team 
+    </p>
+
+2.  <p style="margin-top: 35px">
+    <font size="5">
         <a href="https://scholar.google.com/citations?user=nLuft7kAAAAJ&hl=en" target="_blank">
             <strong> Dwarkadas J. Sanghvi College of Engineering </strong>
         </a>
@@ -28,7 +46,7 @@ subclass: "post page"
         Advised by <a href="https://rammangrulkar.github.io/about/">Dr. Ramchandra Mangrulkar </a> for Semester 6. Worked along with him to complete 2 research projects and contribute them as chapters in the domains of Natural Language Processing and Federated Learning.  
     </p>
 
-2.  <p style="margin-top: 35px">
+3.  <p style="margin-top: 35px">
     <font size="5">
         <a href="http://www.margosatree.com/" target="_blank">
             <strong> Margosatree Technologies </strong>
@@ -45,7 +63,7 @@ subclass: "post page"
     <p>
         Worked with a team of three engineers to build an automation software along with react dashboard and electron app for Syscon Automation company.Was also responsible for a few other projects in the domain of Machine Learning and DevOps.Wrote modern, performant, maintainable code for a diverse array of client and internal projects.
     </p>
-3.  <p style="margin-top: 35px">
+4.  <p style="margin-top: 35px">
     <font size="5">
         <a href="https://levyne.com" target="_blank">
             <strong> Levyne </strong>
@@ -63,7 +81,7 @@ subclass: "post page"
         Worked with the R&D department of the company for developing the Machine Learning backend for their AR E-Commerce website. Created a Recommendation system using fast.ai . Created a chatbot for user interaction using NLTK. Developed the complete lead generation and user analysis platform for the company. Created an unsupervised learning model for user clustering.
     </p>
 
-4.  <p style="margin-top: 35px">
+5.  <p style="margin-top: 35px">
     <font size="5">
         <a href="https://www.linkedin.com/company/feopleorg/" target="_blank">
             <strong> Feople </strong>

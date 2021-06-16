@@ -67,14 +67,14 @@ subclass: "post page"
 
 5.  <p style="margin-top: 20px">
     <strong>
-        Low Resource Language Processing and Sentiment Analysis for Hindi Text     
+        Low Resource Language Processing and Opinion Mining on Hindi Text     
     </strong>
     </p>
     <p>
     <font size="3">
-        <b>Deep Gandhi</b>, Jash Mehta, Naitik Rathod, Prof.Sudhir Bagul.
+        <b>Deep Gandhi<sup>*</sup></b>, Jash Mehta<sup>*</sup>, Naitik Rathod, Prof.Sudhir Bagul.
         <br>
-        <i>Under review at "The 6th Workshop on Representation Learning for NLP (RepL4NLP), ACL 2021" </i>
+        <i>Under review at "The SIGNLL Conference on Computational Natural Language Learning (CoNLL), EMNLP 2021" </i>
     </font>
 
     </p>
@@ -88,7 +88,7 @@ subclass: "post page"
     <font size="3">
         <b>Deep Gandhi</b>, Jash Mehta, Dr.Ramchandra Mangrulkar.
         <br>
-        <i>Provisional Acceptance for the book "Cyber Security Threats and Challenges facing Human Life, CRC Press (Taylor and Francis)" </i>
+        <i>Accepted for the book "Cyber Security Threats and Challenges facing Human Life, CRC Press (Taylor and Francis)" </i>
     </font>
 
     </p>
