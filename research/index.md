@@ -111,7 +111,7 @@ subclass: "post page"
 
 ## Presentations
 
-- Presented a review of the paper "Human-level concept learning through probabilistic program induction". <br />
+- Presented a review of the paper "Human-level concept learning through probabilistic program induction".<br/>
   <a href="/slides/Human-level concept learning through probabilistic program induction Review.pdf">Slides </a> | <a href="https://www.youtube.com/watch?v=wvljzoqNcF0&list=PLob0yCmJjJ3U6vUrmExdTpMoRh43c1nXK&index=3"> Video</a> | <a href="https://science.sciencemag.org/content/350/6266/1332"> Original Paper</a>
 
 - Presented a review of the paper "Deep Probabilistic Programming".<br />
