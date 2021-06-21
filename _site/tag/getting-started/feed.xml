@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
   <link href="http://localhost:4000/tag/getting-started/feed.xml" rel="self" type="application/atom+xml" />
   <link href="http://localhost:4000/" rel="alternate" type="text/html" />
-  <updated>2021-06-18T23:06:03+05:30</updated>
+  <updated>2021-06-21T09:22:42+05:30</updated>
   <id>http://localhost:4000/tag/getting-started/feed.xml</id>
 
   
@@ -49,54 +49,48 @@
       <published>2020-07-05T15:30:00+05:30</published>
       <updated>2020-07-05T15:30:00+05:30</updated>
       <id>http://localhost:4000/motivation-for-this-blog</id>
-      <content type="html" xml:base="http://localhost:4000/motivation-for-this-blog">&lt;h2 id=&quot;why-is-writing-necessary-a-part-of-tech&quot;&gt;Why is writing necessary a part of tech?&lt;/h2&gt;
+      <content type="html" xml:base="http://localhost:4000/motivation-for-this-blog">## Why is writing necessary a part of tech?
 
-&lt;p&gt;Recently, a friend of mine started his own &lt;a href=&quot;https://jashmehta3300.github.io&quot;&gt;blog&lt;/a&gt; and me being curious asked him why?
-At that point he showed me some famous blogs by &lt;a href=&quot;https://www.anishathalye.com&quot;&gt;Anish Athalye&lt;/a&gt; and &lt;a href=&quot;https://www.fast.ai/topics/&quot;&gt;Rachel Thomas&lt;/a&gt;.
-Both of these, are people that we admire and follow a lot and then he explained to me the importance of blogging by mentioning a quote from Rachel Thomas&lt;/p&gt;
+Recently, a friend of mine started his own [blog](https://jashmehta3300.github.io) and me being curious asked him why?
+At that point he showed me some famous blogs by [Anish Athalye](https://www.anishathalye.com) and [Rachel Thomas](https://www.fast.ai/topics/).
+Both of these, are people that we admire and follow a lot and then he explained to me the importance of blogging by mentioning a quote from Rachel Thomas
 
-&lt;blockquote&gt;
-  &lt;p&gt;You are best positioned to help people one step behind you. The material is still fresh in your mind. Many experts have forgotten what it was like to be a beginner (or an intermediate) and have forgotten why the topic is hard to understand when you first hear it. The context of your particular background, your particular style, and your knowledge level will give a different twist to what you’re writing about.&lt;/p&gt;
-&lt;/blockquote&gt;
+&gt; You are best positioned to help people one step behind you. The material is still fresh in your mind. Many experts have forgotten what it was like to be a beginner (or an intermediate) and have forgotten why the topic is hard to understand when you first hear it. The context of your particular background, your particular style, and your knowledge level will give a different twist to what you’re writing about.
 
-&lt;h2 id=&quot;an-introduction-to-me-and-my-journey-till-now&quot;&gt;An introduction to me and my journey till now!&lt;/h2&gt;
+## An introduction to me and my journey till now!
 
-&lt;p&gt;So since you are here, you might know that my name is Deep Gandhi. I am currently a Computer Engineering undergrad at D.J.
+So since you are here, you might know that my name is Deep Gandhi. I am currently a Computer Engineering undergrad at D.J.
 Sanghvi College of Engineering. However for me, engineering has not been just a degree but more of a self-exploration period.
 Finding out what I love to do and then doing that as long as I can.
-Someone once rightly said:&lt;/p&gt;
+Someone once rightly said:
 
-&lt;blockquote&gt;
-  &lt;p&gt;it’s a truly lucky man who knows what he wants to do in this world, because that man will never work a day in his life.&lt;/p&gt;
-&lt;/blockquote&gt;
+&gt; it's a truly lucky man who knows what he wants to do in this world, because that man will never work a day in his life.
 
-&lt;p&gt;I guess that’s what we’re all looking for in life, tech, etc.&lt;/p&gt;
+I guess that's what we're all looking for in life, tech, etc.
 
-&lt;p&gt;Okay, enough philosophy now!&lt;/p&gt;
+Okay, enough philosophy now!
 
-&lt;h2 id=&quot;lets-talk-tech&quot;&gt;Let’s talk tech?&lt;/h2&gt;
+## Let's talk tech?
 
-&lt;p&gt;So my interests primarily lie in the field of Data Science. That is one of the major reasons why I made up my mind to start this blog.
+So my interests primarily lie in the field of Data Science. That is one of the major reasons why I made up my mind to start this blog.
 I have a lot of juniors and peers as well who are interested in getting into this field but Data Science being a lucrative field,
 people often run scams in the name of courses and a lot of my contemporaries have fallen for these scams and wasted a lot of
 money.
-My belief is that if we’re trying to teach ourselves programming then we should find a way to learn everything for free. It’s an
+My belief is that if we're trying to teach ourselves programming then we should find a way to learn everything for free. It's an
 open source world after all :P
-But, my point here isn’t to be a know-it-all but to write blogs so that my juniors know things that &lt;strong&gt;I wish I knew last year&lt;/strong&gt;.
-You know so they don’t waste their time and make the same mistakes. After all, it’s all about helping the person right behind you!&lt;/p&gt;
+But, my point here isn't to be a know-it-all but to write blogs so that my juniors know things that **I wish I knew last year**.
+You know so they don't waste their time and make the same mistakes. After all, it's all about helping the person right behind you!
 
-&lt;p&gt;So I’m gonna end it here and I promise to keep it to the point in the upcoming ones :P (hope so)
-My blogs are going to be about a lot of topics and I’ll just list down some of them below:&lt;/p&gt;
+So I'm gonna end it here and I promise to keep it to the point in the upcoming ones :P (hope so)
+My blogs are going to be about a lot of topics and I'll just list down some of them below:
 
-&lt;ul&gt;
-  &lt;li&gt;Projects that I build&lt;/li&gt;
-  &lt;li&gt;My journey through this amazing tech world&lt;/li&gt;
-  &lt;li&gt;My GRE prep&lt;/li&gt;
-&lt;/ul&gt;
+- Projects that I build
+- My journey through this amazing tech world
+- My GRE prep
 
-&lt;p&gt;and many more to come….&lt;/p&gt;
+and many more to come....
 
-&lt;p&gt;That’s all for now!&lt;/p&gt;</content>
+That's all for now!</content>
 
       
       
