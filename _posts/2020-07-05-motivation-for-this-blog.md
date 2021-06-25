@@ -26,7 +26,7 @@ Sanghvi College of Engineering. However for me, engineering has not been just a 
 Finding out what I love to do and then doing that as long as I can.
 Someone once rightly said:
 
-> it's a truly lucky man who knows what he wants to do in this world, because that man will never work a day in his life.
+> It is a truly lucky man who knows what he wants to do in this world, because that man will never work a day in his life.
 
 I guess that's what we're all looking for in life, tech, etc.
 

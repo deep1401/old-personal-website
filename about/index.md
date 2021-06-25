@@ -10,21 +10,19 @@ subclass: "post page"
 
 ## Who am I?
 
-I am a junior year undergrad student majoring in Computer Science.
+I am a senior year undergrad student majoring in Computer Science.
 
-I love Data Science and Machine Learning and that's the field I devote most of my time in. I was highly motivated by the likes of [Rachel Thomas](https://www.fast.ai/about/#rachel) and [Jeremy Howard](https://www.fast.ai/about/#jeremy) as they've been on the mission to make AI more accessible and also educate people about the ethics in Data Science. I also understood the importance of Data Privacy when I came across [Openmined](https://www.openmined.org).Also, the intricacies of exploring linguistics as taught by [Prof. Christopher Manning](https://nlp.stanford.edu/~manning/) increased my interest in NLP. So after a lot of tumbling in different domains, currently I have a strong interest in various fields such as Natural Language Processing, Federated Learning and Differential Privacy.
+I love Data Science and Machine Learning and that's the field I devote most of my time in. I was highly motivated by the likes of [Rachel Thomas](https://www.fast.ai/about/#rachel) and [Jeremy Howard](https://www.fast.ai/about/#jeremy) as they've been on the mission to make AI more accessible and also educate people about the ethics in Data Science. I also understood the importance of Data Privacy when I came across [Openmined](https://www.openmined.org).Along with this, the intricacies of linguistics as taught by [Prof. Christopher Manning](https://nlp.stanford.edu/~manning/) increased my interest in NLP. So after a lot of tumbling in different domains, currently I have a strong interest in various fields such as Natural Language Processing, Federated Learning, Differential Privacy and also Probabilistic Programming.
 
-Apart from coding, I spend my leisure time swimming, reading books, solving riddles and exploring some amazing offbeat places such as [Gokarna](https://www.tripoto.com/karnataka/trips/gokarna-the-hidden-land-of-happiness-58371a4807aa5){:target="\_blank" rel="noopener"} and [Hippie Island](https://www.tripoto.com/trip/weekend-getaway-to-the-lost-city-hampi-5af88697dde8d){:target="\_blank" rel="noopener"} which are known for their chill vibes.
+I am currently working as a Summer Intern in the Corporate and Investment Banking Department at JPMorgan Chase & Co. I am also a Teaching Assistant at <a href="https://djunicode.github.io/umlsc-2021/">Unicode’s Machine Learning Summer Course</a>. Before that, I was a Freelance Python Developer at <a href="http://www.margosatree.com">Margosatree Technologies </a>. I've also worked as a Machine Learning Engineer Intern at <a href="https://levyne.com">Levyne</a> and as a Data Analyst at <a href="https://www.linkedin.com/company/feopleorg/">Feople</a>.
+
+Apart from coding, I spend my leisure time swimming, reading books, solving riddles and exploring some amazing offbeat places.
 
 ## Why Blog?
 
 My major motivation for writing the blog was this quote by Rachel Thomas:
 
 > You are best positioned to help people one step behind you. The material is still fresh in your mind. Many experts have forgotten what it was like to be a beginner (or an intermediate) and have forgotten why the topic is hard to understand when you first hear it. The context of your particular background, your particular style, and your knowledge level will give a different twist to what you’re writing about.
-
-## Motivation for the blog?
-
-Click [here](https://deep1401.github.io/motivation-for-this-blog) to read the article I wrote to answer this.
 
 ## Where can you find me?
 
