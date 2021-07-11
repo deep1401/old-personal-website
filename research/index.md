@@ -13,7 +13,7 @@ subclass: "post page"
 
 1.  <p style="margin-top: 30px">
     <strong>
-        <a href="https://www.routledge.com/Design-of-Intelligent-Applications-using-Machine-Learning-and-Deep-Learning/Mangrulkar-Michalas-Shekokar-Narvekar-Chavan/p/book/9780367679798">Application of Deep Learning in Cartography using UNET and Generative Adversarial Network.</a>
+        <a href="https://www.taylorfrancis.com/chapters/edit/10.1201/9781003133681-18/application-deep-learning-cartography-using-unet-generative-adversarial-network-deep-gandhi-govind-thakur-pranit-bari-khushali-deulkar">Application of Deep Learning in Cartography using UNET and Generative Adversarial Network.</a>
     </strong>
     </p>
     <p>
