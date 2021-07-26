@@ -76,7 +76,7 @@ subclass: "post page"
     <font size="3">
         <b>Deep Gandhi</b>, Jash Mehta, Dr.Ramchandra Mangrulkar.
         <br>
-        <i>Accepted for the book "Cyber Security Threats and Challenges facing Human Life, CRC Press (Taylor and Francis)" </i>
+        <i>Chapter 9 of the book "Cyber Security Threats and Challenges facing Human Life",(Chapman and Hall/CRC) </i>
     </font>
 
     </p>
