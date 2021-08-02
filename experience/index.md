@@ -25,7 +25,8 @@ subclass: "post page"
     </font>
     </p>
     <p>
-        Working in the Corporate and Investment Banking Team 
+        Worked with the ACM Team in the Investment Banking division and automated the artifact validation check for every release using Python and pandas.
+        Designed a system for automation of evidence store creation for files to be attached to the SNOW     ticket reducing the process time from 1.5 hours to 10 mins.
     </p>
 
 2.  <p style="margin-top: 35px">
