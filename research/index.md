@@ -83,7 +83,7 @@ subclass: "post page"
 
 6.  <p style="margin-top: 20px">
     <strong>
-        Privacy based Approach for Emoji Detection in Low Resource Languages  
+        Privacy based Approach for Emoji Prediction in Low Resource Languages  
     </strong>
     </p>
     <p>
