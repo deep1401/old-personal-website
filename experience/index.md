@@ -13,7 +13,7 @@ subclass: "post page"
 1.  <p style="margin-top: 35px">
     <font size="5">
         <a href="https://www.jpmorganchase.com" target="_blank">
-            <strong> JP Morgan Chase & Co. </strong>
+            <strong> JPMorgan Chase & Co. </strong>
         </a>
     </font>
     </p>
