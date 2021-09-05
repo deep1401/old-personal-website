@@ -60,7 +60,7 @@ scholar:
   sort_by: year, month
   order: ascending
 
-  group_by: year,month
+  group_by: none
   group_order: ascending
 
   source: ./_bibliography
