@@ -46,10 +46,37 @@ permalink: /:title
 
 # gems and other configs
 plugins_dir: [_plugins]
-plugins: [jekyll-paginate, jekyll-feed]
+plugins: [jekyll-paginate, jekyll-feed, jekyll-scholar]
 
 feed:
   path: feed.xml
+
+
+# Jekyll-Scholar
+scholar:
+  style: _bibliography/ieee-with-url.csl
+  locale: en
+
+  sort_by: year, month
+  order: ascending
+
+  group_by: year,month
+  group_order: ascending
+
+  source: ./_bibliography
+  bibliography: references.bib
+  bibliography_template: bib
+
+  replace_strings: true
+  join_strings:    true
+
+  use_raw_bibtex_entry: true
+
+  details_dir:    bibliography
+  details_layout: bibtex.html
+  details_link:   Details
+
+  query: "@*"
 
 # Additional settings available on the front-matter
 # Site logo in the index.html (as in demo.ghost.io)
