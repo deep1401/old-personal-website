@@ -1,7 +1,7 @@
 git add .
-yolo
+git commit -m "$(curl -s http://whatthecommit.com/index.txt)"
 git push origin source:source
 cd _site
 git add .
-yolo
+git commit -m "$(curl -s http://whatthecommit.com/index.txt)"
 git push origin main:master
