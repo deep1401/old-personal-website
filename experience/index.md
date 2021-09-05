@@ -123,7 +123,7 @@ subclass: "post page"
     neural network based product recommendation system.
     </p>
 
-2.  <p style="margin-top: 35px">
+1.  <p style="margin-top: 35px">
     <font size="5">
     <a href="https://github.com/deep1401/Youtube_Genie" target="_blank">
     <strong> Youtube Genie </strong>
@@ -143,7 +143,7 @@ subclass: "post page"
     adding new features soon
     </p>
 
-3.  <p style="margin-top: 35px">
+1.  <p style="margin-top: 35px">
     <font size="5">
     <a href="https://github.com/deep1401/LOC-2020" target="_blank">
     <strong> Fight Club </strong>
@@ -164,7 +164,7 @@ subclass: "post page"
     involved in any kind of substance abuse which is calculated
     using an Ensemble model of SVM+Naive Bayes Classifier.
     </p>
-4.  <p style="margin-top: 35px">
+1.  <p style="margin-top: 35px">
     <font size="5">
     <a href="https://github.com/deep1401/24-DigitalChaos-VIDALYTICS" target="_blank">
     <strong> Vidalytics </strong>
@@ -180,7 +180,7 @@ subclass: "post page"
     A video analytics solutions for all the content creating companies which generates important keywords based on the video uploaded and then provides useful social media links after data mining for marketing the content and also conduct EDA for target markets.
     </p>
 
-5.  <p style="margin-top: 35px">
+1.  <p style="margin-top: 35px">
     <font size="5">
     <a href="https://github.com/deep1401/TravelRecommender" target="_blank">
     <strong> Tourist Guide </strong>
