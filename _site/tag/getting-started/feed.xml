@@ -2,10 +2,10 @@
 
 <feed xmlns="http://www.w3.org/2005/Atom" >
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
-  <link href="http://localhost:4000/tag/getting-started/feed.xml" rel="self" type="application/atom+xml" />
-  <link href="http://localhost:4000/" rel="alternate" type="text/html" />
-  <updated>2021-09-05T16:07:47+05:30</updated>
-  <id>http://localhost:4000/tag/getting-started/feed.xml</id>
+  <link href="http://deep1401.github.io/tag/getting-started/feed.xml" rel="self" type="application/atom+xml" />
+  <link href="http://deep1401.github.io/" rel="alternate" type="text/html" />
+  <updated>2021-09-17T11:54:08+05:30</updated>
+  <id>http://deep1401.github.io/tag/getting-started/feed.xml</id>
 
   
   
@@ -45,11 +45,11 @@
   
     <entry>
       <title type="html">Motivation for this Blog</title>
-      <link href="http://localhost:4000/motivation-for-this-blog" rel="alternate" type="text/html" title="Motivation for this Blog" />
+      <link href="http://deep1401.github.io/motivation-for-this-blog" rel="alternate" type="text/html" title="Motivation for this Blog" />
       <published>2020-07-05T15:30:00+05:30</published>
       <updated>2020-07-05T15:30:00+05:30</updated>
-      <id>http://localhost:4000/motivation-for-this-blog</id>
-      <content type="html" xml:base="http://localhost:4000/motivation-for-this-blog">## Why is writing necessary a part of tech?
+      <id>http://deep1401.github.io/motivation-for-this-blog</id>
+      <content type="html" xml:base="http://deep1401.github.io/motivation-for-this-blog">## Why is writing necessary a part of tech?
 
 Recently, a friend of mine started his own [blog](https://jashmehta3300.github.io) and me being curious asked him why?
 At that point he showed me some famous blogs by [Anish Athalye](https://www.anishathalye.com) and [Rachel Thomas](https://www.fast.ai/topics/).
