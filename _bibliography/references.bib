@@ -1,15 +1,23 @@
 ---
 ---
+@unpublished{causal,
+  author       = "{Swapneel Mehta*} and {Deep Gandhi*} and {Jash Mehta*} and {Jay Gala*}",
+  title        = "{Towards Estimating the Causal Impact of Non-expert Mentorship on Student Career Outcomes	}",
+  abstract     = "In this ongoing work, we preregister our research hypothesis, describe the issue in hand, and highlight the data collection strategies that we will use to estimate the causal impact of mentorship on career outcomes of mentees (students) tracked for a student organisation over four years of operation on a sample of over two hundred student mentees.",
+  note         = "Under Review at The First International AIxIA Workshop on Causality"      
+}
+
 @unpublished{hindi,
-  author       = "{Deep Gandhi*} and {Jash Mehta*} and {Naitik Rathod} and {Sudhir Bagul}",
-  title        = "{Low Resource Language Processing and Opinion Mining on Hindi Text}",
-  abstract  = "We propose a computationally efficient transfer learning method to conduct opinion mining on Hindi language using a mixed dataset containing tweets and movie reviews in Hindi. For this purpose, we generate a complete Hindi corpus of our own consisting of around 18,639 Hindi articles from the Wikimedia dumps database for training the language models and a labeled dataset consisting of a mixture of 10,000 tweets and movie reviews in the Hindi language. Our method achieves significantly better accuracy than the currently existing approaches that involve large language models like mBERT, hindiBERT, Hindi-TPU-Electra, etc."
+  author       = "{Jash Mehta*} and {Deep Gandhi*} and {Naitik Rathod} and {Sudhir Bagul}",
+  title        = "{IndicFed: A Federated Approach for Sentiment Analysis in Indic Languages}",
+  abstract  = "We propose a computationally efficient method to conduct sentiment analysis on Indic languages such as Hindi, Marathi, Bengali and Telugu. For this purpose, We propose Federated Learning as a solution to the fragmented datasets for resource-constrained languages. After conducting extensive experiments on iid and non-iid distributions of data, we found that the Federated models perform far better than the server based models. As per our knowledge, this was first of its kind work done to steer these low resource Indic languages towards Federated Learning"
 }
 
 @unpublished{fedmoji,
-  author       = "{Jash Mehta*} and {Deep Gandhi*} and {Nirali Parekh} and {Karan Waghela} and {Lynette D'Mello} and {Zeerak Talat}",
-  title        = "{Fedmoji:A Federated Approach to Predict Emojis in Noisy Hindi Tweets}",
-  abstract     = "Currently this project deals with how imbalanced data can be handled while approaching the problem of emoji prediction in noisy Hindi text. We also curate our own dataset for the problem. Along with this, we introduce a benchmark for the task of Federated Learning based emoji prediction in the Hindi language. It is observed how introducing Federated Learning doesn't significantly impact the accuracy and thus, the privacy-accuracy tradeoff is also preserved for the same.",
+  author       = "{Deep Gandhi*} and {Jash Mehta*} and {Nirali Parekh} and {Karan Waghela} and {Lynette D'Mello} and {Zeerak Talat}",
+  title        = "{A Federated Approach to Predict Emojis in Hindi Tweets}",
+  abstract     = "Currently this project deals with how imbalanced data can be handled while approaching the problem of emoji prediction in noisy Hindi text. We also curate our own dataset for the problem. Along with this, we observed how introducing Federated Learning performs better than the server-trained counterparts and thus, the privacy-accuracy tradeoff is also preserved for the same.",
+  note         = "Under review at ICON 2021"
 }
 
 @unpublished{fedhate,
@@ -56,4 +64,11 @@
   publisher = {Chapman and Hall/CRC},
   year      = "2021",
   chapter   = "9"
+}
+
+@unpublished{translation,
+  author       = " {Deep Gandhi} and {Jash Mehta} and {Pranit Bari}",
+  title        = "{Ablation Analysis of Seq2Seq Models and Vanilla Transformers for Spanish to English Translation}",
+  abstract     = "Machine Translation, a widely known field in computer linguistics, is a challenging problem which deals with translating between different languages. We undertake the task of translating from Spanish to French in this paper. We provide a comparative analysis of various sequential and non-sequential models such as Seq2Seq, Seq2Seq with Teacher Forcing, Seq2Seq with attention, and Transformers with encoder-decoder architectures for the proposed task. Our experiments show that Transformer architecture along with Label Smoothing attains the best BLEU score on the UN dataset and it is the most efficient choice. Furthermore, we compare various decoding methods like Nucleus Sampling, Top-k sampling, and Greedy Approach, and also conduct an ablation analysis of each of these until we find the best performing method. Our proposed architecture combination is easily extensible and could be used for other translation tasks as well, with minor changes in the pre-processing steps depending upon the languages under consideration. This method is also computationally economic and might help under constrained environments.",
+  note         = "Accepted at The 3rd International Conference on Advances in Distributed Computing and Machine Learning"
 }
