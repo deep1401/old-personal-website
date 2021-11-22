@@ -1,7 +1,7 @@
 ---
 layout: page
 current: research
-title: Papers & Presentations
+title: Papers & Talks
 navigation: true
 logo: "assets/images/blog-cover.png"
 class: page-template
