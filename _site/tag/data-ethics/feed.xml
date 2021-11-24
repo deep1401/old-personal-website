@@ -2,10 +2,10 @@
 
 <feed xmlns="http://www.w3.org/2005/Atom" >
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
-  <link href="http://localhost:4000/tag/data-ethics/feed.xml" rel="self" type="application/atom+xml" />
-  <link href="http://localhost:4000/" rel="alternate" type="text/html" />
-  <updated>2021-11-22T21:09:47+05:30</updated>
-  <id>http://localhost:4000/tag/data-ethics/feed.xml</id>
+  <link href="http://deep1401.github.io/tag/data-ethics/feed.xml" rel="self" type="application/atom+xml" />
+  <link href="http://deep1401.github.io/" rel="alternate" type="text/html" />
+  <updated>2021-11-24T23:29:14+05:30</updated>
+  <id>http://deep1401.github.io/tag/data-ethics/feed.xml</id>
 
   
   
@@ -45,11 +45,11 @@
   
     <entry>
       <title type="html">Is it really fair or did you automate it?</title>
-      <link href="http://localhost:4000/data-ethics-2" rel="alternate" type="text/html" title="Is it really fair or did you automate it?" />
+      <link href="http://deep1401.github.io/data-ethics-2" rel="alternate" type="text/html" title="Is it really fair or did you automate it?" />
       <published>2021-05-26T22:30:00+05:30</published>
       <updated>2021-05-26T22:30:00+05:30</updated>
-      <id>http://localhost:4000/data-ethics-2</id>
-      <content type="html" xml:base="http://localhost:4000/data-ethics-2">&gt; The following article is an overview of my understanding of the [Lesson 2: Bias &amp; Fairness](https://ethics.fast.ai/syllabus/#lesson-2-bias--fairness) taught by [Rachel Thomas](https://rachel.fast.ai). It also represents my notes for the course and is also an attempt at a blog post series to increase awareness about various concepts in fairness and ethics.
+      <id>http://deep1401.github.io/data-ethics-2</id>
+      <content type="html" xml:base="http://deep1401.github.io/data-ethics-2">&gt; The following article is an overview of my understanding of the [Lesson 2: Bias &amp; Fairness](https://ethics.fast.ai/syllabus/#lesson-2-bias--fairness) taught by [Rachel Thomas](https://rachel.fast.ai). It also represents my notes for the course and is also an attempt at a blog post series to increase awareness about various concepts in fairness and ethics.
 
 ## Fairness and Bias
 
@@ -240,11 +240,11 @@ _This is the end of my article. This is the first time that I've written about b
   
     <entry>
       <title type="html">Is it really true or did you read it online?</title>
-      <link href="http://localhost:4000/data-ethics-1" rel="alternate" type="text/html" title="Is it really true or did you read it online?" />
+      <link href="http://deep1401.github.io/data-ethics-1" rel="alternate" type="text/html" title="Is it really true or did you read it online?" />
       <published>2021-05-24T22:30:00+05:30</published>
       <updated>2021-05-24T22:30:00+05:30</updated>
-      <id>http://localhost:4000/data-ethics-1</id>
-      <content type="html" xml:base="http://localhost:4000/data-ethics-1">&gt; The following article is an overview of my understanding of the [Lesson 1: Disinformation](https://ethics.fast.ai/syllabus/#lesson-1-disinformation) taught by [Rachel Thomas](https://rachel.fast.ai). It also represents my notes for the course and also an attempt at a blog post series to increase awareness about various concepts in fairness and ethics.
+      <id>http://deep1401.github.io/data-ethics-1</id>
+      <content type="html" xml:base="http://deep1401.github.io/data-ethics-1">&gt; The following article is an overview of my understanding of the [Lesson 1: Disinformation](https://ethics.fast.ai/syllabus/#lesson-1-disinformation) taught by [Rachel Thomas](https://rachel.fast.ai). It also represents my notes for the course and also an attempt at a blog post series to increase awareness about various concepts in fairness and ethics.
 
 ## What is Disinformation?
 

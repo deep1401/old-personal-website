@@ -43,15 +43,12 @@ pre{
 
 {% if entry.doi %}
 {% if entry.type == 'unpublished' %}
-<a href="{{ entry.doi | prepend: 'https://arxiv.org/abs/' }}" target="_blank"><button class="btn btn-primary btm-sm">[<a>arxiv</a>]</button></a>
+<a href="{{ entry.doi }}" target="_blank"><button class="btn btn-primary btm-sm">[<u style="text-decoration-color: cyan;">working paper</u>]</button></a>
 {% else %}
-<a href="{{ entry.doi | prepend: 'http://doi.org/' }}" target="_blank"><button class="btn btn-primary btm-sm">[<a>doi</a>]</button></a>
+<a href="{{ entry.doi | prepend: 'http://doi.org/' }}" target="_blank"><button class="btn btn-primary btm-sm">[<u style="text-decoration-color: cyan;">doi</u>]</button></a>
 {% endif %}
 {% endif %}
 
-{% if entry.url %}
-<a href="{{ entry.url }}" target="_blank"><button class="btn btn-primary btm-sm">[<a>book</a>]</button></a>
-{% endif %}
 
 {% if entry.type == 'unpublished' or entry.type == 'article' or  entry.type == 'thesis' or entry.type == 'inproceedings' or entry.type == 'incollection' or entry.type == 'report' %}
 <button class="btn btn-danger btm-sm"  onclick="toggleBibtex{{entry.key}}()">[<a>bib</a>]</button>
@@ -64,16 +61,6 @@ pre{
 {% if entry.abstract %}
 <div id="a{{entry.key}}" style="display: none; background-color:white; border-radius:5px; padding:10px; margin-bottom:20px;">
 <pre>{{ entry.bibtex | remove: "entry.abstract" }}</pre>
-</div>
-{% else %}
-<div id="a{{entry.key}}" style="display: none; background-color:rgb(255, 255, 255); border-radius:5px; padding:10px; margin-bottom:20px;">
-<pre>{{ entry.bibtex }}</pre>
-</div>
-{% endif %}
-
-{% if entry.url %}
-<div id="a{{entry.key}}" style="display: none; background-color:white; border-radius:5px; padding:10px; margin-bottom:20px;">
-<pre>{{ entry.bibtex | remove: "entry.url" }}</pre>
 </div>
 {% else %}
 <div id="a{{entry.key}}" style="display: none; background-color:rgb(255, 255, 255); border-radius:5px; padding:10px; margin-bottom:20px;">
