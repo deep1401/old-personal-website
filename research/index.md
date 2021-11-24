@@ -15,3 +15,5 @@ subclass: "post page"
 ## Working Papers
 
 {% bibliography -q @unpublished %}
+
+\* indicates equal contribution
