@@ -282,6 +282,10 @@ into the {body} of the default.hbs template -->
             <section class="post-full-content">
               <h2 id="papers">Papers</h2>
 
+              <blockquote>
+                <p><strong>*</strong> indicates equal contribution</p>
+              </blockquote>
+
               <ol class="bibliography">
                 <li>
                   <style>
@@ -756,106 +760,6 @@ With groundbreaking innovations in healthcare due to advancements in machine lea
                   </style>
 
                   <div class="text-justify">
-                    <span id="mehtaindicfed"
-                      >Jash Mehta*, Deep Gandhi*, Naitik Rathod, and Sudhir
-                      Bagul.
-                      <b
-                        >IndicFed: A Federated Approach for Sentiment Analysis
-                        in Indic Languages</b
-                      >. In:
-                      <i
-                        >Proceedings of ICON 2021: The 18th International
-                        Conference on Natural Language Processing</i
-                      >, ACL Anthology, Accepted.</span
-                    >
-                  </div>
-
-                  <button
-                    class="btn btn-danger btm-sm"
-                    onclick="toggleBibtexmehtaindicfed()"
-                  >
-                    [<a>bib</a>]
-                  </button>
-
-                  <div
-                    id="amehtaindicfed"
-                    style="
-                      display: none;
-                      background-color: rgb(255, 255, 255);
-                      border-radius: 5px;
-                      padding: 10px;
-                      margin-bottom: 20px;
-                    "
-                  >
-                    <pre>
-@inproceedings{mehtaindicfed,
-  title = {{IndicFed: A Federated Approach for Sentiment Analysis in Indic Languages}},
-  author = {{Jash Mehta*} and {Deep Gandhi*} and {Naitik Rathod} and {Sudhir Bagul}},
-  booktitle = {Proceedings of ICON 2021: The 18th International Conference on Natural Language Processing},
-  year = {Accepted},
-  publisher = {ACL Anthology}
-}
-</pre
-                    >
-                  </div>
-
-                  <div
-                    id="bmehtaindicfed"
-                    style="
-                      display: none;
-                      background-color: rgb(255, 255, 255);
-                      border-radius: 5px;
-                      padding: 10px;
-                      margin-bottom: 20px;
-                    "
-                  >
-                    <pre></pre>
-                  </div>
-
-                  <script>
-                    function toggleBibtexmehtaindicfed(parameter) {
-                      var x = document.getElementById("amehtaindicfed");
-                      if (x.style.display === "none") {
-                        x.style.display = "block";
-                      } else {
-                        x.style.display = "none";
-                      }
-                    }
-                    function toggleAbstractmehtaindicfed(parameter) {
-                      var x = document.getElementById("bmehtaindicfed");
-                      if (x.style.display === "none") {
-                        x.style.display = "block";
-                      } else {
-                        x.style.display = "none";
-                      }
-                    }
-                  </script>
-                </li>
-                <li>
-                  <style>
-                    .btn {
-                      margin-bottom: 5px;
-                      padding-top: 0px;
-                      padding-bottom: 0px;
-                      padding-left: 0px;
-                      padding-right: 5px;
-                      height: 40px;
-                      background-color: white;
-                      font-size: 20px;
-                    }
-
-                    pre {
-                      white-space: pre-wrap;
-                      white-space: -moz-pre-wrap;
-                      white-space: -pre-wrap;
-                      white-space: -o-pre-wrap;
-                      word-wrap: break-word;
-                      width: 100%;
-                      overflow-x: auto;
-                    }
-                  </style>
-
-                  <div class="text-justify">
                     <span id="translation"
                       >Deep Gandhi*, Jash Mehta*, and Pranit Bari.
                       <b
@@ -930,9 +834,113 @@ With groundbreaking innovations in healthcare due to advancements in machine lea
                     }
                   </script>
                 </li>
+                <li>
+                  <style>
+                    .btn {
+                      margin-bottom: 5px;
+                      padding-top: 0px;
+                      padding-bottom: 0px;
+                      padding-left: 0px;
+                      padding-right: 5px;
+                      height: 40px;
+                      background-color: white;
+                      font-size: 20px;
+                    }
+
+                    pre {
+                      white-space: pre-wrap;
+                      white-space: -moz-pre-wrap;
+                      white-space: -pre-wrap;
+                      white-space: -o-pre-wrap;
+                      word-wrap: break-word;
+                      width: 100%;
+                      overflow-x: auto;
+                    }
+                  </style>
+
+                  <div class="text-justify">
+                    <span id="mehtaindicfed"
+                      >Jash Mehta*, Deep Gandhi*, Naitik Rathod, and Sudhir
+                      Bagul.
+                      <b
+                        >IndicFed: A Federated Approach for Sentiment Analysis
+                        in Indic Languages</b
+                      >. In:
+                      <i
+                        >Proceedings of ICON 2021: The 18th International
+                        Conference on Natural Language Processing</i
+                      >, ACL Anthology, Presented.</span
+                    >
+                  </div>
+
+                  <button
+                    class="btn btn-danger btm-sm"
+                    onclick="toggleBibtexmehtaindicfed()"
+                  >
+                    [<a>bib</a>]
+                  </button>
+
+                  <div
+                    id="amehtaindicfed"
+                    style="
+                      display: none;
+                      background-color: rgb(255, 255, 255);
+                      border-radius: 5px;
+                      padding: 10px;
+                      margin-bottom: 20px;
+                    "
+                  >
+                    <pre>
+@inproceedings{mehtaindicfed,
+  title = {{IndicFed: A Federated Approach for Sentiment Analysis in Indic Languages}},
+  author = {{Jash Mehta*} and {Deep Gandhi*} and {Naitik Rathod} and {Sudhir Bagul}},
+  booktitle = {Proceedings of ICON 2021: The 18th International Conference on Natural Language Processing},
+  year = {Presented},
+  publisher = {ACL Anthology}
+}
+</pre
+                    >
+                  </div>
+
+                  <div
+                    id="bmehtaindicfed"
+                    style="
+                      display: none;
+                      background-color: rgb(255, 255, 255);
+                      border-radius: 5px;
+                      padding: 10px;
+                      margin-bottom: 20px;
+                    "
+                  >
+                    <pre></pre>
+                  </div>
+
+                  <script>
+                    function toggleBibtexmehtaindicfed(parameter) {
+                      var x = document.getElementById("amehtaindicfed");
+                      if (x.style.display === "none") {
+                        x.style.display = "block";
+                      } else {
+                        x.style.display = "none";
+                      }
+                    }
+                    function toggleAbstractmehtaindicfed(parameter) {
+                      var x = document.getElementById("bmehtaindicfed");
+                      if (x.style.display === "none") {
+                        x.style.display = "block";
+                      } else {
+                        x.style.display = "none";
+                      }
+                    }
+                  </script>
+                </li>
               </ol>
 
               <h2 id="working-papers">Working Papers</h2>
+
+              <blockquote>
+                <p><strong>*</strong> indicates equal contribution</p>
+              </blockquote>
 
               <ol class="bibliography">
                 <li>
@@ -1251,8 +1259,6 @@ Currently this project deals with how imbalanced data can be handled while appro
                   </script>
                 </li>
               </ol>
-
-              <p>* indicates equal contribution</p>
             </section>
           </article>
         </div>

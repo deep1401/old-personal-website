@@ -10,10 +10,12 @@ subclass: "post page"
 
 ## Papers
 
+> **\*** indicates equal contribution
+
 {% bibliography -q @incollection @inproceedings %}
 
 ## Working Papers
 
-{% bibliography -q @unpublished %}
+> **\*** indicates equal contribution
 
-\* indicates equal contribution
+{% bibliography -q @unpublished %}
