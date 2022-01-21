@@ -15,7 +15,10 @@ subclass: "post page"
   [ <a href="/slides/Deep Probabilistic Programming Review.pdf">Slides </a> | <a href="https://www.youtube.com/watch?v=nT8ISRrUixQ&list=PLob0yCmJjJ3U6vUrmExdTpMoRh43c1nXK&index=7"> Video</a> | <a href="https://arxiv.org/pdf/1701.03757.pdf">Paper</a> ]
 
 - Fusing Representations for Code-Mixed Low Resource Language Processing <br />
-  [ <a href="https://slides.com/deep1401/deck/fullscreen">Slides </a> | <a href="https://nyu.zoom.us/rec/share/7_r69IT5Ghwo0vYJb8LF45CZP8jtU-HP1ejTGcwTrpCVTSub0yhSByfAa_xRomoy.SRaJZ9FWkVzk4iso">Video</a> ]
+  [ <a href="https://slides.com/deep1401/deck/fullscreen">Slides </a> | <a href="https://www.youtube.com/watch?v=lme-ZSggaRQ&list=PLob0yCmJjJ3U6vUrmExdTpMoRh43c1nXK&index=12">Video</a> ]
+
+- Literature Review: Causal Effects of Non-expert Mentors on Student Career Outcomes <br/>
+  [<a href="https://www.youtube.com/watch?v=_nckPc_LqSQ&list=PLob0yCmJjJ3U6vUrmExdTpMoRh43c1nXK&index=10">Video</a> ]
 
 - Undergraduate Research Seminar<br />
   [ <a href="/slides/undergrad_research_seminar.pdf">Slides </a> | <a href="https://youtu.be/_0VpUNATCdY">Video</a> ]
