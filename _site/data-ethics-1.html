@@ -1,160 +1,143 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<!-- Document Settings -->
-		<meta charset="utf-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <head>
+    <!-- Document Settings -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-		<!-- Base Meta -->
-		<!-- dynamically fixing the title for tag/author pages -->
+    <!-- Base Meta -->
+    <!-- dynamically fixing the title for tag/author pages -->
 
+    <title>Is it really true or did you read it online?</title>
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Styles'n'Scripts -->
+    <link rel="stylesheet" type="text/css" href="/assets/built/screen.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/assets/built/screen.edited.css"
+    />
+    <link rel="stylesheet" type="text/css" href="/assets/built/syntax.css" />
+    <!-- highlight.js -->
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"
+    />
+    <style>
+      .hljs {
+        background: none;
+      }
+    </style>
 
+    <!--[if IE]>
+      <style>
+        p,
+        ol,
+        ul {
+          width: 100%;
+        }
+        blockquote {
+          width: 100%;
+        }
+      </style>
+    <![endif]-->
 
-		<title>
-			Is it really true or did you read it online?
-		</title>
-		<meta name="HandheldFriendly" content="True" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<!-- Styles'n'Scripts -->
-		<link rel="stylesheet" type="text/css" href="/assets/built/screen.css" />
-		<link
-			rel="stylesheet"
-			type="text/css"
-			href="/assets/built/screen.edited.css"
-		/>
-		<link rel="stylesheet" type="text/css" href="/assets/built/syntax.css" />
-		<!-- highlight.js -->
-		<link
-			rel="stylesheet"
-			href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"
-		/>
-		<style>
-			.hljs {
-				background: none;
-			}
-		</style>
+    <!-- This tag outputs SEO meta+structured data and other important settings -->
+    <meta name="description" content="Deep Gandhi" />
+    <link
+      rel="shortcut icon"
+      href="http://deep1401.github.io/assets/images/favicon.png"
+      type="image/png"
+    />
+    <link
+      rel="icon"
+      href="http://deep1401.github.io/assets/images/blog-icon.png"
+    />
+    <link rel="canonical" href="http://deep1401.github.io/data-ethics-1" />
+    <meta name="referrer" content="no-referrer-when-downgrade" />
 
-		<!--[if IE]>
-			<style>
-				p,
-				ol,
-				ul {
-					width: 100%;
-				}
-				blockquote {
-					width: 100%;
-				}
-			</style>
-		<![endif]-->
+    <!--title below is coming from _includes/dynamic_title-->
+    <meta property="og:site_name" content="Deep Gandhi" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Is it really true or did you read it online?"
+    />
+    <meta
+      property="og:description"
+      content="The following article is an overview of my understanding of the Lesson 1: Disinformation taught by Rachel Thomas. It also represents my notes for the course and also an attempt at a blog post series to increase awareness about various concepts in fairness and ethics. What is Disinformation? Often, we"
+    />
+    <meta property="og:url" content="http://deep1401.github.io/data-ethics-1" />
+    <meta
+      property="og:image"
+      content="http://deep1401.github.io/assets/images/advanced.jpg"
+    />
+    <meta
+      property="article:publisher"
+      content="https://www.facebook.com/deepgandhi1401"
+    />
+    <meta
+      property="article:author"
+      content="https://www.facebook.com/deepgandhi1401"
+    />
+    <meta
+      property="article:published_time"
+      content="2021-05-24T22:30:00+05:30"
+    />
+    <meta
+      property="article:modified_time"
+      content="2021-05-24T22:30:00+05:30"
+    />
+    <meta property="article:tag" content="Data Ethics" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Is it really true or did you read it online?"
+    />
+    <meta
+      name="twitter:description"
+      content="The following article is an overview of my understanding of the Lesson 1: Disinformation taught by Rachel Thomas. It also represents my notes for the course and also an attempt at a blog post series to increase awareness about various concepts in fairness and ethics. What is Disinformation? Often, we"
+    />
+    <meta name="twitter:url" content="http://deep1401.github.io/" />
+    <meta
+      name="twitter:image"
+      content="http://deep1401.github.io/assets/images/advanced.jpg"
+    />
+    <meta name="twitter:label1" content="Written by" />
+    <meta name="twitter:data1" content="Deep Gandhi" />
+    <meta name="twitter:label2" content="Filed under" />
+    <meta name="twitter:data2" content="Data Ethics" />
+    <meta name="twitter:site" content="@deepgandhi_07" />
+    <meta name="twitter:creator" content="@deepgandhi_07" />
+    <meta property="og:image:width" content="1400" />
+    <meta property="og:image:height" content="933" />
 
-		<!-- This tag outputs SEO meta+structured data and other important settings -->
-		<meta
-	name="description"
-	content="Deep Gandhi"
-/>
-<link
-	rel="shortcut icon"
-	href="http://deep1401.github.io/assets/images/favicon.png"
-	type="image/png"
-/>
-<link rel="icon" href="http://deep1401.github.io/assets/images/blog-icon.png" />
-<link
-	rel="canonical"
-	href="http://deep1401.github.io/data-ethics-1"
-/>
-<meta name="referrer" content="no-referrer-when-downgrade" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Website",
+        "publisher": {
+          "@type": "Organization",
+          "name": "Deep Gandhi",
+          "logo": "http://deep1401.github.io/assets/images/blog-icon.png"
+        },
+        "url": "http://deep1401.github.io/data-ethics-1",
+        "image": {
+          "@type": "ImageObject",
+          "url": "http://deep1401.github.io/assets/images/advanced.jpg",
+          "width": 2000,
+          "height": 666
+        },
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "http://deep1401.github.io/data-ethics-1"
+        },
+        "description": "The following article is an overview of my understanding of the Lesson 1: Disinformation taught by Rachel Thomas. It also represents my notes for the course and also an attempt at a blog post series to increase awareness about various concepts in fairness and ethics. What is Disinformation? Often, we"
+      }
+    </script>
 
-
-<!--title below is coming from _includes/dynamic_title-->
-<meta property="og:site_name" content="Deep Gandhi" />
-<meta property="og:type" content="website" />
-<meta
-	property="og:title"
-	content="Is it really true or did you read it online?"
-/>
-<meta
-	property="og:description"
-	content="The following article is an overview of my understanding of the Lesson 1: Disinformation taught by Rachel Thomas. It also represents my notes for the course and also an attempt at a blog post series to increase awareness about various concepts in fairness and ethics. What is Disinformation? Often, we"
-/>
-<meta
-	property="og:url"
-	content="http://deep1401.github.io/data-ethics-1"
-/>
-<meta
-	property="og:image"
-	content="http://deep1401.github.io/assets/images/advanced.jpg"
-/>
-<meta
-	property="article:publisher"
-	content="https://www.facebook.com/deepgandhi1401"
-/>
-<meta
-	property="article:author"
-	content="https://www.facebook.com/deepgandhi1401"
-/>
-<meta
-	property="article:published_time"
-	content="2021-05-24T22:30:00+05:30"
-/>
-<meta
-	property="article:modified_time"
-	content="2021-05-24T22:30:00+05:30"
-/>
-<meta
-	property="article:tag"
-	content="Data Ethics"
-/>
-<meta name="twitter:card" content="summary_large_image" />
-<meta
-	name="twitter:title"
-	content="Is it really true or did you read it online?"
-/>
-<meta
-	name="twitter:description"
-	content="The following article is an overview of my understanding of the Lesson 1: Disinformation taught by Rachel Thomas. It also represents my notes for the course and also an attempt at a blog post series to increase awareness about various concepts in fairness and ethics. What is Disinformation? Often, we"
-/>
-<meta name="twitter:url" content="http://deep1401.github.io/" />
-<meta
-	name="twitter:image"
-	content="http://deep1401.github.io/assets/images/advanced.jpg"
-/>
-<meta name="twitter:label1" content="Written by" />
-<meta name="twitter:data1" content="Deep Gandhi" />
-<meta name="twitter:label2" content="Filed under" />
-<meta
-	name="twitter:data2"
-	content="Data Ethics"
-/>
-<meta name="twitter:site" content="@deepgandhi_07" />
-<meta name="twitter:creator" content="@deepgandhi_07" />
-<meta property="og:image:width" content="1400" />
-<meta property="og:image:height" content="933" />
-
-<script type="application/ld+json">
-	{
-		"@context": "https://schema.org",
-		"@type": "Website",
-		"publisher": {
-			"@type": "Organization",
-			"name": "Deep Gandhi",
-			"logo": "http://deep1401.github.io/assets/images/blog-icon.png"
-		},
-		"url": "http://deep1401.github.io/data-ethics-1",
-		"image": {
-			"@type": "ImageObject",
-			"url": "http://deep1401.github.io/assets/images/advanced.jpg",
-			"width": 2000,
-			"height": 666
-		},
-		"mainEntityOfPage": {
-			"@type": "WebPage",
-			"@id": "http://deep1401.github.io/data-ethics-1"
-		},
-		"description": "The following article is an overview of my understanding of the Lesson 1: Disinformation taught by Rachel Thomas. It also represents my notes for the course and also an attempt at a blog post series to increase awareness about various concepts in fairness and ethics. What is Disinformation? Often, we"
-	}
-</script>
-
-<!-- <script type="text/javascript" src="https://demo.ghost.io/public/ghost-sdk.min.js?v=724281a32e"></script>
+    <!-- <script type="text/javascript" src="https://demo.ghost.io/public/ghost-sdk.min.js?v=724281a32e"></script>
     <script type="text/javascript">
     ghost.init({
     	clientId: "ghost-frontend",
@@ -162,756 +145,1006 @@
     });
     </script> -->
 
-<meta name="generator" content="Jekyll 3.6.2" />
-<link
-	rel="alternate"
-	type="application/rss+xml"
-	title="Is it really true or did you read it online?"
-	href="/feed.xml"
-/>
+    <meta name="generator" content="Jekyll 3.6.2" />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="Is it really true or did you read it online?"
+      href="/feed.xml"
+    />
+  </head>
+  <body class="post-template">
+    <div class="site-wrapper">
+      <!-- All the main content gets inserted here, index.hbs, post.hbs, etc -->
+      <!-- default -->
 
-	</head>
-	<body
-		class="post-template"
-	>
-		<div class="site-wrapper">
-			<!-- All the main content gets inserted here, index.hbs, post.hbs, etc -->
-			<!-- default -->
-
-<!-- The tag above means: insert everything in this file
+      <!-- The tag above means: insert everything in this file
 into the {body} of the default.hbs template -->
 
-<header class="site-header outer">
-    <div class="inner">
-        <nav class="site-nav">
-	<div class="site-nav-left">
-		 
-		<a class="site-nav-logo" href="http://deep1401.github.io/"
-			><img src="/assets/images/blog-icon.png" alt="Deep Gandhi"
-		/></a>
-		   <ul class="nav" role="menu">
-	<li class="nav-home" role="menuitem"><a href="/">Blog</a></li>
-	<li class="nav-getting-started" role="menuitem">
-		<a href="/research/">Research</a>
-	</li>
-	<li class="nav-getting-started" role="menuitem">
-		<a href="/talks/">Talks</a>
-	</li>
-	<li class="nav-try-ghost" role="menuitem">
-		<a href="/experience/">Experience</a>
-	</li>
-	<li class="nav-about" role="menuitem">
-		<a href="/about/">About</a>
-	</li>
-	<li class="nav-try-ghost" role="menuitem">
-		<a href="/cv/Deep_Gandhi.pdf" target="_blank">CV</a>
-	</li>
-	<!-- <li class="nav-try-ghost" role="menuitem">
+      <header class="site-header outer">
+        <div class="inner">
+          <nav class="site-nav">
+            <div class="site-nav-left">
+              <a class="site-nav-logo" href="http://deep1401.github.io/"
+                ><img src="/assets/images/blog-icon.png" alt="Deep Gandhi"
+              /></a>
+              <ul class="nav" role="menu">
+                <li class="nav-home" role="menuitem"><a href="/">Blog</a></li>
+                <li class="nav-getting-started" role="menuitem">
+                  <a href="/research/">Research</a>
+                </li>
+                <li class="nav-getting-started" role="menuitem">
+                  <a href="/talks/">Talks</a>
+                </li>
+                <li class="nav-try-ghost" role="menuitem">
+                  <a href="/experience/">Experience</a>
+                </li>
+                <li class="nav-about" role="menuitem">
+                  <a href="/about/">About</a>
+                </li>
+                <li class="nav-try-ghost" role="menuitem">
+                  <a href="/cv/Deep_Gandhi.pdf" target="_blank">CV</a>
+                </li>
+                <!-- <li class="nav-try-ghost" role="menuitem">
 		<a href="/resume/Deep_Gandhi.pdf" target="_blank">Resume</a>
 	</li> -->
-</ul>
- 
-	</div>
-	<div class="site-nav-right">
-		<div class="social-links">
-			
-			<a
-				class="social-link social-link-fb"
-				href="https://github.com/deep1401"
-				target="_blank"
-				rel="noopener"
-				><img src="https://img.icons8.com/material-sharp/24/ffffff/github.png" />
-</a
-			>
-			 
-			<a
-				class="social-link social-link-fb"
-				href="https://www.linkedin.com/in/deep1401/"
-				target="_blank"
-				rel="noopener"
-				><img
-	src="https://img.icons8.com/fluent-systems-filled/24/ffffff/linkedin.png"
-/>
-</a
-			>
-			 
-			<a
-				class="social-link social-link-fb"
-				href="mailto:thisisdeepgandhi@gmail.com"
-				target="_blank"
-				rel="noopener"
-				><!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z"/></svg> -->
-<!-- <img src="../assets/mail.svg"/> -->
-<?xml version="1.0" encoding="iso-8859-1"?>
-<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 512 450" style="enable-background:new 0 0 512 512;" xml:space="preserve">
-<g>
-	<g>
-		<polygon points="339.392,258.624 512,367.744 512,144.896 		"/>
-	</g>
-</g>
-<g>
-	<g>
-		<polygon points="0,144.896 0,367.744 172.608,258.624 		"/>
-	</g>
-</g>
-<g>
-	<g>
-		<path d="M480,80H32C16.032,80,3.36,91.904,0.96,107.232L256,275.264l255.04-168.032C508.64,91.904,495.968,80,480,80z"/>
-	</g>
-</g>
-<g>
-	<g>
-		<path d="M310.08,277.952l-45.28,29.824c-2.688,1.76-5.728,2.624-8.8,2.624c-3.072,0-6.112-0.864-8.8-2.624l-45.28-29.856
-			L1.024,404.992C3.488,420.192,16.096,432,32,432h448c15.904,0,28.512-11.808,30.976-27.008L310.08,277.952z"/>
-	</g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-</svg>
-</a
-			>
-			 
-			<a
-				class="social-link social-link-tw"
-				href="https://twitter.com/deepgandhi_07"
-				target="_blank"
-				rel="noopener"
-				><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M30.063 7.313c-.813 1.125-1.75 2.125-2.875 2.938v.75c0 1.563-.188 3.125-.688 4.625a15.088 15.088 0 0 1-2.063 4.438c-.875 1.438-2 2.688-3.25 3.813a15.015 15.015 0 0 1-4.625 2.563c-1.813.688-3.75 1-5.75 1-3.25 0-6.188-.875-8.875-2.625.438.063.875.125 1.375.125 2.688 0 5.063-.875 7.188-2.5-1.25 0-2.375-.375-3.375-1.125s-1.688-1.688-2.063-2.875c.438.063.813.125 1.125.125.5 0 1-.063 1.5-.25-1.313-.25-2.438-.938-3.313-1.938a5.673 5.673 0 0 1-1.313-3.688v-.063c.813.438 1.688.688 2.625.688a5.228 5.228 0 0 1-1.875-2c-.5-.875-.688-1.813-.688-2.75 0-1.063.25-2.063.75-2.938 1.438 1.75 3.188 3.188 5.25 4.25s4.313 1.688 6.688 1.813a5.579 5.579 0 0 1 1.5-5.438c1.125-1.125 2.5-1.688 4.125-1.688s3.063.625 4.188 1.813a11.48 11.48 0 0 0 3.688-1.375c-.438 1.375-1.313 2.438-2.563 3.188 1.125-.125 2.188-.438 3.313-.875z"/></svg>
-</a
-			>
-			
-		</div>
-		
-	</div>
-</nav>
+              </ul>
+            </div>
+            <div class="site-nav-right">
+              <div class="social-links">
+                <a
+                  class="social-link social-link-fb"
+                  href="https://github.com/deep1401"
+                  target="_blank"
+                  rel="noopener"
+                  ><img
+                    src="https://img.icons8.com/material-sharp/24/ffffff/github.png"
+                  />
+                </a>
 
-    </div>
-</header>
+                <a
+                  class="social-link social-link-fb"
+                  href="https://www.linkedin.com/in/deep1401/"
+                  target="_blank"
+                  rel="noopener"
+                  ><img
+                    src="https://img.icons8.com/fluent-systems-filled/24/ffffff/linkedin.png"
+                  />
+                </a>
 
-<!-- Everything inside the #post tags pulls data from the post -->
-<!-- #post -->
+                <a
+                  class="social-link social-link-fb"
+                  href="mailto:thisisdeepgandhi@gmail.com"
+                  target="_blank"
+                  rel="noopener"
+                  ><!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z"/></svg> -->
+                  <!-- <img src="../assets/mail.svg"/> -->
+                  <?xml version="1.0" encoding="iso-8859-1"?>
+                  <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                  <svg
+                    version="1.1"
+                    id="Capa_1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    x="0px"
+                    y="0px"
+                    viewBox="0 0 512 450"
+                    style="enable-background: new 0 0 512 512"
+                    xml:space="preserve"
+                  >
+                    <g>
+                      <g>
+                        <polygon
+                          points="339.392,258.624 512,367.744 512,144.896 		"
+                        />
+                      </g>
+                    </g>
+                    <g>
+                      <g>
+                        <polygon
+                          points="0,144.896 0,367.744 172.608,258.624 		"
+                        />
+                      </g>
+                    </g>
+                    <g>
+                      <g>
+                        <path
+                          d="M480,80H32C16.032,80,3.36,91.904,0.96,107.232L256,275.264l255.04-168.032C508.64,91.904,495.968,80,480,80z"
+                        />
+                      </g>
+                    </g>
+                    <g>
+                      <g>
+                        <path
+                          d="M310.08,277.952l-45.28,29.824c-2.688,1.76-5.728,2.624-8.8,2.624c-3.072,0-6.112-0.864-8.8-2.624l-45.28-29.856
+			L1.024,404.992C3.488,420.192,16.096,432,32,432h448c15.904,0,28.512-11.808,30.976-27.008L310.08,277.952z"
+                        />
+                      </g>
+                    </g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                  </svg>
+                </a>
 
-<main id="site-main" class="site-main outer" role="main">
-    <div class="inner">
+                <a
+                  class="social-link social-link-tw"
+                  href="https://twitter.com/deepgandhi_07"
+                  target="_blank"
+                  rel="noopener"
+                  ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                    <path
+                      d="M30.063 7.313c-.813 1.125-1.75 2.125-2.875 2.938v.75c0 1.563-.188 3.125-.688 4.625a15.088 15.088 0 0 1-2.063 4.438c-.875 1.438-2 2.688-3.25 3.813a15.015 15.015 0 0 1-4.625 2.563c-1.813.688-3.75 1-5.75 1-3.25 0-6.188-.875-8.875-2.625.438.063.875.125 1.375.125 2.688 0 5.063-.875 7.188-2.5-1.25 0-2.375-.375-3.375-1.125s-1.688-1.688-2.063-2.875c.438.063.813.125 1.125.125.5 0 1-.063 1.5-.25-1.313-.25-2.438-.938-3.313-1.938a5.673 5.673 0 0 1-1.313-3.688v-.063c.813.438 1.688.688 2.625.688a5.228 5.228 0 0 1-1.875-2c-.5-.875-.688-1.813-.688-2.75 0-1.063.25-2.063.75-2.938 1.438 1.75 3.188 3.188 5.25 4.25s4.313 1.688 6.688 1.813a5.579 5.579 0 0 1 1.5-5.438c1.125-1.125 2.5-1.688 4.125-1.688s3.063.625 4.188 1.813a11.48 11.48 0 0 0 3.688-1.375c-.438 1.375-1.313 2.438-2.563 3.188 1.125-.125 2.188-.438 3.313-.875z"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
 
-        <article class="post-full  tag-data-ethics post ">
+      <!-- Everything inside the #post tags pulls data from the post -->
+      <!-- #post -->
 
+      <main id="site-main" class="site-main outer" role="main">
+        <div class="inner">
+          <article class="post-full tag-data-ethics post">
             <header class="post-full-header">
-                <section class="post-full-meta">
-                    <time class="post-full-meta-date" datetime="24 May 2021">24 May 2021</time>
-                    
-                        <span class="date-divider">/</span>
-                        
-                            
-                               <a href='/tag/data-ethics/'>DATA ETHICS</a>
-                            
-                        
-                    
-                </section>
-                <h1 class="post-full-title">Is it really true or did you read it online?</h1>
+              <section class="post-full-meta">
+                <time class="post-full-meta-date" datetime="24 May 2021"
+                  >24 May 2021</time
+                >
+
+                <span class="date-divider">/</span>
+
+                <a href="/tag/data-ethics/">DATA ETHICS</a>
+              </section>
+              <h1 class="post-full-title">
+                Is it really true or did you read it online?
+              </h1>
             </header>
 
-            
-            <figure class="post-full-image" style="background-image: url(/assets/images/advanced.jpg)">
-            </figure>
-            
+            <figure
+              class="post-full-image"
+              style="background-image: url(/assets/images/advanced.jpg)"
+            ></figure>
 
             <section class="post-full-content">
-                <div class="kg-card-markdown">
-                    <blockquote>
-  <p>The following article is an overview of my understanding of the <a href="https://ethics.fast.ai/syllabus/#lesson-1-disinformation">Lesson 1: Disinformation</a> taught by <a href="https://rachel.fast.ai">Rachel Thomas</a>. It also represents my notes for the course and also an attempt at a blog post series to increase awareness about various concepts in fairness and ethics.</p>
-</blockquote>
+              <div class="kg-card-markdown">
+                <blockquote>
+                  <p>
+                    The following article is an overview of my understanding of
+                    the
+                    <a
+                      href="https://ethics.fast.ai/syllabus/#lesson-1-disinformation"
+                      >Lesson 1: Disinformation</a
+                    >
+                    taught by
+                    <a href="https://rachel.fast.ai">Rachel Thomas</a>. It also
+                    represents my notes for the course and also an attempt at a
+                    blog post series to increase awareness about various
+                    concepts in fairness and ethics.
+                  </p>
+                </blockquote>
 
-<h2 id="what-is-disinformation">What is Disinformation?</h2>
+                <h2 id="what-is-disinformation">What is Disinformation?</h2>
 
-<p>Often, we come across various articles, memes or any other content while browsing social media that we consider as “fake” or “misleading”. These articles could’ve either purposely been posted on the platform to mislead users or it could’ve been a genuine mistake by the poster. This results in untrue information being forwarded to the audience either purposely or as an accident. Thus in such cases, there could be 3 major forms of information which can be observed from the following figure.</p>
+                <p>
+                  Often, we come across various articles, memes or any other
+                  content while browsing social media that we consider as “fake”
+                  or “misleading”. These articles could’ve either purposely been
+                  posted on the platform to mislead users or it could’ve been a
+                  genuine mistake by the poster. This results in untrue
+                  information being forwarded to the audience either purposely
+                  or as an accident. Thus in such cases, there could be 3 major
+                  forms of information which can be observed from the following
+                  figure.
+                </p>
 
-<figure>
-<img style="float:right" src="/assets/images/misinfo-diag.png" alt="misinfo-diag" height="400" />
-<figcaption style="font-size: 12px;"><a href="https://www.brookings.edu/blog/up-front/2020/07/06/how-misinformation-spreads-on-twitter/">Source</a></figcaption>
-</figure>
-<p><br />
-Thus, we can observe that the most dangerous kind of information to receive from such platforms or any source for that matter is disinformation as it is intended to harm the receiver deliberately.</p>
+                <figure>
+                  <img
+                    style="float: right"
+                    src="/assets/images/misinfo-diag.png"
+                    alt="misinfo-diag"
+                    height="400"
+                  />
+                  <figcaption style="font-size: 12px">
+                    <a
+                      href="https://www.brookings.edu/blog/up-front/2020/07/06/how-misinformation-spreads-on-twitter/"
+                      >Source</a
+                    >
+                  </figcaption>
+                </figure>
+                <p>
+                  <br />
+                  Thus, we can observe that the most dangerous kind of
+                  information to receive from such platforms or any source for
+                  that matter is disinformation as it is intended to harm the
+                  receiver deliberately.
+                </p>
 
-<p>However, the next point to observed is if this harm is intended by the algorithm processing the information or by the poster of the information. Intuitively, we have been wired to believe that algorithms are the ones who misinterpret everything and cause the spread of disinformation. This is not a general case but has been proven as the truth in many cases.</p>
+                <p>
+                  However, the next point to observed is if this harm is
+                  intended by the algorithm processing the information or by the
+                  poster of the information. Intuitively, we have been wired to
+                  believe that algorithms are the ones who misinterpret
+                  everything and cause the spread of disinformation. This is not
+                  a general case but has been proven as the truth in many cases.
+                </p>
 
-<h4 id="case-studies-on-misleading-information">Case Studies on Misleading Information</h4>
+                <h4 id="case-studies-on-misleading-information">
+                  Case Studies on Misleading Information
+                </h4>
 
-<p><strong>1. Latanya Sweeney Ad Discrimination</strong></p>
+                <p><strong>1. Latanya Sweeney Ad Discrimination</strong></p>
 
-<p>The first example is about the bias generated by digital ads while looking for various people on search engines. This was observed by <a href="http://latanyasweeney.org">Dr.Latanya Sweeney</a> who is a professor at Harvard. While looking for her name on a search result, she found ambiguous ads such as the ones stating “Latanya Sweeney, arrested” and then she decided to investigate these search results. After conducting an experiment involving around 2000 variations of various names, she concluded that the search engine ads were biased towards a certain community of people and would show such results in order to increase the click rate. This was also properly summarised in the paper written <a href="https://queue.acm.org/detail.cfm?id=2460278">here</a>. An example of comparing such results can be observed below:</p>
+                <p>
+                  The first example is about the bias generated by digital ads
+                  while looking for various people on search engines. This was
+                  observed by
+                  <a href="http://latanyasweeney.org">Dr.Latanya Sweeney</a> who
+                  is a professor at Harvard. While looking for her name on a
+                  search result, she found ambiguous ads such as the ones
+                  stating “Latanya Sweeney, arrested” and then she decided to
+                  investigate these search results. After conducting an
+                  experiment involving around 2000 variations of various names,
+                  she concluded that the search engine ads were biased towards a
+                  certain community of people and would show such results in
+                  order to increase the click rate. This was also properly
+                  summarised in the paper written
+                  <a href="https://queue.acm.org/detail.cfm?id=2460278">here</a
+                  >. An example of comparing such results can be observed below:
+                </p>
 
-<figure>
-<img style="float:left" src="/assets/images/sweeney1.png" alt="sweeney1" />
-<figcaption style="font-size: 12px;"><a href="https://queue.acm.org/detail.cfm?id=2460278">Source</a></figcaption>
-</figure>
-<p><br /></p>
+                <figure>
+                  <img
+                    style="float: left"
+                    src="/assets/images/sweeney1.png"
+                    alt="sweeney1"
+                  />
+                  <figcaption style="font-size: 12px">
+                    <a href="https://queue.acm.org/detail.cfm?id=2460278"
+                      >Source</a
+                    >
+                  </figcaption>
+                </figure>
+                <p><br /></p>
 
-<p>Thus, a clear bias can be observed by the search results and the resulting ads. However, on asking the ad posters regarding the same, a claim was made that for every ad, both copies of the results as observed in the figure were submitted. On observing various ad clicks, the algorithm learnt that African-American names should be assigned one of the two submitted variations and similarly for all other names, a bias was introduced. Thus, in this case, the algorithm was at fault. This could be borderline classified as ‘misinformation’ on the human side.</p>
+                <p>
+                  Thus, a clear bias can be observed by the search results and
+                  the resulting ads. However, on asking the ad posters regarding
+                  the same, a claim was made that for every ad, both copies of
+                  the results as observed in the figure were submitted. On
+                  observing various ad clicks, the algorithm learnt that
+                  African-American names should be assigned one of the two
+                  submitted variations and similarly for all other names, a bias
+                  was introduced. Thus, in this case, the algorithm was at
+                  fault. This could be borderline classified as ‘misinformation’
+                  on the human side.
+                </p>
 
-<p><strong>2. Houston Protest Trollification</strong></p>
+                <p><strong>2. Houston Protest Trollification</strong></p>
 
-<p>On 21<sup>st</sup> May 2017, two non-violent groups of protestors gathered at the Islamic Da’wah Center in Houston. One of these groups was holding the signs stating that <em>“White Lives Matter”</em>. This group was led to believe that the new library in the religious center was publicly funded and thus, this group came to protest the opening for the same. The other group of protestors showed signs in support of the opening stating slogans like <em>“Muslims are welcome here”</em>. Even though, the protest wasn’t violent, there was high tension among the people present.</p>
+                <p>
+                  On 21<sup>st</sup> May 2017, two non-violent groups of
+                  protestors gathered at the Islamic Da’wah Center in Houston.
+                  One of these groups was holding the signs stating that
+                  <em>“White Lives Matter”</em>. This group was led to believe
+                  that the new library in the religious center was publicly
+                  funded and thus, this group came to protest the opening for
+                  the same. The other group of protestors showed signs in
+                  support of the opening stating slogans like
+                  <em>“Muslims are welcome here”</em>. Even though, the protest
+                  wasn’t violent, there was high tension among the people
+                  present.
+                </p>
 
-<p>However the twist to this story was that the real instigators of this protest weren’t even present in the country at that time. They were sitting at their homes in St.Petersburg, Russia. It was also found that the coordinators of these two Facebook events were two seemingly polarized Facebook groups — one called the “Heart of Texas” with 250,000 likes, and the other titled “United Muslims of America” with 320,000 likes. But a federal investigation into Russia’s influence on the 2016 election had linked both accounts to the same St. Petersburg troll hub.</p>
+                <p>
+                  However the twist to this story was that the real instigators
+                  of this protest weren’t even present in the country at that
+                  time. They were sitting at their homes in St.Petersburg,
+                  Russia. It was also found that the coordinators of these two
+                  Facebook events were two seemingly polarized Facebook groups —
+                  one called the “Heart of Texas” with 250,000 likes, and the
+                  other titled “United Muslims of America” with 320,000 likes.
+                  But a federal investigation into Russia’s influence on the
+                  2016 election had linked both accounts to the same St.
+                  Petersburg troll hub.
+                </p>
 
-<p>Thus, this is the case where people spread a form of <strong>disinformation</strong> in order to create chaos and harm 2 distinct groups of people. This is a major problem that has to be dealt with the increase in the usage of these social networks.</p>
+                <p>
+                  Thus, this is the case where people spread a form of
+                  <strong>disinformation</strong> in order to create chaos and
+                  harm 2 distinct groups of people. This is a major problem that
+                  has to be dealt with the increase in the usage of these social
+                  networks.
+                </p>
 
-<h2 id="more-on-disinformation">More on Disinformation</h2>
+                <h2 id="more-on-disinformation">More on Disinformation</h2>
 
-<p>After looking at various such examples, it can be said that disinformation isn’t just about spreading fake news. It also includes memes, videos, social media posts. All of this is spread in the form of rumors, hoaxes, propaganda, misleading content, misleading context. It should be noted that it is not wise to use the terms “fake news” and “disinformation” interchangeably. As we observed with the case studies too, disinformation leads to misleading content majorly and not necessarily only fake content. Thus one should be careful while referring to disinformation.</p>
+                <p>
+                  After looking at various such examples, it can be said that
+                  disinformation isn’t just about spreading fake news. It also
+                  includes memes, videos, social media posts. All of this is
+                  spread in the form of rumors, hoaxes, propaganda, misleading
+                  content, misleading context. It should be noted that it is not
+                  wise to use the terms “fake news” and “disinformation”
+                  interchangeably. As we observed with the case studies too,
+                  disinformation leads to misleading content majorly and not
+                  necessarily only fake content. Thus one should be careful
+                  while referring to disinformation.
+                </p>
 
-<p>Disinformation also doesn’t just necessarily refer to one single content entity. It could be a whole campaign of planned manipulation of an entire community. There is a general framework to how this manipulation is carried out and how it reaches the masses. This framework proposed by <a href="https://cyber.harvard.edu/people/dr-claire-wardle">Dr. Claire Wardle</a> was called “Trumpet of Amplification” and can be represented as:</p>
+                <p>
+                  Disinformation also doesn’t just necessarily refer to one
+                  single content entity. It could be a whole campaign of planned
+                  manipulation of an entire community. There is a general
+                  framework to how this manipulation is carried out and how it
+                  reaches the masses. This framework proposed by
+                  <a href="https://cyber.harvard.edu/people/dr-claire-wardle"
+                    >Dr. Claire Wardle</a
+                  >
+                  was called “Trumpet of Amplification” and can be represented
+                  as:
+                </p>
 
-<figure>
-<img src="/assets/images/trumpet-claire.png" alt="trumpet" />
-<figcaption style="font-size: 12px;"><a href="https://medium.com/1st-draft/5-lessons-for-reporting-in-an-age-of-disinformation-9d98f0441722">Source</a></figcaption>
-</figure>
-<p><br /></p>
+                <figure>
+                  <img src="/assets/images/trumpet-claire.png" alt="trumpet" />
+                  <figcaption style="font-size: 12px">
+                    <a
+                      href="https://medium.com/1st-draft/5-lessons-for-reporting-in-an-age-of-disinformation-9d98f0441722"
+                      >Source</a
+                    >
+                  </figcaption>
+                </figure>
+                <p><br /></p>
 
-<p>This trumpet represents how any misleading information starts with anonymous websites such as 4chan or 8chan. After this the information is passed on and starts doing rounds on social media networks such as Whatsapp, Telegram or Facebook Messenger groups. After gaining some traction, it is posted and shared on various conspiracy groups on Reddit and even YouTube videos are made on the same. After this, the influential social media handles start covering these misleading information tracks and thus, eventually it results in being covered by social media. Due to such widespread of this misleading information already, the end stages of the trumpet aren’t able to verify completely the authenticity of the information at times. Such frameworks often undermine democracy.</p>
+                <p>
+                  This trumpet represents how any misleading information starts
+                  with anonymous websites such as 4chan or 8chan. After this the
+                  information is passed on and starts doing rounds on social
+                  media networks such as Whatsapp, Telegram or Facebook
+                  Messenger groups. After gaining some traction, it is posted
+                  and shared on various conspiracy groups on Reddit and even
+                  YouTube videos are made on the same. After this, the
+                  influential social media handles start covering these
+                  misleading information tracks and thus, eventually it results
+                  in being covered by social media. Due to such widespread of
+                  this misleading information already, the end stages of the
+                  trumpet aren’t able to verify completely the authenticity of
+                  the information at times. Such frameworks often undermine
+                  democracy.
+                </p>
 
-<h4 id="the-issue-of-verification">The Issue of Verification</h4>
+                <h4 id="the-issue-of-verification">
+                  The Issue of Verification
+                </h4>
 
-<p>There is also a very good piece in a <a href="https://www.wired.com/story/zeynep-tufekci-facts-fake-news-verification/">blog post</a> written by <a href="https://sils.unc.edu/people/faculty/profiles/Zeynep-Tufekci">Zeynep Tufekci</a>. This piece is regarding the verification of facts and the threat of surveillance arising out of it and was written as:</p>
+                <p>
+                  There is also a very good piece in a
+                  <a
+                    href="https://www.wired.com/story/zeynep-tufekci-facts-fake-news-verification/"
+                    >blog post</a
+                  >
+                  written by
+                  <a
+                    href="https://sils.unc.edu/people/faculty/profiles/Zeynep-Tufekci"
+                    >Zeynep Tufekci</a
+                  >. This piece is regarding the verification of facts and the
+                  threat of surveillance arising out of it and was written as:
+                </p>
 
-<blockquote>
-  <p>When people argue against verification efforts, they often raise the issue of authoritarian regimes surveilling dissidents. There’s good reason for that concern, but dissidents probably need verification more than anyone else. Indeed, when I talk to dissidents around the world, they rarely ask me how they can post information anonymously, but do often ask me how to authenticate the information they post—“yes, the picture was taken at this place and on this date by me.” When it’s impossible to distinguish facts from fraud, actual facts lose their power. Dissidents can end up putting their lives on the line to post a picture documenting wrongdoing only to be faced with an endless stream of deliberately misleading claims: that the picture was taken 10 years ago, that it’s from somewhere else, that it’s been doctored.</p>
-</blockquote>
+                <blockquote>
+                  <p>
+                    When people argue against verification efforts, they often
+                    raise the issue of authoritarian regimes surveilling
+                    dissidents. There’s good reason for that concern, but
+                    dissidents probably need verification more than anyone else.
+                    Indeed, when I talk to dissidents around the world, they
+                    rarely ask me how they can post information anonymously, but
+                    do often ask me how to authenticate the information they
+                    post—“yes, the picture was taken at this place and on this
+                    date by me.” When it’s impossible to distinguish facts from
+                    fraud, actual facts lose their power. Dissidents can end up
+                    putting their lives on the line to post a picture
+                    documenting wrongdoing only to be faced with an endless
+                    stream of deliberately misleading claims: that the picture
+                    was taken 10 years ago, that it’s from somewhere else, that
+                    it’s been doctored.
+                  </p>
+                </blockquote>
 
-<h2 id="hack-leak-authenticate">Hack, Leak, Authenticate!</h2>
+                <h2 id="hack-leak-authenticate">Hack, Leak, Authenticate!</h2>
 
-<p>An information dump or leak is generally when a load of documents are leaked online. One such example of the information dump is the “Hilary Clinton email leak” which came into light during the 2016 U.S. Presidential Elections.</p>
+                <p>
+                  An information dump or leak is generally when a load of
+                  documents are leaked online. One such example of the
+                  information dump is the “Hilary Clinton email leak” which came
+                  into light during the 2016 U.S. Presidential Elections.
+                </p>
 
-<p>Often in such cases, misuse of information could happen in two ways. One of the ways would be misrepresenting or mixing fake documents in a large dump of real documents. Due to the quite accurate nature of the real documents leaked, the audience would often fall into a state similar to the hot hand fallacy principle and believe all documents to be real. This is what happened in the case of the attack and leak of World Anti-Doping Agency data during the cyberattack by a Russian hacker collective called Fancy Bear. This hacker group was agitated as there were talks of barring Russian athletes from the Olympic games due to the doping incidents. Thus, they leaked the test documents of several athletes who had received therapeutic use exemptions, including gymnast Simone Biles, tennis players Venus and Serena Williams and basketball player Elena Delle Donne. Thus, such athletes were portrayed in the wrong light and Russia was portrayed as the victim. This was later proven to be false.</p>
+                <p>
+                  Often in such cases, misuse of information could happen in two
+                  ways. One of the ways would be misrepresenting or mixing fake
+                  documents in a large dump of real documents. Due to the quite
+                  accurate nature of the real documents leaked, the audience
+                  would often fall into a state similar to the hot hand fallacy
+                  principle and believe all documents to be real. This is what
+                  happened in the case of the attack and leak of World
+                  Anti-Doping Agency data during the cyberattack by a Russian
+                  hacker collective called Fancy Bear. This hacker group was
+                  agitated as there were talks of barring Russian athletes from
+                  the Olympic games due to the doping incidents. Thus, they
+                  leaked the test documents of several athletes who had received
+                  therapeutic use exemptions, including gymnast Simone Biles,
+                  tennis players Venus and Serena Williams and basketball player
+                  Elena Delle Donne. Thus, such athletes were portrayed in the
+                  wrong light and Russia was portrayed as the victim. This was
+                  later proven to be false.
+                </p>
 
-<p>The other method of manipulation is Narrative Laundering. This method is when a story is made up out of the real documents. The story is often misleading or even fake and generally uses certain specific facts from the documents to prove its authenticity. An example of such incident would be if only a certain excerpt was considered from a medical paper and the treatment was provided using that method. Thus, even if the original paper would’ve said later on that this particular method in the excerpt is not recommended, the excerpt signifies something else and thus, misleads the audience who are fed this laundered story. Even generalisation of facts taken from similar medical papers, which have experimented only on a certain sub-group of population and not the whole world leads to improper practices and may cause fatal results.</p>
+                <p>
+                  The other method of manipulation is Narrative Laundering. This
+                  method is when a story is made up out of the real documents.
+                  The story is often misleading or even fake and generally uses
+                  certain specific facts from the documents to prove its
+                  authenticity. An example of such incident would be if only a
+                  certain excerpt was considered from a medical paper and the
+                  treatment was provided using that method. Thus, even if the
+                  original paper would’ve said later on that this particular
+                  method in the excerpt is not recommended, the excerpt
+                  signifies something else and thus, misleads the audience who
+                  are fed this laundered story. Even generalisation of facts
+                  taken from similar medical papers, which have experimented
+                  only on a certain sub-group of population and not the whole
+                  world leads to improper practices and may cause fatal results.
+                </p>
 
-<h2 id="virtual-content-real-influence">Virtual Content, Real Influence</h2>
+                <h2 id="virtual-content-real-influence">
+                  Virtual Content, Real Influence
+                </h2>
 
-<p>While looking at social media content, we often find out based on the earlier case studies that these systems promote and incentivise disinformation. Since we don’t really live in an Orwellian world right now, it would be safe to say that this is a design flaw and isn’t done purposefully.</p>
+                <p>
+                  While looking at social media content, we often find out based
+                  on the earlier case studies that these systems promote and
+                  incentivise disinformation. Since we don’t really live in an
+                  Orwellian world right now, it would be safe to say that this
+                  is a design flaw and isn’t done purposefully.
+                </p>
 
-<ul>
-  <li>Social Media Networks are designed in such a way that instant feedback (quantified in the form of # of likes) is instantly rewarded.</li>
-  <li>Consuming more content leads to the algorithm assuming satisfaction in that particular category and thus, recommending content without further verification or a general feedback loop to the user.</li>
-  <li>Business models designed to increase user consumption also push these propagandas of disinformation</li>
-</ul>
+                <ul>
+                  <li>
+                    Social Media Networks are designed in such a way that
+                    instant feedback (quantified in the form of # of likes) is
+                    instantly rewarded.
+                  </li>
+                  <li>
+                    Consuming more content leads to the algorithm assuming
+                    satisfaction in that particular category and thus,
+                    recommending content without further verification or a
+                    general feedback loop to the user.
+                  </li>
+                  <li>
+                    Business models designed to increase user consumption also
+                    push these propagandas of disinformation
+                  </li>
+                </ul>
 
-<p>As it was rightly said by Renee DiResta, Mozfest 2018 @ noUpside:</p>
+                <p>
+                  As it was rightly said by Renee DiResta, Mozfest 2018 @
+                  noUpside:
+                </p>
 
-<blockquote>
-  <p>“Our political conversations are happening on an infrastructure built for viral advertising.”</p>
-</blockquote>
+                <blockquote>
+                  <p>
+                    “Our political conversations are happening on an
+                    infrastructure built for viral advertising.”
+                  </p>
+                </blockquote>
 
-<p>Such content is also used to heavily influence humans consuming the said content. Humans often drop a viewpoint when faced with extreme criticism and thus, this leads to easier manipulation of the audience when there’s already a prominent community supporting a misleading context point. This can also be observed in case of the KKK (Ku Klux Klan). When a particular neighbourhood participates in such racially discriminating practices, the people who are open-minded start receiving backlash and thus, give-in to such extremist thoughts and the use of social networks amplifies this factors as it is very easy to generate a fake “fan following” with the help of fake accounts and whatnot.
-This can be represented by</p>
+                <p>
+                  Such content is also used to heavily influence humans
+                  consuming the said content. Humans often drop a viewpoint when
+                  faced with extreme criticism and thus, this leads to easier
+                  manipulation of the audience when there’s already a prominent
+                  community supporting a misleading context point. This can also
+                  be observed in case of the KKK (Ku Klux Klan). When a
+                  particular neighbourhood participates in such racially
+                  discriminating practices, the people who are open-minded start
+                  receiving backlash and thus, give-in to such extremist
+                  thoughts and the use of social networks amplifies this factors
+                  as it is very easy to generate a fake “fan following” with the
+                  help of fake accounts and whatnot. This can be represented by
+                </p>
 
-<blockquote>
-  <p>“Extreme viewpoints can be normalized when we think there are others around us who hold the same views”</p>
-</blockquote>
+                <blockquote>
+                  <p>
+                    “Extreme viewpoints can be normalized when we think there
+                    are others around us who hold the same views”
+                  </p>
+                </blockquote>
 
-<p>A very good question raised during the <a href="https://ethics.fast.ai/syllabus/#lesson-1-disinformation">lecture</a> was that</p>
+                <p>
+                  A very good question raised during the
+                  <a
+                    href="https://ethics.fast.ai/syllabus/#lesson-1-disinformation"
+                    >lecture</a
+                  >
+                  was that
+                </p>
 
-<p><em>“If Big Tech companies build effective tools to detect such fake accounts or extremist propaganda accounts and shut them down completely with the help of their superior engineering workforce, wouldn’t it lower the daily active user count significantly and would that in turn make them hesitant in taking action?”</em></p>
+                <p>
+                  <em
+                    >“If Big Tech companies build effective tools to detect such
+                    fake accounts or extremist propaganda accounts and shut them
+                    down completely with the help of their superior engineering
+                    workforce, wouldn’t it lower the daily active user count
+                    significantly and would that in turn make them hesitant in
+                    taking action?”</em
+                  >
+                </p>
 
-<p>This is indeed a very good point to think about as not every organisation is 100% evil or even 100% ethical.</p>
+                <p>
+                  This is indeed a very good point to think about as not every
+                  organisation is 100% evil or even 100% ethical.
+                </p>
 
-<h2 id="we-know-the-problems-now-how-can-we-solve-them">We know the problems now, how can we solve them?</h2>
+                <h2 id="we-know-the-problems-now-how-can-we-solve-them">
+                  We know the problems now, how can we solve them?
+                </h2>
 
-<h4 id="the-pinterest-pandemonium">The Pinterest Pandemonium</h4>
+                <h4 id="the-pinterest-pandemonium">
+                  The Pinterest Pandemonium
+                </h4>
 
-<p>Recently during the Covid19 pandemic panic, there was a huge fallout regarding the authenticity of vaccine and the people identified as anti-vaxxers were dubious about what was in the vaccines as they were created rather quickly according to them. This led to such groups relying on the mighty social media articles, the utmost “reliable” sources of information for these vaccines. In order to prevent the spread of disinformation, Pinterest implemented a feature in which any such vaccine query would be redirected automatically to verified sources such as CDC, WHO, etc.</p>
+                <p>
+                  Recently during the Covid19 pandemic panic, there was a huge
+                  fallout regarding the authenticity of vaccine and the people
+                  identified as anti-vaxxers were dubious about what was in the
+                  vaccines as they were created rather quickly according to
+                  them. This led to such groups relying on the mighty social
+                  media articles, the utmost “reliable” sources of information
+                  for these vaccines. In order to prevent the spread of
+                  disinformation, Pinterest implemented a feature in which any
+                  such vaccine query would be redirected automatically to
+                  verified sources such as CDC, WHO, etc.
+                </p>
 
-<p>However, this didn’t go as expected. The redirection led to the anti-vaxxers becoming more paranoid and believing that the vaccines did have something to hide which the “higher-ups” didn’t want them to know. Also, this revealed that such authoritarian control was possible on such social media networks to the extent that content search was completely manipulated (even if it was done for good). Thus, giving authoritative power to social networks is definitely not the solution to ending disinformation and infact, this could be the factor which might increase dissent among the users.</p>
+                <p>
+                  However, this didn’t go as expected. The redirection led to
+                  the anti-vaxxers becoming more paranoid and believing that the
+                  vaccines did have something to hide which the “higher-ups”
+                  didn’t want them to know. Also, this revealed that such
+                  authoritarian control was possible on such social media
+                  networks to the extent that content search was completely
+                  manipulated (even if it was done for good). Thus, giving
+                  authoritative power to social networks is definitely not the
+                  solution to ending disinformation and infact, this could be
+                  the factor which might increase dissent among the users.
+                </p>
 
-<h4 id="the-ctrl--f-solution">The <em>Ctrl + F</em> solution</h4>
+                <h4 id="the-ctrl--f-solution">
+                  The <em>Ctrl + F</em> solution
+                </h4>
 
-<p>Instead of looking at the intricate faults of such humongous networks, the users could increase the digital literacy among themselves. The ultimate verification of any article or any digital content for that matter can be carried out by the people consuming them in a sheer duration of 30 seconds. The approach to do this was proposed by <a href="https://twitter.com/holden">Mike Caulfield</a> in <a href="http://lessons.checkplease.cc">Check, Please!</a>. This approach is often considered to be better than researching various other websites and finding more misleading information on the same topic. This course could be used as an exhaustive method to verify doubtful content and thus, decreasing the disinformation being spread among the people.</p>
+                <p>
+                  Instead of looking at the intricate faults of such humongous
+                  networks, the users could increase the digital literacy among
+                  themselves. The ultimate verification of any article or any
+                  digital content for that matter can be carried out by the
+                  people consuming them in a sheer duration of 30 seconds. The
+                  approach to do this was proposed by
+                  <a href="https://twitter.com/holden">Mike Caulfield</a> in
+                  <a href="http://lessons.checkplease.cc">Check, Please!</a>.
+                  This approach is often considered to be better than
+                  researching various other websites and finding more misleading
+                  information on the same topic. This course could be used as an
+                  exhaustive method to verify doubtful content and thus,
+                  decreasing the disinformation being spread among the people.
+                </p>
 
-<p>A point can be raised that since the approach is that simple, why is it not automated and built into the networks themselves. Although, it is true that the approach is simple but it is very context specific and it would be better if the users run the test themselves instead of scanning the content. Though scanning the content would be considered okay on public platforms such as Twitter but it isn’t accepted on end-to-end encrypted platforms like Whatsapp as this would lead to a possible leak in the sensitive messages and thus, the app would lose its crucial usability feature.</p>
+                <p>
+                  A point can be raised that since the approach is that simple,
+                  why is it not automated and built into the networks
+                  themselves. Although, it is true that the approach is simple
+                  but it is very context specific and it would be better if the
+                  users run the test themselves instead of scanning the content.
+                  Though scanning the content would be considered okay on public
+                  platforms such as Twitter but it isn’t accepted on end-to-end
+                  encrypted platforms like Whatsapp as this would lead to a
+                  possible leak in the sensitive messages and thus, the app
+                  would lose its crucial usability feature.
+                </p>
 
-<h3 id="large-scale-issues">Large Scale Issues</h3>
+                <h3 id="large-scale-issues">Large Scale Issues</h3>
 
-<p>On a large scale level, even information-centric platforms like Wikipedia have appointed fact-checkers who verify the content posted. However, on observing the revision history on such platforms, one can observe that there is an arms race going on between the disinformationists and the fact-checkers. Thus, it is the responsibility of the tech companies as well as the consumers to fight this serious problem and prevent critical circumstances such as the <a href="https://americasquarterly.org/article/misinformation-is-threatening-brazils-elections-too/">Brazil Election Issue</a>.</p>
+                <p>
+                  On a large scale level, even information-centric platforms
+                  like Wikipedia have appointed fact-checkers who verify the
+                  content posted. However, on observing the revision history on
+                  such platforms, one can observe that there is an arms race
+                  going on between the disinformationists and the fact-checkers.
+                  Thus, it is the responsibility of the tech companies as well
+                  as the consumers to fight this serious problem and prevent
+                  critical circumstances such as the
+                  <a
+                    href="https://americasquarterly.org/article/misinformation-is-threatening-brazils-elections-too/"
+                    >Brazil Election Issue</a
+                  >.
+                </p>
 
-<p><br /></p>
+                <p><br /></p>
 
-<p>Thanks for reading! Hope you liked it :)</p>
-
-                </div>
+                <p>Thanks for reading! Hope you liked it :)</p>
+              </div>
             </section>
 
             <!-- Email subscribe form at the bottom of the page -->
-            
 
             <footer class="post-full-footer">
-                <!-- Everything inside the #author tags pulls data from the author -->
-                <!-- #author-->
-                
-                    
-                
-                    
-                
-                    
-                
-                    
-                
-                    
-                
-                    
-                
-                    
-                
-                <!-- /author  -->
+              <!-- Everything inside the #author tags pulls data from the author -->
+              <!-- #author-->
+
+              <!-- /author  -->
             </footer>
 
             <!-- If you use Disqus comments, just uncomment this block.
             The only thing you need to change is "test-apkdzgmqhj" - which
             should be replaced with your own Disqus site-id. -->
-            
-                <section class="post-full-comments">
-                    <div id="disqus_thread"></div>
-                    <script>
-                        var disqus_config = function () {
-                            this.page.url = 'http://deep1401.github.io/data-ethics-1';
-                            this.page.identifier = '/data-ethics-1';
-                            this.page.title = 'Is it really true or did you read it online?';
-                        };
-                        (function() {
-                            var d = document, s = d.createElement('script');
-                            s.src = 'https://deep1401.disqus.com/embed.js';
-                            s.setAttribute('data-timestamp', +new Date());
-                            (d.head || d.body).appendChild(s);
-                        })();
-                    </script>
-                </section>
-            
 
-        </article>
+            <section class="post-full-comments">
+              <div id="disqus_thread"></div>
+              <script>
+                var disqus_config = function () {
+                  this.page.url = "http://deep1401.github.io/data-ethics-1";
+                  this.page.identifier = "/data-ethics-1";
+                  this.page.title =
+                    "Is it really true or did you read it online?";
+                };
+                (function () {
+                  var d = document,
+                    s = d.createElement("script");
+                  s.src = "https://deep1401.disqus.com/embed.js";
+                  s.setAttribute("data-timestamp", +new Date());
+                  (d.head || d.body).appendChild(s);
+                })();
+              </script>
+            </section>
+          </article>
+        </div>
+      </main>
 
-    </div>
-</main>
+      <!-- Links to Previous/Next posts -->
+      <aside class="read-next outer">
+        <div class="inner">
+          <div class="read-next-feed">
+            <article
+              class="read-next-card"
+              style="background-image: url(/assets/images/blog-cover.jpg)"
+            >
+              <header class="read-next-card-header">
+                <small class="read-next-card-header-sitetitle"
+                  >&mdash; Deep Gandhi &mdash;</small
+                >
 
-<!-- Links to Previous/Next posts -->
-<aside class="read-next outer">
-    <div class="inner">
-        <div class="read-next-feed">
-            
-                
-                
-                
-                
-                    <article class="read-next-card"
-                        
-                            style="background-image: url(/assets/images/blog-cover.jpg)"
-                        
+                <h3 class="read-next-card-header-title">
+                  <a href="/tag/data-ethics/">Data ethics</a>
+                </h3>
+              </header>
+              <div class="read-next-divider">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path
+                    d="M13 14.5s2 3 5 3 5.5-2.463 5.5-5.5S21 6.5 18 6.5c-5 0-7 11-12 11C2.962 17.5.5 15.037.5 12S3 6.5 6 6.5s4.5 3.5 4.5 3.5"
+                  />
+                </svg>
+              </div>
+              <div class="read-next-card-content">
+                <ul>
+                  <li>
+                    <a href="/data-ethics-2"
+                      >Is it really fair or did you automate it?</a
                     >
-                        <header class="read-next-card-header">
-                            <small class="read-next-card-header-sitetitle">&mdash; Deep Gandhi &mdash;</small>
-                            
-                                <h3 class="read-next-card-header-title"><a href="/tag/data-ethics/">Data ethics</a></h3>
-                            
-                        </header>
-                        <div class="read-next-divider"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 14.5s2 3 5 3 5.5-2.463 5.5-5.5S21 6.5 18 6.5c-5 0-7 11-12 11C2.962 17.5.5 15.037.5 12S3 6.5 6 6.5s4.5 3.5 4.5 3.5"/></svg>
-</div>
-                        <div class="read-next-card-content">
-                            <ul>
-                                
-                                
-                                  
-                                    
-                                        
-                                        
-                                            <li><a href="/data-ethics-2">Is it really fair or did you automate it?</a></li>
-                                        
-                                    
-                                  
-                                
-                                  
-                                    
-                                  
-                                
-                                  
-                                
-                            </ul>
-                        </div>
-                        <footer class="read-next-card-footer">
-                            <a href="/tag/data-ethics/">
-                                
-                                    See all 1 posts  →
-                                
-                            </a>
-                        </footer>
-                    </article>
-                
-            
+                  </li>
+                </ul>
+              </div>
+              <footer class="read-next-card-footer">
+                <a href="/tag/data-ethics/"> See all 1 posts → </a>
+              </footer>
+            </article>
 
             <!-- If there's a next post, display it using the same markup included from - partials/post-card.hbs -->
-            
-                
 
-    <article class="post-card post-template">
-        
-            <a class="post-card-image-link" href="/data-ethics-2">
-                <div class="post-card-image" style="background-image: url(/assets/images/fairness.jpeg)"></div>
-            </a>
-        
-        <div class="post-card-content">
-            <a class="post-card-content-link" href="/data-ethics-2">
-                <header class="post-card-header">
-                    
-                        
-                            
-                                <span class="post-card-tags">Data ethics</span>
-                            
-                        
-                    
+            <article class="post-card post-template">
+              <a class="post-card-image-link" href="/data-ethics-2">
+                <div
+                  class="post-card-image"
+                  style="background-image: url(/assets/images/fairness.jpeg)"
+                ></div>
+              </a>
 
-                    <h2 class="post-card-title">Is it really fair or did you automate it?</h2>
-                </header>
-                <section class="post-card-excerpt">
-                    
-                        <p></p>
-                    
-                </section>
-            </a>
-            <footer class="post-card-meta">
-                
-                    
-                
-                    
-                
-                    
-                
-                    
-                
-                    
-                
-                    
-                
-                    
-                
-                <span class="reading-time">
-                    
-                    
-                      1 min read
-                    
-                </span>
-            </footer>
-        </div>
-    </article>
+              <div class="post-card-content">
+                <a class="post-card-content-link" href="/data-ethics-2">
+                  <header class="post-card-header">
+                    <span class="post-card-tags">Data ethics</span>
 
-            
+                    <h2 class="post-card-title">
+                      Is it really fair or did you automate it?
+                    </h2>
+                  </header>
+                  <section class="post-card-excerpt">
+                    <p></p>
+                  </section>
+                </a>
+                <footer class="post-card-meta">
+                  <span class="reading-time"> 1 min read </span>
+                </footer>
+              </div>
+            </article>
 
             <!-- If there's a previous post, display it using the same markup included from - partials/post-card.hbs -->
-            
-                
 
-    <article class="post-card post-template">
-        
-            <a class="post-card-image-link" href="/motivation-for-this-blog">
-                <div class="post-card-image" style="background-image: url(/assets/images/spt.jpg)"></div>
-            </a>
-        
-        <div class="post-card-content">
-            <a class="post-card-content-link" href="/motivation-for-this-blog">
-                <header class="post-card-header">
-                    
-                        
-                            
-                                <span class="post-card-tags">Getting started</span>
-                            
-                        
-                    
+            <article class="post-card post-template">
+              <a class="post-card-image-link" href="/motivation-for-this-blog">
+                <div
+                  class="post-card-image"
+                  style="background-image: url(/assets/images/spt.jpg)"
+                ></div>
+              </a>
+
+              <div class="post-card-content">
+                <a
+                  class="post-card-content-link"
+                  href="/motivation-for-this-blog"
+                >
+                  <header class="post-card-header">
+                    <span class="post-card-tags">Getting started</span>
 
                     <h2 class="post-card-title">Motivation for this Blog</h2>
-                </header>
-                <section class="post-card-excerpt">
-                    
-                        <p></p>
-                    
-                </section>
-            </a>
-            <footer class="post-card-meta">
-                
-                    
-                
-                    
-                
-                    
-                
-                    
-                
-                    
-                
-                    
-                
-                    
-                
-                <span class="reading-time">
-                    
-                    
-                      1 min read
-                    
-                </span>
-            </footer>
+                  </header>
+                  <section class="post-card-excerpt">
+                    <p></p>
+                  </section>
+                </a>
+                <footer class="post-card-meta">
+                  <span class="reading-time"> 1 min read </span>
+                </footer>
+              </div>
+            </article>
+          </div>
         </div>
-    </article>
+      </aside>
 
-            
+      <!-- Floating header which appears on-scroll, included from includes/floating-header.hbs -->
+      <div class="floating-header">
+        <div class="floating-header-logo">
+          <a href="http://deep1401.github.io/">
+            <img src="/assets/images/favicon.png" alt="Deep Gandhi icon" />
 
-        </div>
-    </div>
-</aside>
-
-<!-- Floating header which appears on-scroll, included from includes/floating-header.hbs -->
-<div class="floating-header">
-    <div class="floating-header-logo">
-        <a href="http://deep1401.github.io/">
-            
-                <img src="/assets/images/favicon.png" alt="Deep Gandhi icon" />
-            
             <span>Deep Gandhi</span>
-        </a>
-    </div>
-    <span class="floating-header-divider">&mdash;</span>
-    <div class="floating-header-title">Is it really true or did you read it online?</div>
-    <div class="floating-header-share">
-        <div class="floating-header-share-label">Share this <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-    <path d="M7.5 15.5V4a1.5 1.5 0 1 1 3 0v4.5h2a1 1 0 0 1 1 1h2a1 1 0 0 1 1 1H18a1.5 1.5 0 0 1 1.5 1.5v3.099c0 .929-.13 1.854-.385 2.748L17.5 23.5h-9c-1.5-2-5.417-8.673-5.417-8.673a1.2 1.2 0 0 1 1.76-1.605L7.5 15.5zm6-6v2m-3-3.5v3.5m6-1v2"/>
-</svg>
-</div>
-        <a class="floating-header-share-tw" href="https://twitter.com/share?text=Is+it+really+true+or+did+you+read+it+online%3F&amp;url=https://deep1401.github.iodata-ethics-1"
-            onclick="window.open(this.href,'share-twitter', newwindow);return false;">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M30.063 7.313c-.813 1.125-1.75 2.125-2.875 2.938v.75c0 1.563-.188 3.125-.688 4.625a15.088 15.088 0 0 1-2.063 4.438c-.875 1.438-2 2.688-3.25 3.813a15.015 15.015 0 0 1-4.625 2.563c-1.813.688-3.75 1-5.75 1-3.25 0-6.188-.875-8.875-2.625.438.063.875.125 1.375.125 2.688 0 5.063-.875 7.188-2.5-1.25 0-2.375-.375-3.375-1.125s-1.688-1.688-2.063-2.875c.438.063.813.125 1.125.125.5 0 1-.063 1.5-.25-1.313-.25-2.438-.938-3.313-1.938a5.673 5.673 0 0 1-1.313-3.688v-.063c.813.438 1.688.688 2.625.688a5.228 5.228 0 0 1-1.875-2c-.5-.875-.688-1.813-.688-2.75 0-1.063.25-2.063.75-2.938 1.438 1.75 3.188 3.188 5.25 4.25s4.313 1.688 6.688 1.813a5.579 5.579 0 0 1 1.5-5.438c1.125-1.125 2.5-1.688 4.125-1.688s3.063.625 4.188 1.813a11.48 11.48 0 0 0 3.688-1.375c-.438 1.375-1.313 2.438-2.563 3.188 1.125-.125 2.188-.438 3.313-.875z"/></svg>
-
-        </a>
-        <a class="floating-header-share-fb" href="https://www.facebook.com/sharer/sharer.php?u=https://deep1401.github.iodata-ethics-1"
-            onclick="window.open(this.href, 'share-facebook', newwindow);return false;">
-            <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z"/></svg> -->
-<!-- <img src="../assets/mail.svg"/> -->
-<?xml version="1.0" encoding="iso-8859-1"?>
-<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 512 450" style="enable-background:new 0 0 512 512;" xml:space="preserve">
-<g>
-	<g>
-		<polygon points="339.392,258.624 512,367.744 512,144.896 		"/>
-	</g>
-</g>
-<g>
-	<g>
-		<polygon points="0,144.896 0,367.744 172.608,258.624 		"/>
-	</g>
-</g>
-<g>
-	<g>
-		<path d="M480,80H32C16.032,80,3.36,91.904,0.96,107.232L256,275.264l255.04-168.032C508.64,91.904,495.968,80,480,80z"/>
-	</g>
-</g>
-<g>
-	<g>
-		<path d="M310.08,277.952l-45.28,29.824c-2.688,1.76-5.728,2.624-8.8,2.624c-3.072,0-6.112-0.864-8.8-2.624l-45.28-29.856
-			L1.024,404.992C3.488,420.192,16.096,432,32,432h448c15.904,0,28.512-11.808,30.976-27.008L310.08,277.952z"/>
-	</g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-</svg>
-
-        </a>
-    </div>
-    <progress class="progress" value="0">
-        <div class="progress-container">
-            <span class="progress-bar"></span>
+          </a>
         </div>
-    </progress>
-</div>
+        <span class="floating-header-divider">&mdash;</span>
+        <div class="floating-header-title">
+          Is it really true or did you read it online?
+        </div>
+        <div class="floating-header-share">
+          <div class="floating-header-share-label">
+            Share this
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path
+                d="M7.5 15.5V4a1.5 1.5 0 1 1 3 0v4.5h2a1 1 0 0 1 1 1h2a1 1 0 0 1 1 1H18a1.5 1.5 0 0 1 1.5 1.5v3.099c0 .929-.13 1.854-.385 2.748L17.5 23.5h-9c-1.5-2-5.417-8.673-5.417-8.673a1.2 1.2 0 0 1 1.76-1.605L7.5 15.5zm6-6v2m-3-3.5v3.5m6-1v2"
+              />
+            </svg>
+          </div>
+          <a
+            class="floating-header-share-tw"
+            href="https://twitter.com/share?text=Is+it+really+true+or+did+you+read+it+online%3F&amp;url=https://deep1401.github.iodata-ethics-1"
+            onclick="window.open(this.href,'share-twitter', newwindow);return false;"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+              <path
+                d="M30.063 7.313c-.813 1.125-1.75 2.125-2.875 2.938v.75c0 1.563-.188 3.125-.688 4.625a15.088 15.088 0 0 1-2.063 4.438c-.875 1.438-2 2.688-3.25 3.813a15.015 15.015 0 0 1-4.625 2.563c-1.813.688-3.75 1-5.75 1-3.25 0-6.188-.875-8.875-2.625.438.063.875.125 1.375.125 2.688 0 5.063-.875 7.188-2.5-1.25 0-2.375-.375-3.375-1.125s-1.688-1.688-2.063-2.875c.438.063.813.125 1.125.125.5 0 1-.063 1.5-.25-1.313-.25-2.438-.938-3.313-1.938a5.673 5.673 0 0 1-1.313-3.688v-.063c.813.438 1.688.688 2.625.688a5.228 5.228 0 0 1-1.875-2c-.5-.875-.688-1.813-.688-2.75 0-1.063.25-2.063.75-2.938 1.438 1.75 3.188 3.188 5.25 4.25s4.313 1.688 6.688 1.813a5.579 5.579 0 0 1 1.5-5.438c1.125-1.125 2.5-1.688 4.125-1.688s3.063.625 4.188 1.813a11.48 11.48 0 0 0 3.688-1.375c-.438 1.375-1.313 2.438-2.563 3.188 1.125-.125 2.188-.438 3.313-.875z"
+              />
+            </svg>
+          </a>
+          <a
+            class="floating-header-share-fb"
+            href="https://www.facebook.com/sharer/sharer.php?u=https://deep1401.github.iodata-ethics-1"
+            onclick="window.open(this.href, 'share-facebook', newwindow);return false;"
+          >
+            <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z"/></svg> -->
+            <!-- <img src="../assets/mail.svg"/> -->
+            <?xml version="1.0" encoding="iso-8859-1"?>
+            <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+            <svg
+              version="1.1"
+              id="Capa_1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px"
+              y="0px"
+              viewBox="0 0 512 450"
+              style="enable-background: new 0 0 512 512"
+              xml:space="preserve"
+            >
+              <g>
+                <g>
+                  <polygon points="339.392,258.624 512,367.744 512,144.896 		" />
+                </g>
+              </g>
+              <g>
+                <g>
+                  <polygon points="0,144.896 0,367.744 172.608,258.624 		" />
+                </g>
+              </g>
+              <g>
+                <g>
+                  <path
+                    d="M480,80H32C16.032,80,3.36,91.904,0.96,107.232L256,275.264l255.04-168.032C508.64,91.904,495.968,80,480,80z"
+                  />
+                </g>
+              </g>
+              <g>
+                <g>
+                  <path
+                    d="M310.08,277.952l-45.28,29.824c-2.688,1.76-5.728,2.624-8.8,2.624c-3.072,0-6.112-0.864-8.8-2.624l-45.28-29.856
+			L1.024,404.992C3.488,420.192,16.096,432,32,432h448c15.904,0,28.512-11.808,30.976-27.008L310.08,277.952z"
+                  />
+                </g>
+              </g>
+              <g></g>
+              <g></g>
+              <g></g>
+              <g></g>
+              <g></g>
+              <g></g>
+              <g></g>
+              <g></g>
+              <g></g>
+              <g></g>
+              <g></g>
+              <g></g>
+              <g></g>
+              <g></g>
+              <g></g>
+            </svg>
+          </a>
+        </div>
+        <progress class="progress" value="0">
+          <div class="progress-container">
+            <span class="progress-bar"></span>
+          </div>
+        </progress>
+      </div>
 
+      <!-- /post -->
 
-<!-- /post -->
+      <!-- The #contentFor helper here will send everything inside it up to the matching #block helper found in default.hbs -->
 
-<!-- The #contentFor helper here will send everything inside it up to the matching #block helper found in default.hbs -->
+      <!-- Previous/next page links - displayed on every page -->
 
+      <!-- The footer at the very bottom of the screen -->
+      <footer class="site-footer outer">
+        <div class="site-footer-content inner">
+          <section class="copyright">
+            <a href="http://deep1401.github.io/">Deep Gandhi</a>
+            &copy; 2022
+          </section>
+          <section class="poweredby">
+            Proudly published with <a href="https://jekyllrb.com/">Jekyll</a> &
+            <a href="https://pages.github.com/" target="_blank" rel="noopener"
+              >GitHub Pages</a
+            >
+            using
+            <a
+              href="https://github.com/jekyller/jasper2"
+              target="_blank"
+              rel="noopener"
+              >Jasper2</a
+            >
+          </section>
+          <nav class="site-footer-nav">
+            <a href="/">Latest Posts</a>
+            <a
+              href="mailto:thisisdeepgandhi@gmail.com"
+              target="_blank"
+              rel="noopener"
+              >Email</a
+            >
+            <a
+              href="https://twitter.com/deepgandhi_07"
+              target="_blank"
+              rel="noopener"
+              >Twitter</a
+            >
+            <a href="https://github.com/deep1401" target="_blank" rel="noopener"
+              >Github</a
+            >
+            <a
+              href="https://www.linkedin.com/in/deep1401/"
+              target="_blank"
+              rel="noopener"
+              >LinkedIn</a
+            >
+          </nav>
+        </div>
+      </footer>
+    </div>
 
-			<!-- Previous/next page links - displayed on every page -->
-			
+    <!-- The big email subscribe modal content -->
 
-			<!-- The footer at the very bottom of the screen -->
-			<footer class="site-footer outer">
-				<div class="site-footer-content inner">
-					<section class="copyright">
-						<a href="http://deep1401.github.io/">Deep Gandhi</a>
-						&copy; 2021
-					</section>
-					<section class="poweredby">
-						Proudly published with <a href="https://jekyllrb.com/">Jekyll</a> &
-						<a href="https://pages.github.com/" target="_blank" rel="noopener"
-							>GitHub Pages</a
-						>
-						using
-						<a
-							href="https://github.com/jekyller/jasper2"
-							target="_blank"
-							rel="noopener"
-							>Jasper2</a
-						>
-					</section>
-					<nav class="site-footer-nav">
-						<a href="/">Latest Posts</a>
-						<a
-							href="mailto:thisisdeepgandhi@gmail.com"
-							target="_blank"
-							rel="noopener"
-							>Email</a
-						> <a
-							href="https://twitter.com/deepgandhi_07"
-							target="_blank"
-							rel="noopener"
-							>Twitter</a
-						>
-						<a
-							href="https://github.com/deep1401"
-							target="_blank"
-							rel="noopener"
-							>Github</a
-						>
-						<a
-							href="https://www.linkedin.com/in/deep1401/"
-							target="_blank"
-							rel="noopener"
-							>LinkedIn</a
-						>
-					</nav>
-				</div>
-			</footer>
-		</div>
+    <!-- highlight.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.10.0/components/prism-abap.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("pre code").each(function (i, block) {
+          hljs.highlightBlock(block);
+        });
+      });
+    </script>
 
-		<!-- The big email subscribe modal content -->
-		
+    <!-- jQuery + Fitvids, which makes all video embeds responsive -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="/assets/js/jquery.fitvids.js"></script>
+    <script
+      type="text/javascript"
+      src="https://demo.ghost.io/assets/js/jquery.fitvids.js?v=724281a32e"
+    ></script>
 
-		<!-- highlight.js -->
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.10.0/components/prism-abap.min.js"></script>
-		<script>
-			$(document).ready(function () {
-				$('pre code').each(function (i, block) {
-					hljs.highlightBlock(block);
-				});
-			});
-		</script>
-
-		<!-- jQuery + Fitvids, which makes all video embeds responsive -->
-		<script
-			src="https://code.jquery.com/jquery-3.2.1.min.js"
-			integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-			crossorigin="anonymous"
-		></script>
-		<script
-			type="text/javascript"
-			src="/assets/js/jquery.fitvids.js"
-		></script>
-		<script
-			type="text/javascript"
-			src="https://demo.ghost.io/assets/js/jquery.fitvids.js?v=724281a32e"
-		></script>
-
-		<!-- Paginator increased to "infinit" in _config.yml -->
-		<!-- if paginator.posts  -->
-		<!-- <script>
+    <!-- Paginator increased to "infinit" in _config.yml -->
+    <!-- if paginator.posts  -->
+    <!-- <script>
         var maxPages = parseInt('');
     </script>
     <script src="/assets/js/infinitescroll.js"></script> -->
-		<!-- /endif -->
+    <!-- /endif -->
 
-		
+    <!-- Add Google Analytics  -->
+    <!-- Google Analytics Tracking code -->
+    <script>
+      (function (i, s, o, g, r, a, m) {
+        i["GoogleAnalyticsObject"] = r;
+        (i[r] =
+          i[r] ||
+          function () {
+            (i[r].q = i[r].q || []).push(arguments);
+          }),
+          (i[r].l = 1 * new Date());
+        (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m);
+      })(
+        window,
+        document,
+        "script",
+        "//www.google-analytics.com/analytics.js",
+        "ga"
+      );
 
-		<!-- Add Google Analytics  -->
-		<!-- Google Analytics Tracking code -->
-<script>
-	(function (i, s, o, g, r, a, m) {
-		i['GoogleAnalyticsObject'] = r;
-		(i[r] =
-			i[r] ||
-			function () {
-				(i[r].q = i[r].q || []).push(arguments);
-			}),
-			(i[r].l = 1 * new Date());
-		(a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
-		a.async = 1;
-		a.src = g;
-		m.parentNode.insertBefore(a, m);
-	})(
-		window,
-		document,
-		'script',
-		'//www.google-analytics.com/analytics.js',
-		'ga'
-	);
+      ga("create", "G-YQRQTNBW9K", "auto");
+      ga("send", "pageview");
+    </script>
 
-	ga('create', 'UA-149584643-1', 'auto');
-	ga('send', 'pageview');
-</script>
-
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-YQRQTNBW9K"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-YQRQTNBW9K"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -920,74 +1153,71 @@ This can be represented by</p>
   gtag('config', 'G-YQRQTNBW9K');
 </script> -->
 
+    <!-- The #block helper will pull in data from the #contentFor other template files. In this case, there's some JavaScript which we only want to use in post.hbs, but it needs to be included down here, after jQuery has already loaded. -->
+    <script>
+      // NOTE: Scroll performance is poor in Safari
+      // - this appears to be due to the events firing much more slowly in Safari.
+      //   Dropping the scroll event and using only a raf loop results in smoother
+      //   scrolling but continuous processing even when not scrolling
+      $(document).ready(function () {
+        // Start fitVids
+        var $postContent = $(".post-full-content");
+        $postContent.fitVids();
+        // End fitVids
 
-		<!-- The #block helper will pull in data from the #contentFor other template files. In this case, there's some JavaScript which we only want to use in post.hbs, but it needs to be included down here, after jQuery has already loaded. -->
-		 <script>
+        var progressBar = document.querySelector("progress");
+        var header = document.querySelector(".floating-header");
+        var title = document.querySelector(".post-full-title");
 
-// NOTE: Scroll performance is poor in Safari
-// - this appears to be due to the events firing much more slowly in Safari.
-//   Dropping the scroll event and using only a raf loop results in smoother
-//   scrolling but continuous processing even when not scrolling
-$(document).ready(function () {
-    // Start fitVids
-    var $postContent = $(".post-full-content");
-    $postContent.fitVids();
-    // End fitVids
+        var lastScrollY = window.scrollY;
+        var lastWindowHeight = window.innerHeight;
+        var lastDocumentHeight = $(document).height();
+        var ticking = false;
 
-    var progressBar = document.querySelector('progress');
-    var header = document.querySelector('.floating-header');
-    var title = document.querySelector('.post-full-title');
+        function onScroll() {
+          lastScrollY = window.scrollY;
+          requestTick();
+        }
 
-    var lastScrollY = window.scrollY;
-    var lastWindowHeight = window.innerHeight;
-    var lastDocumentHeight = $(document).height();
-    var ticking = false;
+        function onResize() {
+          lastWindowHeight = window.innerHeight;
+          lastDocumentHeight = $(document).height();
+          requestTick();
+        }
 
-    function onScroll() {
-        lastScrollY = window.scrollY;
-        requestTick();
-    }
-
-    function onResize() {
-        lastWindowHeight = window.innerHeight;
-        lastDocumentHeight = $(document).height();
-        requestTick();
-    }
-
-    function requestTick() {
-        if (!ticking) {
+        function requestTick() {
+          if (!ticking) {
             requestAnimationFrame(update);
-        }
-        ticking = true;
-    }
-
-    function update() {
-        var trigger = title.getBoundingClientRect().top + window.scrollY;
-        var triggerOffset = title.offsetHeight + 35;
-        var progressMax = lastDocumentHeight - lastWindowHeight;
-
-        // show/hide floating header
-        if (lastScrollY >= trigger + triggerOffset) {
-            header.classList.add('floating-active');
-        } else {
-            header.classList.remove('floating-active');
+          }
+          ticking = true;
         }
 
-        progressBar.setAttribute('max', progressMax);
-        progressBar.setAttribute('value', lastScrollY);
+        function update() {
+          var trigger = title.getBoundingClientRect().top + window.scrollY;
+          var triggerOffset = title.offsetHeight + 35;
+          var progressMax = lastDocumentHeight - lastWindowHeight;
 
-        ticking = false;
-    }
+          // show/hide floating header
+          if (lastScrollY >= trigger + triggerOffset) {
+            header.classList.add("floating-active");
+          } else {
+            header.classList.remove("floating-active");
+          }
 
-    window.addEventListener('scroll', onScroll, {passive: true});
-    window.addEventListener('resize', onResize, false);
+          progressBar.setAttribute("max", progressMax);
+          progressBar.setAttribute("value", lastScrollY);
 
-    update();
-});
-</script>
- 
+          ticking = false;
+        }
 
-		<!-- Ghost outputs important scripts and data with this tag - it should always be the very last thing before the closing body tag -->
-		<!-- ghost_foot -->
-	</body>
+        window.addEventListener("scroll", onScroll, { passive: true });
+        window.addEventListener("resize", onResize, false);
+
+        update();
+      });
+    </script>
+
+    <!-- Ghost outputs important scripts and data with this tag - it should always be the very last thing before the closing body tag -->
+    <!-- ghost_foot -->
+  </body>
 </html>
