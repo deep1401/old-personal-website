@@ -10,7 +10,55 @@ subclass: "post page"
 
 <br/>
 ## Experience
+
 1.  <p style="margin-top: 35px">
+    <font size="5">
+        <a href="https://www.eleuther.ai/" target="_blank">
+            <strong> EleutherAI </strong>
+        </a>
+    </font>
+    </p>
+    <p>
+    <font size="4">
+        (Feb 2022 - Present)
+        <br>
+        <b><i>Research Intern</i></b>
+    </font>
+    </p>
+    <p>
+        Working with <a href="https://www.stellabiderman.com/">Stella Biderman</a> on detecting adversarial attacks and backdoor attacks on large language models such as GPT-J, GPT-NeoX.
+        Designing a suite to constrain poisoned language models for downstream tasks such as classification and QnA.
+    </p>
+
+2.  <p style="margin-top: 35px">
+    <font size="5">
+        <a href="https://unicode-research.netlify.app/" target="_blank">
+            <strong> Unicode Research </strong>
+        </a>
+    </font>
+    </p>
+    <p>
+    <font size="4">
+        (Aug 2020 - Present)
+        <br>
+        <b><i>Research Student</i></b>
+    </font>
+    </p>
+    <p>
+        <ul>
+        <li>Active Projects:
+            <ul>
+            <li> Estimating the causal impact of non-expert mentors on mentee students’ careers in Indian institutions. </li>
+            <li> Small-world simulation to model opinion polarization of online communities </li>
+            </ul>
+        </li>
+        <li>Teaching Assistant: Summer Machine Learning Course,<a href="https://djunicode.github.io/umlsc-2021/">UMLSC 2021</a>, funded by Google Research India.</li>
+        <li>Presented various paper reviews in the domains of NLP and Probabilistic Programming.</li>
+        </ul>
+        
+    </p>
+
+3.  <p style="margin-top: 35px">
     <font size="5">
         <a href="https://www.jpmorganchase.com" target="_blank">
             <strong> JPMorgan Chase & Co. </strong>
@@ -26,10 +74,10 @@ subclass: "post page"
     </p>
     <p>
         Worked with the ACM Team in the Investment Banking division and automated the artifact validation check for every release using Python and pandas.
-        Designed a system for automation of evidence store creation for files to be attached to the SNOW     ticket reducing the process time from 1.5 hours to 10 mins.
+        Designed a system for automation of evidence store creation for files to be attached to the SNOW ticket reducing the process time from 1.5 hours to 10 mins.
     </p>
 
-2.  <p style="margin-top: 35px">
+4.  <p style="margin-top: 35px">
     <font size="5">
         <a href="https://scholar.google.com/citations?user=nLuft7kAAAAJ&hl=en" target="_blank">
             <strong> Dwarkadas J. Sanghvi College of Engineering </strong>
@@ -44,10 +92,10 @@ subclass: "post page"
     </font>
     </p>
     <p>
-        Advised by <a href="https://rammangrulkar.github.io/about/">Dr. Ramchandra Mangrulkar </a> for Semester 6. Worked along with him to complete 2 research projects and contribute them as chapters in the domains of Natural Language Processing and Federated Learning.  
+        Advised by <a href="https://rammangrulkar.github.io/about/">Dr. Ramchandra Mangrulkar</a> for Semester 6. Worked along with him to complete 2 research projects and contribute them as chapters in the domains of Natural Language Processing and Federated Learning.  
     </p>
 
-3.  <p style="margin-top: 35px">
+5.  <p style="margin-top: 35px">
     <font size="5">
         <a href="http://www.margosatree.com/" target="_blank">
             <strong> Margosatree Technologies </strong>
@@ -64,7 +112,7 @@ subclass: "post page"
     <p>
         Worked with a team of three engineers to build an automation software along with react dashboard and electron app for Syscon Automation company.Was also responsible for a few other projects in the domain of Machine Learning and DevOps.Wrote modern, performant, maintainable code for a diverse array of client and internal projects.
     </p>
-4.  <p style="margin-top: 35px">
+6.  <p style="margin-top: 35px">
     <font size="5">
         <a href="https://levyne.com" target="_blank">
             <strong> Levyne </strong>
@@ -82,7 +130,7 @@ subclass: "post page"
         Worked with the R&D department of the company for developing the Machine Learning backend for their AR E-Commerce website. Created a Recommendation system using fast.ai . Created a chatbot for user interaction using NLTK. Developed the complete lead generation and user analysis platform for the company. Created an unsupervised learning model for user clustering.
     </p>
 
-5.  <p style="margin-top: 35px">
+7.  <p style="margin-top: 35px">
     <font size="5">
         <a href="https://www.linkedin.com/company/feopleorg/" target="_blank">
             <strong> Feople </strong>
