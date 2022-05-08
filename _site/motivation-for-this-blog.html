@@ -1,143 +1,160 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <!-- Document Settings -->
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<head>
+		<!-- Document Settings -->
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    <!-- Base Meta -->
-    <!-- dynamically fixing the title for tag/author pages -->
+		<!-- Base Meta -->
+		<!-- dynamically fixing the title for tag/author pages -->
 
-    <title>Motivation for this Blog</title>
-    <meta name="HandheldFriendly" content="True" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Styles'n'Scripts -->
-    <link rel="stylesheet" type="text/css" href="/assets/built/screen.css" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="/assets/built/screen.edited.css"
-    />
-    <link rel="stylesheet" type="text/css" href="/assets/built/syntax.css" />
-    <!-- highlight.js -->
-    <link
-      rel="stylesheet"
-      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"
-    />
-    <style>
-      .hljs {
-        background: none;
-      }
-    </style>
 
-    <!--[if IE]>
-      <style>
-        p,
-        ol,
-        ul {
-          width: 100%;
-        }
-        blockquote {
-          width: 100%;
-        }
-      </style>
-    <![endif]-->
 
-    <!-- This tag outputs SEO meta+structured data and other important settings -->
-    <meta name="description" content="Deep Gandhi" />
-    <link
-      rel="shortcut icon"
-      href="http://deep1401.github.io/assets/images/favicon.png"
-      type="image/png"
-    />
-    <link
-      rel="icon"
-      href="http://deep1401.github.io/assets/images/blog-icon.png"
-    />
-    <link
-      rel="canonical"
-      href="http://deep1401.github.io/motivation-for-this-blog"
-    />
-    <meta name="referrer" content="no-referrer-when-downgrade" />
+		<title>
+			Motivation for this Blog
+		</title>
+		<meta name="HandheldFriendly" content="True" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- Styles'n'Scripts -->
+		<link rel="stylesheet" type="text/css" href="/assets/built/screen.css" />
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="/assets/built/screen.edited.css"
+		/>
+		<link rel="stylesheet" type="text/css" href="/assets/built/syntax.css" />
+		<!-- highlight.js -->
+		<link
+			rel="stylesheet"
+			href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"
+		/>
+		<style>
+			.hljs {
+				background: none;
+			}
+		</style>
 
-    <!--title below is coming from _includes/dynamic_title-->
-    <meta property="og:site_name" content="Deep Gandhi" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Motivation for this Blog" />
-    <meta
-      property="og:description"
-      content="Why is writing necessary a part of tech? Recently, a friend of mine started his own blog and me being curious asked him why? At that point he showed me some famous blogs by Anish Athalye and Rachel Thomas. Both of these, are people that we admire and follow a"
-    />
-    <meta
-      property="og:url"
-      content="http://deep1401.github.io/motivation-for-this-blog"
-    />
-    <meta
-      property="og:image"
-      content="http://deep1401.github.io/assets/images/spt.jpg"
-    />
-    <meta
-      property="article:publisher"
-      content="https://www.facebook.com/deepgandhi1401"
-    />
-    <meta
-      property="article:author"
-      content="https://www.facebook.com/deepgandhi1401"
-    />
-    <meta
-      property="article:published_time"
-      content="2020-07-05T15:30:00+05:30"
-    />
-    <meta
-      property="article:modified_time"
-      content="2020-07-05T15:30:00+05:30"
-    />
-    <meta property="article:tag" content="Getting Started" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Motivation for this Blog" />
-    <meta
-      name="twitter:description"
-      content="Why is writing necessary a part of tech? Recently, a friend of mine started his own blog and me being curious asked him why? At that point he showed me some famous blogs by Anish Athalye and Rachel Thomas. Both of these, are people that we admire and follow a"
-    />
-    <meta name="twitter:url" content="http://deep1401.github.io/" />
-    <meta
-      name="twitter:image"
-      content="http://deep1401.github.io/assets/images/spt.jpg"
-    />
-    <meta name="twitter:label1" content="Written by" />
-    <meta name="twitter:data1" content="Deep Gandhi" />
-    <meta name="twitter:label2" content="Filed under" />
-    <meta name="twitter:data2" content="Getting Started" />
-    <meta name="twitter:site" content="@deepgandhi_07" />
-    <meta name="twitter:creator" content="@deepgandhi_07" />
-    <meta property="og:image:width" content="1400" />
-    <meta property="og:image:height" content="933" />
+		<!--[if IE]>
+			<style>
+				p,
+				ol,
+				ul {
+					width: 100%;
+				}
+				blockquote {
+					width: 100%;
+				}
+			</style>
+		<![endif]-->
 
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Website",
-        "publisher": {
-          "@type": "Organization",
-          "name": "Deep Gandhi",
-          "logo": "http://deep1401.github.io/assets/images/blog-icon.png"
-        },
-        "url": "http://deep1401.github.io/motivation-for-this-blog",
-        "image": {
-          "@type": "ImageObject",
-          "url": "http://deep1401.github.io/assets/images/spt.jpg",
-          "width": 2000,
-          "height": 666
-        },
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "http://deep1401.github.io/motivation-for-this-blog"
-        },
-        "description": "Why is writing necessary a part of tech? Recently, a friend of mine started his own blog and me being curious asked him why? At that point he showed me some famous blogs by Anish Athalye and Rachel Thomas. Both of these, are people that we admire and follow a"
-      }
-    </script>
+		<!-- This tag outputs SEO meta+structured data and other important settings -->
+		<meta
+	name="description"
+	content="Deep Gandhi"
+/>
+<link
+	rel="shortcut icon"
+	href="http://deep1401.github.io/assets/images/favicon.png"
+	type="image/png"
+/>
+<link rel="icon" href="http://deep1401.github.io/assets/images/blog-icon.png" />
+<link
+	rel="canonical"
+	href="http://deep1401.github.io/motivation-for-this-blog"
+/>
+<meta name="referrer" content="no-referrer-when-downgrade" />
 
-    <!-- <script type="text/javascript" src="https://demo.ghost.io/public/ghost-sdk.min.js?v=724281a32e"></script>
+
+<!--title below is coming from _includes/dynamic_title-->
+<meta property="og:site_name" content="Deep Gandhi" />
+<meta property="og:type" content="website" />
+<meta
+	property="og:title"
+	content="Motivation for this Blog"
+/>
+<meta
+	property="og:description"
+	content="Why is writing necessary a part of tech? Recently, a friend of mine started his own blog and me being curious asked him why? At that point he showed me some famous blogs by Anish Athalye and Rachel Thomas. Both of these, are people that we admire and follow a"
+/>
+<meta
+	property="og:url"
+	content="http://deep1401.github.io/motivation-for-this-blog"
+/>
+<meta
+	property="og:image"
+	content="http://deep1401.github.io/assets/images/spt.jpg"
+/>
+<meta
+	property="article:publisher"
+	content="https://www.facebook.com/deepgandhi1401"
+/>
+<meta
+	property="article:author"
+	content="https://www.facebook.com/deepgandhi1401"
+/>
+<meta
+	property="article:published_time"
+	content="2020-07-05T15:30:00+05:30"
+/>
+<meta
+	property="article:modified_time"
+	content="2020-07-05T15:30:00+05:30"
+/>
+<meta
+	property="article:tag"
+	content="Getting Started"
+/>
+<meta name="twitter:card" content="summary_large_image" />
+<meta
+	name="twitter:title"
+	content="Motivation for this Blog"
+/>
+<meta
+	name="twitter:description"
+	content="Why is writing necessary a part of tech? Recently, a friend of mine started his own blog and me being curious asked him why? At that point he showed me some famous blogs by Anish Athalye and Rachel Thomas. Both of these, are people that we admire and follow a"
+/>
+<meta name="twitter:url" content="http://deep1401.github.io/" />
+<meta
+	name="twitter:image"
+	content="http://deep1401.github.io/assets/images/spt.jpg"
+/>
+<meta name="twitter:label1" content="Written by" />
+<meta name="twitter:data1" content="Deep Gandhi" />
+<meta name="twitter:label2" content="Filed under" />
+<meta
+	name="twitter:data2"
+	content="Getting Started"
+/>
+<meta name="twitter:site" content="@deepgandhi_07" />
+<meta name="twitter:creator" content="@deepgandhi_07" />
+<meta property="og:image:width" content="1400" />
+<meta property="og:image:height" content="933" />
+
+<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "Website",
+		"publisher": {
+			"@type": "Organization",
+			"name": "Deep Gandhi",
+			"logo": "http://deep1401.github.io/assets/images/blog-icon.png"
+		},
+		"url": "http://deep1401.github.io/motivation-for-this-blog",
+		"image": {
+			"@type": "ImageObject",
+			"url": "http://deep1401.github.io/assets/images/spt.jpg",
+			"width": 2000,
+			"height": 666
+		},
+		"mainEntityOfPage": {
+			"@type": "WebPage",
+			"@id": "http://deep1401.github.io/motivation-for-this-blog"
+		},
+		"description": "Why is writing necessary a part of tech? Recently, a friend of mine started his own blog and me being curious asked him why? At that point he showed me some famous blogs by Anish Athalye and Rachel Thomas. Both of these, are people that we admire and follow a"
+	}
+</script>
+
+<!-- <script type="text/javascript" src="https://demo.ghost.io/public/ghost-sdk.min.js?v=724281a32e"></script>
     <script type="text/javascript">
     ghost.init({
     	clientId: "ghost-frontend",
@@ -145,566 +162,588 @@
     });
     </script> -->
 
-    <meta name="generator" content="Jekyll 3.6.2" />
-    <link
-      rel="alternate"
-      type="application/rss+xml"
-      title="Motivation for this Blog"
-      href="/feed.xml"
-    />
-  </head>
-  <body class="post-template">
-    <div class="site-wrapper">
-      <!-- All the main content gets inserted here, index.hbs, post.hbs, etc -->
-      <!-- default -->
+<meta name="generator" content="Jekyll 3.6.2" />
+<link
+	rel="alternate"
+	type="application/rss+xml"
+	title="Motivation for this Blog"
+	href="/feed.xml"
+/>
 
-      <!-- The tag above means: insert everything in this file
+	</head>
+	<body
+		class="post-template"
+	>
+		<div class="site-wrapper">
+			<!-- All the main content gets inserted here, index.hbs, post.hbs, etc -->
+			<!-- default -->
+
+<!-- The tag above means: insert everything in this file
 into the {body} of the default.hbs template -->
 
-      <header class="site-header outer">
-        <div class="inner">
-          <nav class="site-nav">
-            <div class="site-nav-left">
-              <a class="site-nav-logo" href="http://deep1401.github.io/"
-                ><img src="/assets/images/blog-icon.png" alt="Deep Gandhi"
-              /></a>
-              <ul class="nav" role="menu">
-                <li class="nav-home" role="menuitem"><a href="/">Blog</a></li>
-                <li class="nav-getting-started" role="menuitem">
-                  <a href="/research/">Research</a>
-                </li>
-                <li class="nav-getting-started" role="menuitem">
-                  <a href="/talks/">Talks</a>
-                </li>
-                <li class="nav-try-ghost" role="menuitem">
-                  <a href="/experience/">Experience</a>
-                </li>
-                <li class="nav-about" role="menuitem">
-                  <a href="/about/">About</a>
-                </li>
-                <li class="nav-try-ghost" role="menuitem">
-                  <a href="/cv/Deep_Gandhi.pdf" target="_blank">CV</a>
-                </li>
-                <!-- <li class="nav-try-ghost" role="menuitem">
+<header class="site-header outer">
+    <div class="inner">
+        <nav class="site-nav">
+	<div class="site-nav-left">
+		 
+		<a class="site-nav-logo" href="http://deep1401.github.io/"
+			><img src="/assets/images/blog-icon.png" alt="Deep Gandhi"
+		/></a>
+		   <ul class="nav" role="menu">
+	<li class="nav-home" role="menuitem"><a href="/">Blog</a></li>
+	<li class="nav-getting-started" role="menuitem">
+		<a href="/research/">Research</a>
+	</li>
+	<li class="nav-getting-started" role="menuitem">
+		<a href="/talks/">Talks</a>
+	</li>
+	<li class="nav-try-ghost" role="menuitem">
+		<a href="/experience/">Experience</a>
+	</li>
+	<li class="nav-about" role="menuitem">
+		<a href="/about/">About</a>
+	</li>
+	<li class="nav-try-ghost" role="menuitem">
+		<a href="/cv/Deep_Gandhi.pdf" target="_blank">CV</a>
+	</li>
+	<!-- <li class="nav-try-ghost" role="menuitem">
 		<a href="/resume/Deep_Gandhi.pdf" target="_blank">Resume</a>
 	</li> -->
-              </ul>
-            </div>
-            <div class="site-nav-right">
-              <div class="social-links">
-                <a
-                  class="social-link social-link-fb"
-                  href="https://github.com/deep1401"
-                  target="_blank"
-                  rel="noopener"
-                  ><img
-                    src="https://img.icons8.com/material-sharp/24/ffffff/github.png"
-                  />
-                </a>
+</ul>
+ 
+	</div>
+	<div class="site-nav-right">
+		<div class="social-links">
+			
+			<a
+				class="social-link social-link-fb"
+				href="https://github.com/deep1401"
+				target="_blank"
+				rel="noopener"
+				><img src="https://img.icons8.com/material-sharp/24/ffffff/github.png" />
+</a
+			>
+			 
+			<a
+				class="social-link social-link-fb"
+				href="https://www.linkedin.com/in/deep1401/"
+				target="_blank"
+				rel="noopener"
+				><img
+	src="https://img.icons8.com/fluent-systems-filled/24/ffffff/linkedin.png"
+/>
+</a
+			>
+			 
+			<a
+				class="social-link social-link-fb"
+				href="mailto:thisisdeepgandhi@gmail.com"
+				target="_blank"
+				rel="noopener"
+				><!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z"/></svg> -->
+<!-- <img src="../assets/mail.svg"/> -->
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 512 450" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+<g>
+	<g>
+		<polygon points="339.392,258.624 512,367.744 512,144.896 		"/>
+	</g>
+</g>
+<g>
+	<g>
+		<polygon points="0,144.896 0,367.744 172.608,258.624 		"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M480,80H32C16.032,80,3.36,91.904,0.96,107.232L256,275.264l255.04-168.032C508.64,91.904,495.968,80,480,80z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M310.08,277.952l-45.28,29.824c-2.688,1.76-5.728,2.624-8.8,2.624c-3.072,0-6.112-0.864-8.8-2.624l-45.28-29.856
+			L1.024,404.992C3.488,420.192,16.096,432,32,432h448c15.904,0,28.512-11.808,30.976-27.008L310.08,277.952z"/>
+	</g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>
+</a
+			>
+			 
+			<a
+				class="social-link social-link-tw"
+				href="https://twitter.com/deepgandhi_07"
+				target="_blank"
+				rel="noopener"
+				><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M30.063 7.313c-.813 1.125-1.75 2.125-2.875 2.938v.75c0 1.563-.188 3.125-.688 4.625a15.088 15.088 0 0 1-2.063 4.438c-.875 1.438-2 2.688-3.25 3.813a15.015 15.015 0 0 1-4.625 2.563c-1.813.688-3.75 1-5.75 1-3.25 0-6.188-.875-8.875-2.625.438.063.875.125 1.375.125 2.688 0 5.063-.875 7.188-2.5-1.25 0-2.375-.375-3.375-1.125s-1.688-1.688-2.063-2.875c.438.063.813.125 1.125.125.5 0 1-.063 1.5-.25-1.313-.25-2.438-.938-3.313-1.938a5.673 5.673 0 0 1-1.313-3.688v-.063c.813.438 1.688.688 2.625.688a5.228 5.228 0 0 1-1.875-2c-.5-.875-.688-1.813-.688-2.75 0-1.063.25-2.063.75-2.938 1.438 1.75 3.188 3.188 5.25 4.25s4.313 1.688 6.688 1.813a5.579 5.579 0 0 1 1.5-5.438c1.125-1.125 2.5-1.688 4.125-1.688s3.063.625 4.188 1.813a11.48 11.48 0 0 0 3.688-1.375c-.438 1.375-1.313 2.438-2.563 3.188 1.125-.125 2.188-.438 3.313-.875z"/></svg>
+</a
+			>
+			
+		</div>
+		
+	</div>
+</nav>
 
-                <a
-                  class="social-link social-link-fb"
-                  href="https://www.linkedin.com/in/deep1401/"
-                  target="_blank"
-                  rel="noopener"
-                  ><img
-                    src="https://img.icons8.com/fluent-systems-filled/24/ffffff/linkedin.png"
-                  />
-                </a>
+    </div>
+</header>
 
-                <a
-                  class="social-link social-link-fb"
-                  href="mailto:thisisdeepgandhi@gmail.com"
-                  target="_blank"
-                  rel="noopener"
-                  ><!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z"/></svg> -->
-                  <!-- <img src="../assets/mail.svg"/> -->
-                  <?xml version="1.0" encoding="iso-8859-1"?>
-                  <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-                  <svg
-                    version="1.1"
-                    id="Capa_1"
-                    xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                    x="0px"
-                    y="0px"
-                    viewBox="0 0 512 450"
-                    style="enable-background: new 0 0 512 512"
-                    xml:space="preserve"
-                  >
-                    <g>
-                      <g>
-                        <polygon
-                          points="339.392,258.624 512,367.744 512,144.896 		"
-                        />
-                      </g>
-                    </g>
-                    <g>
-                      <g>
-                        <polygon
-                          points="0,144.896 0,367.744 172.608,258.624 		"
-                        />
-                      </g>
-                    </g>
-                    <g>
-                      <g>
-                        <path
-                          d="M480,80H32C16.032,80,3.36,91.904,0.96,107.232L256,275.264l255.04-168.032C508.64,91.904,495.968,80,480,80z"
-                        />
-                      </g>
-                    </g>
-                    <g>
-                      <g>
-                        <path
-                          d="M310.08,277.952l-45.28,29.824c-2.688,1.76-5.728,2.624-8.8,2.624c-3.072,0-6.112-0.864-8.8-2.624l-45.28-29.856
-			L1.024,404.992C3.488,420.192,16.096,432,32,432h448c15.904,0,28.512-11.808,30.976-27.008L310.08,277.952z"
-                        />
-                      </g>
-                    </g>
-                    <g></g>
-                    <g></g>
-                    <g></g>
-                    <g></g>
-                    <g></g>
-                    <g></g>
-                    <g></g>
-                    <g></g>
-                    <g></g>
-                    <g></g>
-                    <g></g>
-                    <g></g>
-                    <g></g>
-                    <g></g>
-                    <g></g>
-                  </svg>
-                </a>
+<!-- Everything inside the #post tags pulls data from the post -->
+<!-- #post -->
 
-                <a
-                  class="social-link social-link-tw"
-                  href="https://twitter.com/deepgandhi_07"
-                  target="_blank"
-                  rel="noopener"
-                  ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-                    <path
-                      d="M30.063 7.313c-.813 1.125-1.75 2.125-2.875 2.938v.75c0 1.563-.188 3.125-.688 4.625a15.088 15.088 0 0 1-2.063 4.438c-.875 1.438-2 2.688-3.25 3.813a15.015 15.015 0 0 1-4.625 2.563c-1.813.688-3.75 1-5.75 1-3.25 0-6.188-.875-8.875-2.625.438.063.875.125 1.375.125 2.688 0 5.063-.875 7.188-2.5-1.25 0-2.375-.375-3.375-1.125s-1.688-1.688-2.063-2.875c.438.063.813.125 1.125.125.5 0 1-.063 1.5-.25-1.313-.25-2.438-.938-3.313-1.938a5.673 5.673 0 0 1-1.313-3.688v-.063c.813.438 1.688.688 2.625.688a5.228 5.228 0 0 1-1.875-2c-.5-.875-.688-1.813-.688-2.75 0-1.063.25-2.063.75-2.938 1.438 1.75 3.188 3.188 5.25 4.25s4.313 1.688 6.688 1.813a5.579 5.579 0 0 1 1.5-5.438c1.125-1.125 2.5-1.688 4.125-1.688s3.063.625 4.188 1.813a11.48 11.48 0 0 0 3.688-1.375c-.438 1.375-1.313 2.438-2.563 3.188 1.125-.125 2.188-.438 3.313-.875z"
-                    />
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </nav>
-        </div>
-      </header>
+<main id="site-main" class="site-main outer" role="main">
+    <div class="inner">
 
-      <!-- Everything inside the #post tags pulls data from the post -->
-      <!-- #post -->
+        <article class="post-full  tag-getting-started post ">
 
-      <main id="site-main" class="site-main outer" role="main">
-        <div class="inner">
-          <article class="post-full tag-getting-started post">
             <header class="post-full-header">
-              <section class="post-full-meta">
-                <time class="post-full-meta-date" datetime=" 5 July 2020">
-                  5 July 2020</time
-                >
-
-                <span class="date-divider">/</span>
-
-                <a href="/tag/getting-started/">GETTING STARTED</a>
-              </section>
-              <h1 class="post-full-title">Motivation for this Blog</h1>
+                <section class="post-full-meta">
+                    <time class="post-full-meta-date" datetime=" 5 July 2020"> 5 July 2020</time>
+                    
+                        <span class="date-divider">/</span>
+                        
+                            
+                               <a href='/tag/getting-started/'>GETTING STARTED</a>
+                            
+                        
+                    
+                </section>
+                <h1 class="post-full-title">Motivation for this Blog</h1>
             </header>
 
-            <figure
-              class="post-full-image"
-              style="background-image: url(/assets/images/spt.jpg)"
-            ></figure>
+            
+            <figure class="post-full-image" style="background-image: url(/assets/images/spt.jpg)">
+            </figure>
+            
 
             <section class="post-full-content">
-              <div class="kg-card-markdown">
-                <h2 id="why-is-writing-necessary-a-part-of-tech">
-                  Why is writing necessary a part of tech?
-                </h2>
+                <div class="kg-card-markdown">
+                    <h2 id="why-is-writing-necessary-a-part-of-tech">Why is writing necessary a part of tech?</h2>
 
-                <p>
-                  Recently, a friend of mine started his own
-                  <a href="https://jashmehta3300.github.io">blog</a> and me
-                  being curious asked him why? At that point he showed me some
-                  famous blogs by
-                  <a href="https://www.anishathalye.com">Anish Athalye</a> and
-                  <a href="https://www.fast.ai/topics/">Rachel Thomas</a>. Both
-                  of these, are people that we admire and follow a lot and then
-                  he explained to me the importance of blogging by mentioning a
-                  quote from Rachel Thomas
-                </p>
+<p>Recently, a friend of mine started his own <a href="https://jashmehta3300.github.io">blog</a> and me being curious asked him why?
+At that point he showed me some famous blogs by <a href="https://www.anishathalye.com">Anish Athalye</a> and <a href="https://www.fast.ai/topics/">Rachel Thomas</a>.
+Both of these, are people that we admire and follow a lot and then he explained to me the importance of blogging by mentioning a quote from Rachel Thomas</p>
 
-                <blockquote>
-                  <p>
-                    You are best positioned to help people one step behind you.
-                    The material is still fresh in your mind. Many experts have
-                    forgotten what it was like to be a beginner (or an
-                    intermediate) and have forgotten why the topic is hard to
-                    understand when you first hear it. The context of your
-                    particular background, your particular style, and your
-                    knowledge level will give a different twist to what you’re
-                    writing about.
-                  </p>
-                </blockquote>
+<blockquote>
+  <p>You are best positioned to help people one step behind you. The material is still fresh in your mind. Many experts have forgotten what it was like to be a beginner (or an intermediate) and have forgotten why the topic is hard to understand when you first hear it. The context of your particular background, your particular style, and your knowledge level will give a different twist to what you’re writing about.</p>
+</blockquote>
 
-                <h2 id="an-introduction-to-me-and-my-journey-till-now">
-                  An introduction to me and my journey till now!
-                </h2>
+<h2 id="an-introduction-to-me-and-my-journey-till-now">An introduction to me and my journey till now!</h2>
 
-                <p>
-                  So since you are here, you might know that my name is Deep
-                  Gandhi. I am currently a Computer Engineering undergrad at
-                  D.J. Sanghvi College of Engineering. However for me,
-                  engineering has not been just a degree but more of a
-                  self-exploration period. Finding out what I love to do and
-                  then doing that as long as I can. Someone once rightly said:
-                </p>
+<p>So since you are here, you might know that my name is Deep Gandhi. I am currently a Computer Engineering undergrad at D.J.
+Sanghvi College of Engineering. However for me, engineering has not been just a degree but more of a self-exploration period.
+Finding out what I love to do and then doing that as long as I can.
+Someone once rightly said:</p>
 
-                <blockquote>
-                  <p>
-                    It is a truly lucky man who knows what he wants to do in
-                    this world, because that man will never work a day in his
-                    life.
-                  </p>
-                </blockquote>
+<blockquote>
+  <p>It is a truly lucky man who knows what he wants to do in this world, because that man will never work a day in his life.</p>
+</blockquote>
 
-                <p>
-                  I guess that’s what we’re all looking for in life, tech, etc.
-                </p>
+<p>I guess that’s what we’re all looking for in life, tech, etc.</p>
 
-                <p>Okay, enough philosophy now!</p>
+<p>Okay, enough philosophy now!</p>
 
-                <h2 id="lets-talk-tech">Let’s talk tech?</h2>
+<h2 id="lets-talk-tech">Let’s talk tech?</h2>
 
-                <p>
-                  So my interests primarily lie in the field of Data Science.
-                  That is one of the major reasons why I made up my mind to
-                  start this blog. I have a lot of juniors and peers as well who
-                  are interested in getting into this field but Data Science
-                  being a lucrative field, people often run scams in the name of
-                  courses and a lot of my contemporaries have fallen for these
-                  scams and wasted a lot of money. My belief is that if we’re
-                  trying to teach ourselves programming then we should find a
-                  way to learn everything for free. It’s an open source world
-                  after all :P But, my point here isn’t to be a know-it-all but
-                  to write blogs so that my juniors know things that
-                  <strong>I wish I knew last year</strong>. You know so they
-                  don’t waste their time and make the same mistakes. After all,
-                  it’s all about helping the person right behind you!
-                </p>
+<p>So my interests primarily lie in the field of Data Science. That is one of the major reasons why I made up my mind to start this blog.
+I have a lot of juniors and peers as well who are interested in getting into this field but Data Science being a lucrative field,
+people often run scams in the name of courses and a lot of my contemporaries have fallen for these scams and wasted a lot of
+money.
+My belief is that if we’re trying to teach ourselves programming then we should find a way to learn everything for free. It’s an
+open source world after all :P
+But, my point here isn’t to be a know-it-all but to write blogs so that my juniors know things that <strong>I wish I knew last year</strong>.
+You know so they don’t waste their time and make the same mistakes. After all, it’s all about helping the person right behind you!</p>
 
-                <p>
-                  So I’m gonna end it here and I promise to keep it to the point
-                  in the upcoming ones :P (hope so) My blogs are going to be
-                  about a lot of topics and I’ll just list down some of them
-                  below:
-                </p>
+<p>So I’m gonna end it here and I promise to keep it to the point in the upcoming ones :P (hope so)
+My blogs are going to be about a lot of topics and I’ll just list down some of them below:</p>
 
-                <ul>
-                  <li>Projects that I build</li>
-                  <li>My journey through this amazing tech world</li>
-                  <li>My GRE prep</li>
-                </ul>
+<ul>
+  <li>Projects that I build</li>
+  <li>My journey through this amazing tech world</li>
+  <li>My GRE prep</li>
+</ul>
 
-                <p>and many more to come….</p>
+<p>and many more to come….</p>
 
-                <p>That’s all for now!</p>
-              </div>
+<p>That’s all for now!</p>
+
+                </div>
             </section>
 
             <!-- Email subscribe form at the bottom of the page -->
+            
 
             <footer class="post-full-footer">
-              <!-- Everything inside the #author tags pulls data from the author -->
-              <!-- #author-->
-
-              <!-- /author  -->
+                <!-- Everything inside the #author tags pulls data from the author -->
+                <!-- #author-->
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                <!-- /author  -->
             </footer>
 
             <!-- If you use Disqus comments, just uncomment this block.
             The only thing you need to change is "test-apkdzgmqhj" - which
             should be replaced with your own Disqus site-id. -->
+            
+                <section class="post-full-comments">
+                    <div id="disqus_thread"></div>
+                    <script>
+                        var disqus_config = function () {
+                            this.page.url = 'http://deep1401.github.io/motivation-for-this-blog';
+                            this.page.identifier = '/motivation-for-this-blog';
+                            this.page.title = 'Motivation for this Blog';
+                        };
+                        (function() {
+                            var d = document, s = d.createElement('script');
+                            s.src = 'https://deep1401.disqus.com/embed.js';
+                            s.setAttribute('data-timestamp', +new Date());
+                            (d.head || d.body).appendChild(s);
+                        })();
+                    </script>
+                </section>
+            
 
-            <section class="post-full-comments">
-              <div id="disqus_thread"></div>
-              <script>
-                var disqus_config = function () {
-                  this.page.url =
-                    "http://deep1401.github.io/motivation-for-this-blog";
-                  this.page.identifier = "/motivation-for-this-blog";
-                  this.page.title = "Motivation for this Blog";
-                };
-                (function () {
-                  var d = document,
-                    s = d.createElement("script");
-                  s.src = "https://deep1401.disqus.com/embed.js";
-                  s.setAttribute("data-timestamp", +new Date());
-                  (d.head || d.body).appendChild(s);
-                })();
-              </script>
-            </section>
-          </article>
-        </div>
-      </main>
+        </article>
 
-      <!-- Links to Previous/Next posts -->
-      <aside class="read-next outer">
-        <div class="inner">
-          <div class="read-next-feed">
+    </div>
+</main>
+
+<!-- Links to Previous/Next posts -->
+<aside class="read-next outer">
+    <div class="inner">
+        <div class="read-next-feed">
+            
+                
+                
+                
+                
+            
+
             <!-- If there's a next post, display it using the same markup included from - partials/post-card.hbs -->
+            
+                
 
-            <article class="post-card post-template">
-              <a class="post-card-image-link" href="/data-ethics-1">
-                <div
-                  class="post-card-image"
-                  style="background-image: url(/assets/images/advanced.jpg)"
-                ></div>
-              </a>
+    <article class="post-card post-template">
+        
+            <a class="post-card-image-link" href="/data-ethics-1">
+                <div class="post-card-image" style="background-image: url(/assets/images/advanced.jpg)"></div>
+            </a>
+        
+        <div class="post-card-content">
+            <a class="post-card-content-link" href="/data-ethics-1">
+                <header class="post-card-header">
+                    
+                        
+                            
+                                <span class="post-card-tags">Data ethics</span>
+                            
+                        
+                    
 
-              <div class="post-card-content">
-                <a class="post-card-content-link" href="/data-ethics-1">
-                  <header class="post-card-header">
-                    <span class="post-card-tags">Data ethics</span>
+                    <h2 class="post-card-title">Is it really true or did you read it online?</h2>
+                </header>
+                <section class="post-card-excerpt">
+                    
+                        <p></p>
+                    
+                </section>
+            </a>
+            <footer class="post-card-meta">
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                <span class="reading-time">
+                    
+                    
+                      1 min read
+                    
+                </span>
+            </footer>
+        </div>
+    </article>
 
-                    <h2 class="post-card-title">
-                      Is it really true or did you read it online?
-                    </h2>
-                  </header>
-                  <section class="post-card-excerpt">
-                    <p></p>
-                  </section>
-                </a>
-                <footer class="post-card-meta">
-                  <span class="reading-time"> 1 min read </span>
-                </footer>
-              </div>
-            </article>
+            
 
             <!-- If there's a previous post, display it using the same markup included from - partials/post-card.hbs -->
-          </div>
+            
+
         </div>
-      </aside>
-
-      <!-- Floating header which appears on-scroll, included from includes/floating-header.hbs -->
-      <div class="floating-header">
-        <div class="floating-header-logo">
-          <a href="http://deep1401.github.io/">
-            <img src="/assets/images/favicon.png" alt="Deep Gandhi icon" />
-
-            <span>Deep Gandhi</span>
-          </a>
-        </div>
-        <span class="floating-header-divider">&mdash;</span>
-        <div class="floating-header-title">Motivation for this Blog</div>
-        <div class="floating-header-share">
-          <div class="floating-header-share-label">
-            Share this
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-              <path
-                d="M7.5 15.5V4a1.5 1.5 0 1 1 3 0v4.5h2a1 1 0 0 1 1 1h2a1 1 0 0 1 1 1H18a1.5 1.5 0 0 1 1.5 1.5v3.099c0 .929-.13 1.854-.385 2.748L17.5 23.5h-9c-1.5-2-5.417-8.673-5.417-8.673a1.2 1.2 0 0 1 1.76-1.605L7.5 15.5zm6-6v2m-3-3.5v3.5m6-1v2"
-              />
-            </svg>
-          </div>
-          <a
-            class="floating-header-share-tw"
-            href="https://twitter.com/share?text=Motivation+for+this+Blog&amp;url=https://deep1401.github.iomotivation-for-this-blog"
-            onclick="window.open(this.href,'share-twitter', newwindow);return false;"
-          >
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-              <path
-                d="M30.063 7.313c-.813 1.125-1.75 2.125-2.875 2.938v.75c0 1.563-.188 3.125-.688 4.625a15.088 15.088 0 0 1-2.063 4.438c-.875 1.438-2 2.688-3.25 3.813a15.015 15.015 0 0 1-4.625 2.563c-1.813.688-3.75 1-5.75 1-3.25 0-6.188-.875-8.875-2.625.438.063.875.125 1.375.125 2.688 0 5.063-.875 7.188-2.5-1.25 0-2.375-.375-3.375-1.125s-1.688-1.688-2.063-2.875c.438.063.813.125 1.125.125.5 0 1-.063 1.5-.25-1.313-.25-2.438-.938-3.313-1.938a5.673 5.673 0 0 1-1.313-3.688v-.063c.813.438 1.688.688 2.625.688a5.228 5.228 0 0 1-1.875-2c-.5-.875-.688-1.813-.688-2.75 0-1.063.25-2.063.75-2.938 1.438 1.75 3.188 3.188 5.25 4.25s4.313 1.688 6.688 1.813a5.579 5.579 0 0 1 1.5-5.438c1.125-1.125 2.5-1.688 4.125-1.688s3.063.625 4.188 1.813a11.48 11.48 0 0 0 3.688-1.375c-.438 1.375-1.313 2.438-2.563 3.188 1.125-.125 2.188-.438 3.313-.875z"
-              />
-            </svg>
-          </a>
-          <a
-            class="floating-header-share-fb"
-            href="https://www.facebook.com/sharer/sharer.php?u=https://deep1401.github.iomotivation-for-this-blog"
-            onclick="window.open(this.href, 'share-facebook', newwindow);return false;"
-          >
-            <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z"/></svg> -->
-            <!-- <img src="../assets/mail.svg"/> -->
-            <?xml version="1.0" encoding="iso-8859-1"?>
-            <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-            <svg
-              version="1.1"
-              id="Capa_1"
-              xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-              x="0px"
-              y="0px"
-              viewBox="0 0 512 450"
-              style="enable-background: new 0 0 512 512"
-              xml:space="preserve"
-            >
-              <g>
-                <g>
-                  <polygon points="339.392,258.624 512,367.744 512,144.896 		" />
-                </g>
-              </g>
-              <g>
-                <g>
-                  <polygon points="0,144.896 0,367.744 172.608,258.624 		" />
-                </g>
-              </g>
-              <g>
-                <g>
-                  <path
-                    d="M480,80H32C16.032,80,3.36,91.904,0.96,107.232L256,275.264l255.04-168.032C508.64,91.904,495.968,80,480,80z"
-                  />
-                </g>
-              </g>
-              <g>
-                <g>
-                  <path
-                    d="M310.08,277.952l-45.28,29.824c-2.688,1.76-5.728,2.624-8.8,2.624c-3.072,0-6.112-0.864-8.8-2.624l-45.28-29.856
-			L1.024,404.992C3.488,420.192,16.096,432,32,432h448c15.904,0,28.512-11.808,30.976-27.008L310.08,277.952z"
-                  />
-                </g>
-              </g>
-              <g></g>
-              <g></g>
-              <g></g>
-              <g></g>
-              <g></g>
-              <g></g>
-              <g></g>
-              <g></g>
-              <g></g>
-              <g></g>
-              <g></g>
-              <g></g>
-              <g></g>
-              <g></g>
-              <g></g>
-            </svg>
-          </a>
-        </div>
-        <progress class="progress" value="0">
-          <div class="progress-container">
-            <span class="progress-bar"></span>
-          </div>
-        </progress>
-      </div>
-
-      <!-- /post -->
-
-      <!-- The #contentFor helper here will send everything inside it up to the matching #block helper found in default.hbs -->
-
-      <!-- Previous/next page links - displayed on every page -->
-
-      <!-- The footer at the very bottom of the screen -->
-      <footer class="site-footer outer">
-        <div class="site-footer-content inner">
-          <section class="copyright">
-            <a href="http://deep1401.github.io/">Deep Gandhi</a>
-            &copy; 2022
-          </section>
-          <section class="poweredby">
-            Proudly published with <a href="https://jekyllrb.com/">Jekyll</a> &
-            <a href="https://pages.github.com/" target="_blank" rel="noopener"
-              >GitHub Pages</a
-            >
-            using
-            <a
-              href="https://github.com/jekyller/jasper2"
-              target="_blank"
-              rel="noopener"
-              >Jasper2</a
-            >
-          </section>
-          <nav class="site-footer-nav">
-            <a href="/">Latest Posts</a>
-            <a
-              href="mailto:thisisdeepgandhi@gmail.com"
-              target="_blank"
-              rel="noopener"
-              >Email</a
-            >
-            <a
-              href="https://twitter.com/deepgandhi_07"
-              target="_blank"
-              rel="noopener"
-              >Twitter</a
-            >
-            <a href="https://github.com/deep1401" target="_blank" rel="noopener"
-              >Github</a
-            >
-            <a
-              href="https://www.linkedin.com/in/deep1401/"
-              target="_blank"
-              rel="noopener"
-              >LinkedIn</a
-            >
-          </nav>
-        </div>
-      </footer>
     </div>
+</aside>
 
-    <!-- The big email subscribe modal content -->
+<!-- Floating header which appears on-scroll, included from includes/floating-header.hbs -->
+<div class="floating-header">
+    <div class="floating-header-logo">
+        <a href="http://deep1401.github.io/">
+            
+                <img src="/assets/images/favicon.png" alt="Deep Gandhi icon" />
+            
+            <span>Deep Gandhi</span>
+        </a>
+    </div>
+    <span class="floating-header-divider">&mdash;</span>
+    <div class="floating-header-title">Motivation for this Blog</div>
+    <div class="floating-header-share">
+        <div class="floating-header-share-label">Share this <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <path d="M7.5 15.5V4a1.5 1.5 0 1 1 3 0v4.5h2a1 1 0 0 1 1 1h2a1 1 0 0 1 1 1H18a1.5 1.5 0 0 1 1.5 1.5v3.099c0 .929-.13 1.854-.385 2.748L17.5 23.5h-9c-1.5-2-5.417-8.673-5.417-8.673a1.2 1.2 0 0 1 1.76-1.605L7.5 15.5zm6-6v2m-3-3.5v3.5m6-1v2"/>
+</svg>
+</div>
+        <a class="floating-header-share-tw" href="https://twitter.com/share?text=Motivation+for+this+Blog&amp;url=https://deep1401.github.iomotivation-for-this-blog"
+            onclick="window.open(this.href,'share-twitter', newwindow);return false;">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M30.063 7.313c-.813 1.125-1.75 2.125-2.875 2.938v.75c0 1.563-.188 3.125-.688 4.625a15.088 15.088 0 0 1-2.063 4.438c-.875 1.438-2 2.688-3.25 3.813a15.015 15.015 0 0 1-4.625 2.563c-1.813.688-3.75 1-5.75 1-3.25 0-6.188-.875-8.875-2.625.438.063.875.125 1.375.125 2.688 0 5.063-.875 7.188-2.5-1.25 0-2.375-.375-3.375-1.125s-1.688-1.688-2.063-2.875c.438.063.813.125 1.125.125.5 0 1-.063 1.5-.25-1.313-.25-2.438-.938-3.313-1.938a5.673 5.673 0 0 1-1.313-3.688v-.063c.813.438 1.688.688 2.625.688a5.228 5.228 0 0 1-1.875-2c-.5-.875-.688-1.813-.688-2.75 0-1.063.25-2.063.75-2.938 1.438 1.75 3.188 3.188 5.25 4.25s4.313 1.688 6.688 1.813a5.579 5.579 0 0 1 1.5-5.438c1.125-1.125 2.5-1.688 4.125-1.688s3.063.625 4.188 1.813a11.48 11.48 0 0 0 3.688-1.375c-.438 1.375-1.313 2.438-2.563 3.188 1.125-.125 2.188-.438 3.313-.875z"/></svg>
 
-    <!-- highlight.js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.10.0/components/prism-abap.min.js"></script>
-    <script>
-      $(document).ready(function () {
-        $("pre code").each(function (i, block) {
-          hljs.highlightBlock(block);
-        });
-      });
-    </script>
+        </a>
+        <a class="floating-header-share-fb" href="https://www.facebook.com/sharer/sharer.php?u=https://deep1401.github.iomotivation-for-this-blog"
+            onclick="window.open(this.href, 'share-facebook', newwindow);return false;">
+            <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z"/></svg> -->
+<!-- <img src="../assets/mail.svg"/> -->
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 512 450" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+<g>
+	<g>
+		<polygon points="339.392,258.624 512,367.744 512,144.896 		"/>
+	</g>
+</g>
+<g>
+	<g>
+		<polygon points="0,144.896 0,367.744 172.608,258.624 		"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M480,80H32C16.032,80,3.36,91.904,0.96,107.232L256,275.264l255.04-168.032C508.64,91.904,495.968,80,480,80z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M310.08,277.952l-45.28,29.824c-2.688,1.76-5.728,2.624-8.8,2.624c-3.072,0-6.112-0.864-8.8-2.624l-45.28-29.856
+			L1.024,404.992C3.488,420.192,16.096,432,32,432h448c15.904,0,28.512-11.808,30.976-27.008L310.08,277.952z"/>
+	</g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>
 
-    <!-- jQuery + Fitvids, which makes all video embeds responsive -->
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.min.js"
-      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-      crossorigin="anonymous"
-    ></script>
-    <script type="text/javascript" src="/assets/js/jquery.fitvids.js"></script>
-    <script
-      type="text/javascript"
-      src="https://demo.ghost.io/assets/js/jquery.fitvids.js?v=724281a32e"
-    ></script>
+        </a>
+    </div>
+    <progress class="progress" value="0">
+        <div class="progress-container">
+            <span class="progress-bar"></span>
+        </div>
+    </progress>
+</div>
 
-    <!-- Paginator increased to "infinit" in _config.yml -->
-    <!-- if paginator.posts  -->
-    <!-- <script>
+
+<!-- /post -->
+
+<!-- The #contentFor helper here will send everything inside it up to the matching #block helper found in default.hbs -->
+
+
+			<!-- Previous/next page links - displayed on every page -->
+			
+
+			<!-- The footer at the very bottom of the screen -->
+			<footer class="site-footer outer">
+				<div class="site-footer-content inner">
+					<section class="copyright">
+						<a href="http://deep1401.github.io/">Deep Gandhi</a>
+						&copy; 2022
+					</section>
+					<section class="poweredby">
+						Proudly published with <a href="https://jekyllrb.com/">Jekyll</a> &
+						<a href="https://pages.github.com/" target="_blank" rel="noopener"
+							>GitHub Pages</a
+						>
+						using
+						<a
+							href="https://github.com/jekyller/jasper2"
+							target="_blank"
+							rel="noopener"
+							>Jasper2</a
+						>
+					</section>
+					<nav class="site-footer-nav">
+						<a href="/">Latest Posts</a>
+						<a
+							href="mailto:thisisdeepgandhi@gmail.com"
+							target="_blank"
+							rel="noopener"
+							>Email</a
+						> <a
+							href="https://twitter.com/deepgandhi_07"
+							target="_blank"
+							rel="noopener"
+							>Twitter</a
+						>
+						<a
+							href="https://github.com/deep1401"
+							target="_blank"
+							rel="noopener"
+							>Github</a
+						>
+						<a
+							href="https://www.linkedin.com/in/deep1401/"
+							target="_blank"
+							rel="noopener"
+							>LinkedIn</a
+						>
+					</nav>
+				</div>
+			</footer>
+		</div>
+
+		<!-- The big email subscribe modal content -->
+		
+
+		<!-- highlight.js -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.10.0/components/prism-abap.min.js"></script>
+		<script>
+			$(document).ready(function () {
+				$('pre code').each(function (i, block) {
+					hljs.highlightBlock(block);
+				});
+			});
+		</script>
+
+		<!-- jQuery + Fitvids, which makes all video embeds responsive -->
+		<script
+			src="https://code.jquery.com/jquery-3.2.1.min.js"
+			integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+			crossorigin="anonymous"
+		></script>
+		<script
+			type="text/javascript"
+			src="/assets/js/jquery.fitvids.js"
+		></script>
+		<script
+			type="text/javascript"
+			src="https://demo.ghost.io/assets/js/jquery.fitvids.js?v=724281a32e"
+		></script>
+
+		<!-- Paginator increased to "infinit" in _config.yml -->
+		<!-- if paginator.posts  -->
+		<!-- <script>
         var maxPages = parseInt('');
     </script>
     <script src="/assets/js/infinitescroll.js"></script> -->
-    <!-- /endif -->
+		<!-- /endif -->
 
-    <!-- Add Google Analytics  -->
-    <!-- Google Analytics Tracking code -->
-    <script>
-      (function (i, s, o, g, r, a, m) {
-        i["GoogleAnalyticsObject"] = r;
-        (i[r] =
-          i[r] ||
-          function () {
-            (i[r].q = i[r].q || []).push(arguments);
-          }),
-          (i[r].l = 1 * new Date());
-        (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
-        a.async = 1;
-        a.src = g;
-        m.parentNode.insertBefore(a, m);
-      })(
-        window,
-        document,
-        "script",
-        "//www.google-analytics.com/analytics.js",
-        "ga"
-      );
+		
 
-      ga("create", "G-EX5N2N6EB5", "auto");
-      ga("send", "pageview");
-    </script>
+		<!-- Add Google Analytics  -->
+		<!-- Google Analytics Tracking code -->
+<script>
+	(function (i, s, o, g, r, a, m) {
+		i['GoogleAnalyticsObject'] = r;
+		(i[r] =
+			i[r] ||
+			function () {
+				(i[r].q = i[r].q || []).push(arguments);
+			}),
+			(i[r].l = 1 * new Date());
+		(a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+		a.async = 1;
+		a.src = g;
+		m.parentNode.insertBefore(a, m);
+	})(
+		window,
+		document,
+		'script',
+		'//www.google-analytics.com/analytics.js',
+		'ga'
+	);
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-EX5N2N6EB5"></script>
+	ga('create', 'G-EX5N2N6EB5', 'auto');
+	ga('send', 'pageview');
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-EX5N2N6EB5"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -713,71 +752,74 @@ into the {body} of the default.hbs template -->
   gtag('config', 'G-EX5N2N6EB5');
 </script> -->
 
-    <!-- The #block helper will pull in data from the #contentFor other template files. In this case, there's some JavaScript which we only want to use in post.hbs, but it needs to be included down here, after jQuery has already loaded. -->
-    <script>
-      // NOTE: Scroll performance is poor in Safari
-      // - this appears to be due to the events firing much more slowly in Safari.
-      //   Dropping the scroll event and using only a raf loop results in smoother
-      //   scrolling but continuous processing even when not scrolling
-      $(document).ready(function () {
-        // Start fitVids
-        var $postContent = $(".post-full-content");
-        $postContent.fitVids();
-        // End fitVids
 
-        var progressBar = document.querySelector("progress");
-        var header = document.querySelector(".floating-header");
-        var title = document.querySelector(".post-full-title");
+		<!-- The #block helper will pull in data from the #contentFor other template files. In this case, there's some JavaScript which we only want to use in post.hbs, but it needs to be included down here, after jQuery has already loaded. -->
+		 <script>
 
-        var lastScrollY = window.scrollY;
-        var lastWindowHeight = window.innerHeight;
-        var lastDocumentHeight = $(document).height();
-        var ticking = false;
+// NOTE: Scroll performance is poor in Safari
+// - this appears to be due to the events firing much more slowly in Safari.
+//   Dropping the scroll event and using only a raf loop results in smoother
+//   scrolling but continuous processing even when not scrolling
+$(document).ready(function () {
+    // Start fitVids
+    var $postContent = $(".post-full-content");
+    $postContent.fitVids();
+    // End fitVids
 
-        function onScroll() {
-          lastScrollY = window.scrollY;
-          requestTick();
-        }
+    var progressBar = document.querySelector('progress');
+    var header = document.querySelector('.floating-header');
+    var title = document.querySelector('.post-full-title');
 
-        function onResize() {
-          lastWindowHeight = window.innerHeight;
-          lastDocumentHeight = $(document).height();
-          requestTick();
-        }
+    var lastScrollY = window.scrollY;
+    var lastWindowHeight = window.innerHeight;
+    var lastDocumentHeight = $(document).height();
+    var ticking = false;
 
-        function requestTick() {
-          if (!ticking) {
+    function onScroll() {
+        lastScrollY = window.scrollY;
+        requestTick();
+    }
+
+    function onResize() {
+        lastWindowHeight = window.innerHeight;
+        lastDocumentHeight = $(document).height();
+        requestTick();
+    }
+
+    function requestTick() {
+        if (!ticking) {
             requestAnimationFrame(update);
-          }
-          ticking = true;
+        }
+        ticking = true;
+    }
+
+    function update() {
+        var trigger = title.getBoundingClientRect().top + window.scrollY;
+        var triggerOffset = title.offsetHeight + 35;
+        var progressMax = lastDocumentHeight - lastWindowHeight;
+
+        // show/hide floating header
+        if (lastScrollY >= trigger + triggerOffset) {
+            header.classList.add('floating-active');
+        } else {
+            header.classList.remove('floating-active');
         }
 
-        function update() {
-          var trigger = title.getBoundingClientRect().top + window.scrollY;
-          var triggerOffset = title.offsetHeight + 35;
-          var progressMax = lastDocumentHeight - lastWindowHeight;
+        progressBar.setAttribute('max', progressMax);
+        progressBar.setAttribute('value', lastScrollY);
 
-          // show/hide floating header
-          if (lastScrollY >= trigger + triggerOffset) {
-            header.classList.add("floating-active");
-          } else {
-            header.classList.remove("floating-active");
-          }
+        ticking = false;
+    }
 
-          progressBar.setAttribute("max", progressMax);
-          progressBar.setAttribute("value", lastScrollY);
+    window.addEventListener('scroll', onScroll, {passive: true});
+    window.addEventListener('resize', onResize, false);
 
-          ticking = false;
-        }
+    update();
+});
+</script>
+ 
 
-        window.addEventListener("scroll", onScroll, { passive: true });
-        window.addEventListener("resize", onResize, false);
-
-        update();
-      });
-    </script>
-
-    <!-- Ghost outputs important scripts and data with this tag - it should always be the very last thing before the closing body tag -->
-    <!-- ghost_foot -->
-  </body>
+		<!-- Ghost outputs important scripts and data with this tag - it should always be the very last thing before the closing body tag -->
+		<!-- ghost_foot -->
+	</body>
 </html>

@@ -1,311 +1,352 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://deep1401.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="http://deep1401.github.io/" rel="alternate" type="text/html" /><updated>2022-05-02T17:25:21+05:30</updated><id>http://deep1401.github.io/</id><title type="html">Deep Gandhi</title><subtitle>Deep Gandhi</subtitle><entry><title type="html">Is it really fair or did you automate it?</title><link href="http://deep1401.github.io/data-ethics-2" rel="alternate" type="text/html" title="Is it really fair or did you automate it?" /><published>2021-05-26T22:30:00+05:30</published><updated>2021-05-26T22:30:00+05:30</updated><id>http://deep1401.github.io/data-ethics-2</id><content type="html" xml:base="http://deep1401.github.io/data-ethics-2">&gt; The following article is an overview of my understanding of the [Lesson 2: Bias &amp; Fairness](https://ethics.fast.ai/syllabus/#lesson-2-bias--fairness) taught by [Rachel Thomas](https://rachel.fast.ai). It also represents my notes for the course and is also an attempt at a blog post series to increase awareness about various concepts in fairness and ethics.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://deep1401.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="http://deep1401.github.io/" rel="alternate" type="text/html" /><updated>2022-05-08T13:16:52+05:30</updated><id>http://deep1401.github.io/</id><title type="html">Deep Gandhi</title><subtitle>Deep Gandhi</subtitle><entry><title type="html">Is it really fair or did you automate it?</title><link href="http://deep1401.github.io/data-ethics-2" rel="alternate" type="text/html" title="Is it really fair or did you automate it?" /><published>2021-05-26T22:30:00+05:30</published><updated>2021-05-26T22:30:00+05:30</updated><id>http://deep1401.github.io/data-ethics-2</id><content type="html" xml:base="http://deep1401.github.io/data-ethics-2">&lt;blockquote&gt;
+  &lt;p&gt;The following article is an overview of my understanding of the &lt;a href=&quot;https://ethics.fast.ai/syllabus/#lesson-2-bias--fairness&quot;&gt;Lesson 2: Bias &amp;amp; Fairness&lt;/a&gt; taught by &lt;a href=&quot;https://rachel.fast.ai&quot;&gt;Rachel Thomas&lt;/a&gt;. It also represents my notes for the course and is also an attempt at a blog post series to increase awareness about various concepts in fairness and ethics.&lt;/p&gt;
+&lt;/blockquote&gt;
 
-## Fairness and Bias
+&lt;h2 id=&quot;fairness-and-bias&quot;&gt;Fairness and Bias&lt;/h2&gt;
 
-Fairness has been talked about since a long time in the field of Computer Science or any other policy related fields where third party decisions influence the lives of other people. However, it has always been the case that fairness has always been described broadly as being impartial to people and in a real world scenario, such a vague definition wouldn't yield much results. Bias is a term which is often used in juxtaposition with fairness. So it would be wise to understand bias first and then move on to fairness.
+&lt;p&gt;Fairness has been talked about since a long time in the field of Computer Science or any other policy related fields where third party decisions influence the lives of other people. However, it has always been the case that fairness has always been described broadly as being impartial to people and in a real world scenario, such a vague definition wouldn’t yield much results. Bias is a term which is often used in juxtaposition with fairness. So it would be wise to understand bias first and then move on to fairness.&lt;/p&gt;
 
-## Applications &amp; Biases
+&lt;h2 id=&quot;applications--biases&quot;&gt;Applications &amp;amp; Biases&lt;/h2&gt;
 
-Starting off with some examples of bias which exist in products seems like a good idea and that's what we'll be doing!
+&lt;p&gt;Starting off with some examples of bias which exist in products seems like a good idea and that’s what we’ll be doing!&lt;/p&gt;
 
-#### Representation Bias in Facial Recognition
+&lt;h4 id=&quot;representation-bias-in-facial-recognition&quot;&gt;Representation Bias in Facial Recognition&lt;/h4&gt;
 
-Gender and ethnicity have been the most talked about subjects when we consider algorithmic bias. Right from the existing [gender bias](https://pop.inquirer.net/107105/google-translate-gender-bias) in Google Translate to the [infamous research](http://proceedings.mlr.press/v81/buolamwini18a/buolamwini18a.pdf) regarding facial recognition technology by [Joy Buolamwini](https://www.media.mit.edu/people/joyab/overview/) and [Timnit Gebru](https://ai.stanford.edu/~tgebru/), gender and ethnicity have been at the forefront whenever the community has tried to deal with bias. So, in this section we'll be discussing the facial recognition results and why it was a better approach than the other ones.
+&lt;p&gt;Gender and ethnicity have been the most talked about subjects when we consider algorithmic bias. Right from the existing &lt;a href=&quot;https://pop.inquirer.net/107105/google-translate-gender-bias&quot;&gt;gender bias&lt;/a&gt; in Google Translate to the &lt;a href=&quot;http://proceedings.mlr.press/v81/buolamwini18a/buolamwini18a.pdf&quot;&gt;infamous research&lt;/a&gt; regarding facial recognition technology by &lt;a href=&quot;https://www.media.mit.edu/people/joyab/overview/&quot;&gt;Joy Buolamwini&lt;/a&gt; and &lt;a href=&quot;https://ai.stanford.edu/~tgebru/&quot;&gt;Timnit Gebru&lt;/a&gt;, gender and ethnicity have been at the forefront whenever the community has tried to deal with bias. So, in this section we’ll be discussing the facial recognition results and why it was a better approach than the other ones.&lt;/p&gt;
 
 &lt;figure&gt;
-&lt;img  style=&quot;float:right&quot; src=&quot;/assets/images/gebru-facial.png&quot; alt=&quot;gebru-facial&quot;&gt;
+&lt;img style=&quot;float:right&quot; src=&quot;/assets/images/gebru-facial.png&quot; alt=&quot;gebru-facial&quot; /&gt;
 &lt;figcaption style=&quot;font-size: 12px;&quot;&gt;&lt;a href=&quot;http://gendershades.org/overview.html&quot;&gt;Source&lt;/a&gt;&lt;/figcaption&gt;
 &lt;/figure&gt;
-&lt;br&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
-The research conducted across various facial recognition technologies could be considered sort of bi-directional as it considered both gender as well as ethnicity and looked at the real accuracies of them. As it can be observed in the figure, there were glaring gaps in how this model actually behaved on various categories and it is conspicuous that darker females achieved the worst accuracy which would mean that the bias was quite higher than realized and there are a lot of reasons for this algorithmic bias which we'll be discussing further in detail.
+&lt;p&gt;The research conducted across various facial recognition technologies could be considered sort of bi-directional as it considered both gender as well as ethnicity and looked at the real accuracies of them. As it can be observed in the figure, there were glaring gaps in how this model actually behaved on various categories and it is conspicuous that darker females achieved the worst accuracy which would mean that the bias was quite higher than realized and there are a lot of reasons for this algorithmic bias which we’ll be discussing further in detail.&lt;/p&gt;
 
-_The question isn't just about removing bias but also identifying how the tech is used_
+&lt;p&gt;&lt;em&gt;The question isn’t just about removing bias but also identifying how the tech is used&lt;/em&gt;&lt;/p&gt;
 
-#### Bias in Recidivism software
+&lt;h4 id=&quot;bias-in-recidivism-software&quot;&gt;Bias in Recidivism software&lt;/h4&gt;
 
-Recidivism means calculating the probability of a convicted criminal to reoffend. Since this has been an important problem while dealing with detention sentences and also to lower the crime rates, a lot of places came up with using computer software in order to predict the risk of an individual to commit further crime and then sentence them accordingly. However in a report published by [ProPublica](https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing), a lot of biases started popping up. A seasoned white criminal being rated as low risk when a African-American child with just a misdemeanor in her record was labelled as high risk and put in jail was one of the many such &quot;bizarre&quot; incidences that the report sheds light on.
+&lt;p&gt;Recidivism means calculating the probability of a convicted criminal to reoffend. Since this has been an important problem while dealing with detention sentences and also to lower the crime rates, a lot of places came up with using computer software in order to predict the risk of an individual to commit further crime and then sentence them accordingly. However in a report published by &lt;a href=&quot;https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing&quot;&gt;ProPublica&lt;/a&gt;, a lot of biases started popping up. A seasoned white criminal being rated as low risk when a African-American child with just a misdemeanor in her record was labelled as high risk and put in jail was one of the many such “bizarre” incidences that the report sheds light on.&lt;/p&gt;
 
 &lt;figure&gt;
-&lt;img  style=&quot;float:right&quot; src=&quot;/assets/images/recidivism.png&quot; alt=&quot;recidivism&quot;&gt;
+&lt;img style=&quot;float:right&quot; src=&quot;/assets/images/recidivism.png&quot; alt=&quot;recidivism&quot; /&gt;
 &lt;figcaption style=&quot;font-size: 12px;&quot;&gt;&lt;a href=&quot;https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing&quot;&gt;Source: ProPublica analysis of data from Broward County, Fla.&lt;/a&gt;&lt;/figcaption&gt;
 &lt;/figure&gt;
-&lt;br&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
-As mentioned in the report, &quot;Overall Northpointe’s assessment tool correctly predicts recidivism 61 percent of the time. But blacks are almost twice as likely as whites to be labeled a higher risk but not actually re-offend. It makes the opposite mistake among whites: They are much more likely than blacks to be labeled lower risk but go on to commit other crimes.&quot;
+&lt;p&gt;As mentioned in the report, “Overall Northpointe’s assessment tool correctly predicts recidivism 61 percent of the time. But blacks are almost twice as likely as whites to be labeled a higher risk but not actually re-offend. It makes the opposite mistake among whites: They are much more likely than blacks to be labeled lower risk but go on to commit other crimes.”&lt;/p&gt;
 
-Upon further research it was also found that this &quot;complicated&quot; software was no better at predicting reoffense risk than a linear classifier with 3 variables. This is very serious as it could invalidate a lot of sentences issued using the same software. The most interesting thing in this case was that while evaluating every case, 'race' was never an input into the software. This would mean that even in the presence of sensitive data, machine learning excels at finding latent variables and deriving the said bias from those variables. We'll also discuss a thought experiment about this later!
+&lt;p&gt;Upon further research it was also found that this “complicated” software was no better at predicting reoffense risk than a linear classifier with 3 variables. This is very serious as it could invalidate a lot of sentences issued using the same software. The most interesting thing in this case was that while evaluating every case, ‘race’ was never an input into the software. This would mean that even in the presence of sensitive data, machine learning excels at finding latent variables and deriving the said bias from those variables. We’ll also discuss a thought experiment about this later!&lt;/p&gt;
 
-#### Predictive Policing
+&lt;h4 id=&quot;predictive-policing&quot;&gt;Predictive Policing&lt;/h4&gt;
 
-Predictive policing is a process in which police are allocated all over the city in such a way that the crime rate is minimized. In principle, this should be an optimisation problem. However, it resulted in being much more than that. As discussed by [(D. Ensign et al.)](https://arxiv.org/pdf/1706.09847.pdf), predictive policing software gives rise to a number of issues.
+&lt;p&gt;Predictive policing is a process in which police are allocated all over the city in such a way that the crime rate is minimized. In principle, this should be an optimisation problem. However, it resulted in being much more than that. As discussed by &lt;a href=&quot;https://arxiv.org/pdf/1706.09847.pdf&quot;&gt;(D. Ensign et al.)&lt;/a&gt;, predictive policing software gives rise to a number of issues.&lt;/p&gt;
 
-Since, it has to be trained on previous incidents data, there is a chance of inducing historical bias. This would mean that the model would also learn the exploitation of certain communities and assign more police officers in that area, just based on the historical record data. This causes the rise of feedback loops. This means that in case of predictive policing, the next round of data that you're going to receive for re-training is controlled by the model itself. This can be understood easily by an analogy to the [Stanford Prison Experiment](https://en.wikipedia.org/wiki/Stanford_prison_experiment). Just like the experiment, officers deployed in exploited areas might cause psychological distress to the people living there and thus, increase the chances of a crime occurring in that region. Thus, this doesn't help curb the crime rate at all and instead introduces new factors to influence the crime rate.
+&lt;p&gt;Since, it has to be trained on previous incidents data, there is a chance of inducing historical bias. This would mean that the model would also learn the exploitation of certain communities and assign more police officers in that area, just based on the historical record data. This causes the rise of feedback loops. This means that in case of predictive policing, the next round of data that you’re going to receive for re-training is controlled by the model itself. This can be understood easily by an analogy to the &lt;a href=&quot;https://en.wikipedia.org/wiki/Stanford_prison_experiment&quot;&gt;Stanford Prison Experiment&lt;/a&gt;. Just like the experiment, officers deployed in exploited areas might cause psychological distress to the people living there and thus, increase the chances of a crime occurring in that region. Thus, this doesn’t help curb the crime rate at all and instead introduces new factors to influence the crime rate.&lt;/p&gt;
 
-This predictive policing failure could be concisely summarized by a quote from [Suresh Venkatasubramanian ](https://www.linkedin.com/in/suresh-venkatasubramanian-233b751/):
+&lt;p&gt;This predictive policing failure could be concisely summarized by a quote from &lt;a href=&quot;https://www.linkedin.com/in/suresh-venkatasubramanian-233b751/&quot;&gt;Suresh Venkatasubramanian &lt;/a&gt;:&lt;/p&gt;
 
-&gt; &quot;Predictive Policing is aptly named: it is predicting future policing, not future crime&quot;
+&lt;blockquote&gt;
+  &lt;p&gt;“Predictive Policing is aptly named: it is predicting future policing, not future crime”&lt;/p&gt;
+&lt;/blockquote&gt;
 
-## Different sources of bias and their causes
+&lt;h2 id=&quot;different-sources-of-bias-and-their-causes&quot;&gt;Different sources of bias and their causes&lt;/h2&gt;
 
 &lt;figure&gt;
-&lt;img  style=&quot;float:right&quot; src=&quot;/assets/images/bias-sources.png&quot; alt=&quot;bias-sources&quot;&gt;
+&lt;img style=&quot;float:right&quot; src=&quot;/assets/images/bias-sources.png&quot; alt=&quot;bias-sources&quot; /&gt;
 &lt;figcaption style=&quot;font-size: 12px;&quot;&gt;&lt;a href=&quot;https://arxiv.org/pdf/1901.10002.pdf&quot;&gt;Source&lt;/a&gt;&lt;/figcaption&gt;
 &lt;/figure&gt;
-&lt;br&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
-As proposed by [(Harini Suresh and John Guttag, 2019)](https://arxiv.org/pdf/1901.10002.pdf), the whole KDD process (or a pipeline) of any Machine Learning process leads to various different kinds of biases at different stages which can be observed in the diagram and so now, we'll have a look at each of them separately and how they occur.
+&lt;p&gt;As proposed by &lt;a href=&quot;https://arxiv.org/pdf/1901.10002.pdf&quot;&gt;(Harini Suresh and John Guttag, 2019)&lt;/a&gt;, the whole KDD process (or a pipeline) of any Machine Learning process leads to various different kinds of biases at different stages which can be observed in the diagram and so now, we’ll have a look at each of them separately and how they occur.&lt;/p&gt;
 
-- **Histrorical Bias**: This occurs in the data generation process. It occurs when the data being collected represents a version of the world which is significantly different from the society in which it is to be deployed. This data assumes that right from the time of the data being generated, there have been no changes in the world, which might be true in an ideal scenario, however, that's not the case in the real word and this could cause a lot of problems.
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Histrorical Bias&lt;/strong&gt;: This occurs in the data generation process. It occurs when the data being collected represents a version of the world which is significantly different from the society in which it is to be deployed. This data assumes that right from the time of the data being generated, there have been no changes in the world, which might be true in an ideal scenario, however, that’s not the case in the real word and this could cause a lot of problems.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Representation Bias&lt;/strong&gt;: This is often created during the data selection part. As observed in the facial recognition software, the data under-represents and even fails to generalize over any sub-group of population which is going to use the software.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Measurement Bias&lt;/strong&gt;: This occurs during the feature selection phase. This bias generally happens when the selected features may leave out crucial data and thus, create a situation where these selected features then act as the latent variables to create bias as observed in the recidivism software.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Aggregation Bias&lt;/strong&gt;: This occurs when various models trained on separate populations are aggregated to form as a whole. This is probably done in order to solve the problem that ‘one model cannot handle such heterogenous population’. However, aggregation leads to distinct population being inappropriately combined.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Evaluation Bias&lt;/strong&gt;: This evidently occurs during the evaluation phase when the evaluation sets do not represent the entire population. This leads to no detection of any existing bias and the subgroup present heavily in the evaluation set is what the model then optimizes on and is biased towards that same model. This is also the reason why Kaggle has separate ‘public’ and ‘private’ leaderboards in order to check if the model is really good or is it just overfit on the eval data.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Deployment Bias&lt;/strong&gt;: This could be a completely human induced bias (even though every bias is indirectly a human induced bias). This occurs when the system is used in such a way that the results are misinterpreted and thus, cause more harm than they help the others.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
 
-- **Representation Bias**: This is often created during the data selection part. As observed in the facial recognition software, the data under-represents and even fails to generalize over any sub-group of population which is going to use the software.
+&lt;h2 id=&quot;case-studies-on-specific-biases&quot;&gt;Case Studies on Specific Biases&lt;/h2&gt;
 
-- **Measurement Bias**: This occurs during the feature selection phase. This bias generally happens when the selected features may leave out crucial data and thus, create a situation where these selected features then act as the latent variables to create bias as observed in the recidivism software.
+&lt;p&gt;Before diving into different case studies about bias, I’d like to highlight a question which was asked during the lecture. The person asked that while discussing biases, we often highlight physical constructs such as race and gender upon which these biases occur. However, are there any other kinds of biases which aren’t as apparent as these constructs?&lt;/p&gt;
 
-- **Aggregation Bias**: This occurs when various models trained on separate populations are aggregated to form as a whole. This is probably done in order to solve the problem that 'one model cannot handle such heterogenous population'. However, aggregation leads to distinct population being inappropriately combined.
+&lt;p&gt;The answer to this was very interesting and also unclear at the same time. Since, these softwares are built using models which are considered to be a ‘black-box’ to a certain point, no one can surely point out what bias is being settled into the model actually. However, there could be a case that the models learn social constructs such as language, country of origin,etc. and are partial towards these. Even though, these aren’t taken into consideration during deployment, but there could be a case where these factors act as latent factors and insert an undetectable bias. It is also interesting that all of these supposed “attributes” are socially constructed. This means that if you consider historical data, white people from a certain country wouldn’t have been considered white 200 years ago and thus, historic bias along with the origin country would act up and create bias in this case. This is why dealing with bias is considered to be a very complicated task. A possible solution to this problem is to talk to domain experts for which the solution is being built, as much as one can.&lt;/p&gt;
 
-- **Evaluation Bias**: This evidently occurs during the evaluation phase when the evaluation sets do not represent the entire population. This leads to no detection of any existing bias and the subgroup present heavily in the evaluation set is what the model then optimizes on and is biased towards that same model. This is also the reason why Kaggle has separate 'public' and 'private' leaderboards in order to check if the model is really good or is it just overfit on the eval data.
+&lt;p&gt;Along with this, there were suggestions to reconsider the term ‘tech industry’. This was well presented in the &lt;a href=&quot;https://medium.com/humane-tech/there-is-no-technology-industry-44774dfb3ed7&quot;&gt;blog post&lt;/a&gt; by &lt;a href=&quot;https://anildash.com&quot;&gt;Anil Dash&lt;/a&gt;. He suggests that the industry has become too big to consider it just as a community of software engineers and thus, help with proper policy making for the same.The need for the same was also observed in many cases such as the &lt;a href=&quot;https://www.reuters.com/article/us-amazon-com-jobs-automation-insight-idUSKCN1MK08G&quot;&gt;Amazon incident&lt;/a&gt;. Proper monitoring and policy making can prevent such fiascos.&lt;/p&gt;
 
-- **Deployment Bias**: This could be a completely human induced bias (even though every bias is indirectly a human induced bias). This occurs when the system is used in such a way that the results are misinterpreted and thus, cause more harm than they help the others.
+&lt;h4 id=&quot;1-machine-learning-and-moral-hazard&quot;&gt;1. Machine Learning and Moral Hazard&lt;/h4&gt;
 
-## Case Studies on Specific Biases
+&lt;p&gt;This case study is an overview of the &lt;a href=&quot;https://scholar.harvard.edu/files/sendhil/files/aer.p20171084.pdf&quot;&gt;research study&lt;/a&gt; conducted by &lt;a href=&quot;https://www.chicagobooth.edu/faculty/directory/m/sendhil-mullainathan&quot;&gt;Sendhil Mullainathan&lt;/a&gt; and &lt;a href=&quot;https://publichealth.berkeley.edu/people/ziad-obermeyer/&quot;&gt;Ziad Obermeyer&lt;/a&gt;. In this research study, the authors tried to find out the leading factors which could predict the possibility of stroke in a patient. To conduct this study, they used historical EHR (Electronic Health Record) data of patients.&lt;/p&gt;
 
-Before diving into different case studies about bias, I'd like to highlight a question which was asked during the lecture. The person asked that while discussing biases, we often highlight physical constructs such as race and gender upon which these biases occur. However, are there any other kinds of biases which aren't as apparent as these constructs?
+&lt;p&gt;At the end of the research, they found out and listed the various factors which were figured out in the process. The top 2 factors responsible to predict a stroke were ‘Prior Stroke’ and ‘Cardiovascular Disease’. These factors made a lot of sense intuitively as these are also the factors the doctors generally ask the patients for. However,upon listing further, there occurred some abnormalities in the factors.&lt;/p&gt;
 
-The answer to this was very interesting and also unclear at the same time. Since, these softwares are built using models which are considered to be a 'black-box' to a certain point, no one can surely point out what bias is being settled into the model actually. However, there could be a case that the models learn social constructs such as language, country of origin,etc. and are partial towards these. Even though, these aren't taken into consideration during deployment, but there could be a case where these factors act as latent factors and insert an undetectable bias. It is also interesting that all of these supposed &quot;attributes&quot; are socially constructed. This means that if you consider historical data, white people from a certain country wouldn't have been considered white 200 years ago and thus, historic bias along with the origin country would act up and create bias in this case. This is why dealing with bias is considered to be a very complicated task. A possible solution to this problem is to talk to domain experts for which the solution is being built, as much as one can.
+&lt;p&gt;The next 4 important factors after these 2 were ‘Accidental Injury’, ‘Benign Breast Lump’, ‘Colonoscopy’ and ‘Sinusitis’. It doesn’t take a medical expert to figure out that these factors aren’t correlated much to having a stroke. Then why did the model mention these factors among the most important? Upon conducting further analysis of the data, the authors found that in the actual experiment, they didn’t measure the probability of having a stroke. What they instead measured was ‘have symptoms, go to doctor, get tests, AND receive diagnosis of stroke’. This was a classic case of Measurement Bias. This also led to an important corollary that simply quantifying how well algorithms predict ‘y’ is not enough to gauge the quality of the said algorithms.&lt;/p&gt;
 
-Along with this, there were suggestions to reconsider the term 'tech industry'. This was well presented in the [blog post](https://medium.com/humane-tech/there-is-no-technology-industry-44774dfb3ed7) by [Anil Dash](https://anildash.com). He suggests that the industry has become too big to consider it just as a community of software engineers and thus, help with proper policy making for the same.The need for the same was also observed in many cases such as the [Amazon incident](https://www.reuters.com/article/us-amazon-com-jobs-automation-insight-idUSKCN1MK08G). Proper monitoring and policy making can prevent such fiascos.
+&lt;h4 id=&quot;2-aggregation-bias-on-healthcare&quot;&gt;2. Aggregation Bias on Healthcare&lt;/h4&gt;
 
-#### 1. Machine Learning and Moral Hazard
+&lt;p&gt;It has been proven by &lt;a href=&quot;https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3830901/&quot;&gt;(Spanakis and Golden,2013)&lt;/a&gt; that diabetes patients have different complications across various ethnicities. It has also been observed in &lt;a href=&quot;https://pubmed.ncbi.nlm.nih.gov/22238408/&quot;&gt;(Herman and Cohen, 2012)&lt;/a&gt; that the HbA1c (which are used to monitor diabetes) differ in complex ways across various ethnicities and gender. Thus, taking these cases in mind, it would probably seem that a universal model wouldn’t be a smart way to eliminate bias completely as aggregation bias would distort the results across ethnicities and thus, defeat the whole meaning of building the product altogether.&lt;/p&gt;
 
-This case study is an overview of the [research study](https://scholar.harvard.edu/files/sendhil/files/aer.p20171084.pdf) conducted by [Sendhil Mullainathan](https://www.chicagobooth.edu/faculty/directory/m/sendhil-mullainathan) and [Ziad Obermeyer](https://publichealth.berkeley.edu/people/ziad-obermeyer/). In this research study, the authors tried to find out the leading factors which could predict the possibility of stroke in a patient. To conduct this study, they used historical EHR (Electronic Health Record) data of patients.
+&lt;h2 id=&quot;alright-i-still-dont-understand-why-algorithmic-bias-matters&quot;&gt;Alright, I still don’t understand why Algorithmic Bias matters?&lt;/h2&gt;
 
-At the end of the research, they found out and listed the various factors which were figured out in the process. The top 2 factors responsible to predict a stroke were 'Prior Stroke' and 'Cardiovascular Disease'. These factors made a lot of sense intuitively as these are also the factors the doctors generally ask the patients for. However,upon listing further, there occurred some abnormalities in the factors.
+&lt;p&gt;&lt;strong&gt;It’s not just the data! Machine learning can amplify bias.&lt;/strong&gt; As proposed by &lt;a href=&quot;https://arxiv.org/pdf/1901.09451.pdf&quot;&gt;(De-Arteaga et al.,2019)&lt;/a&gt;,it was observed that the algorithms were clearly amplifying bias in an already biased dataset. For example, the proportion of females in an occupation dataset who were surgeons was 14.6%. This was already very bad. However, on trying to predict the occupations using the model, it was found out that the true positive rate was 11.6%. This clearly shows that the model detected the bias in the data and amplified it further. Thus, this is another example of why algorithmic bias should be an important factor to us.&lt;/p&gt;
 
-The next 4 important factors after these 2 were 'Accidental Injury', 'Benign Breast Lump', 'Colonoscopy' and 'Sinusitis'. It doesn't take a medical expert to figure out that these factors aren't correlated much to having a stroke. Then why did the model mention these factors among the most important? Upon conducting further analysis of the data, the authors found that in the actual experiment, they didn't measure the probability of having a stroke. What they instead measured was 'have symptoms, go to doctor, get tests, AND receive diagnosis of stroke'. This was a classic case of Measurement Bias. This also led to an important corollary that simply quantifying how well algorithms predict 'y' is not enough to gauge the quality of the said algorithms.
+&lt;p&gt;Other than this, algorithms are used very differently than human decision makers. It has generally been the case that people assume that the algorithms in place are &lt;strong&gt;objective or error-free&lt;/strong&gt;. Thus, even if an option is provided for human override, they don’t utilise it. Along with this, most of the times, algorithms replace people as cost-cutting measures. Thus, due to this &lt;strong&gt;no appeals process&lt;/strong&gt; is in place to challenge the decision of these algorithms as it would require extensive manpower. Thus, this results in worsening of the situation further. These algorithms are also used &lt;strong&gt;at scale&lt;/strong&gt;. However, they aren’t necessarily designed/trained with data which represents the real world population and thus, aren’t able to function properly at scale with the existing diversities. Along with this, the algorithmic systems are &lt;strong&gt;cheap&lt;/strong&gt; as they’re meant to replace the human workforce. Thus, utilising high-quality datasets and good fairness practices is out of question at such times.
+A great quote by &lt;a href=&quot;https://mathbabe.org&quot;&gt;Cathy O’Neil&lt;/a&gt; in her book &lt;a href=&quot;https://weaponsofmathdestructionbook.com&quot;&gt;Weapons of Math Destruction&lt;/a&gt; summarizes this as:&lt;/p&gt;
 
-#### 2. Aggregation Bias on Healthcare
+&lt;blockquote&gt;
+  &lt;p&gt;“The privileged are processed by people, the poor are processed by algorithms”&lt;/p&gt;
+&lt;/blockquote&gt;
 
-It has been proven by [(Spanakis and Golden,2013)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3830901/) that diabetes patients have different complications across various ethnicities. It has also been observed in [(Herman and Cohen, 2012)](https://pubmed.ncbi.nlm.nih.gov/22238408/) that the HbA1c (which are used to monitor diabetes) differ in complex ways across various ethnicities and gender. Thus, taking these cases in mind, it would probably seem that a universal model wouldn't be a smart way to eliminate bias completely as aggregation bias would distort the results across ethnicities and thus, defeat the whole meaning of building the product altogether.
+&lt;h2 id=&quot;humans-are-biased-why-does-algorithmic-bias-matter&quot;&gt;Humans are biased, why does algorithmic bias matter?&lt;/h2&gt;
 
-## Alright, I still don't understand why Algorithmic Bias matters?
+&lt;p&gt;As we observed earlier, algorithmic bias matters so much because it can create feedback loops (such as the one in predictive policing). Along with this, Machine Learning can amplify that existing bias. In the real world, even though it may seem similar but humans and algorithms are utilised completely differently. Since, technology grants additional power to human beings, an additional responsibility also comes with it.&lt;/p&gt;
 
-**It's not just the data! Machine learning can amplify bias.** As proposed by [(De-Arteaga et al.,2019)](https://arxiv.org/pdf/1901.09451.pdf),it was observed that the algorithms were clearly amplifying bias in an already biased dataset. For example, the proportion of females in an occupation dataset who were surgeons was 14.6%. This was already very bad. However, on trying to predict the occupations using the model, it was found out that the true positive rate was 11.6%. This clearly shows that the model detected the bias in the data and amplified it further. Thus, this is another example of why algorithmic bias should be an important factor to us.
+&lt;p&gt;On observing more intricately, we find that computers do exactly what we tell them to do. Even in Machine Learning, we define what success is. This success is generally achieved in the form of &lt;strong&gt;minimizing an error function&lt;/strong&gt;. But who gets to decide that error function? Isn’t it completely subjective?&lt;/p&gt;
 
-Other than this, algorithms are used very differently than human decision makers. It has generally been the case that people assume that the algorithms in place are **objective or error-free**. Thus, even if an option is provided for human override, they don't utilise it. Along with this, most of the times, algorithms replace people as cost-cutting measures. Thus, due to this **no appeals process** is in place to challenge the decision of these algorithms as it would require extensive manpower. Thus, this results in worsening of the situation further. These algorithms are also used **at scale**. However, they aren't necessarily designed/trained with data which represents the real world population and thus, aren't able to function properly at scale with the existing diversities. Along with this, the algorithmic systems are **cheap** as they're meant to replace the human workforce. Thus, utilising high-quality datasets and good fairness practices is out of question at such times.
-A great quote by [Cathy O'Neil](https://mathbabe.org) in her book [Weapons of Math Destruction](https://weaponsofmathdestructionbook.com) summarizes this as:
+&lt;p&gt;For example, when someone gets tested for Cancer, which would be considered worse? A false Positive or a false negative? The right answer in this case might be a false positive, since the person can get further tests done and find out that they don’t actually have cancer. However, the situation might be much worse if your model gives out improper false negatives. (This also depends, if you keep on predicting positive for every case you get, then the model should probably be thrown out.)&lt;/p&gt;
 
-&gt; &quot;The privileged are processed by people, the poor are processed by algorithms&quot;
+&lt;p&gt;Conversely, if you think about your email inbox spam classifier. Which would be considered worse? A false positive or a false Negative? a false Positive here would signify that an email which wasn’t spam got classified as spam and was sent to the spam folder. This could be a crucial email. On the other hand, a false negative just puts an unnecessary email in your primary folder and thus, this doesn’t cause as much harm as the other one. (Again, depends on the proportion.)&lt;/p&gt;
 
-## Humans are biased, why does algorithmic bias matter?
+&lt;p&gt;Considering both these examples and the complexity of all existing systems, how can it be expected to just get optimum results by minimizing an error function which is completely context depdendent? And how would one even go about automating that process too?&lt;/p&gt;
 
-As we observed earlier, algorithmic bias matters so much because it can create feedback loops (such as the one in predictive policing). Along with this, Machine Learning can amplify that existing bias. In the real world, even though it may seem similar but humans and algorithms are utilised completely differently. Since, technology grants additional power to human beings, an additional responsibility also comes with it.
+&lt;p&gt;If the above two examples seem really simple, let’s consider a thought experiment of a similar ‘Which is worse’ scenario on our criminal recidivism system. Which would be worse in that case?&lt;/p&gt;
 
-On observing more intricately, we find that computers do exactly what we tell them to do. Even in Machine Learning, we define what success is. This success is generally achieved in the form of **minimizing an error function**. But who gets to decide that error function? Isn't it completely subjective?
+&lt;p&gt;A false positive would denote that a person who is not likely to reoffend would be sent to jail and thus, their chance to rebuild and correct their mistakes gets taken away. A false Negative means potentially putting a criminal on the street.&lt;/p&gt;
 
-For example, when someone gets tested for Cancer, which would be considered worse? A false Positive or a false negative? The right answer in this case might be a false positive, since the person can get further tests done and find out that they don't actually have cancer. However, the situation might be much worse if your model gives out improper false negatives. (This also depends, if you keep on predicting positive for every case you get, then the model should probably be thrown out.)
+&lt;p&gt;How would one even decide what to optimize in such cases?&lt;/p&gt;
 
-Conversely, if you think about your email inbox spam classifier. Which would be considered worse? A false positive or a false Negative? a false Positive here would signify that an email which wasn't spam got classified as spam and was sent to the spam folder. This could be a crucial email. On the other hand, a false negative just puts an unnecessary email in your primary folder and thus, this doesn't cause as much harm as the other one. (Again, depends on the proportion.)
+&lt;h2 id=&quot;is-introducing-fairness-really-that-difficult&quot;&gt;Is introducing fairness really that difficult?&lt;/h2&gt;
 
-Considering both these examples and the complexity of all existing systems, how can it be expected to just get optimum results by minimizing an error function which is completely context depdendent? And how would one even go about automating that process too?
+&lt;p&gt;Before going into this, a very good point was discussed. A student questioned that if no safeguards are set to ensure fairness, wouldn’t this wreak havoc in the whole system? However, similarly, if we have a system of receiving 100% accurate data, wouldn’t this prevent the underprivileged from getting access to healthcare and other such necessities?&lt;/p&gt;
 
-If the above two examples seem really simple, let's consider a thought experiment of a similar 'Which is worse' scenario on our criminal recidivism system. Which would be worse in that case?
+&lt;h4 id=&quot;carcorp-conundrum&quot;&gt;CarCorp Conundrum&lt;/h4&gt;
 
-A false positive would denote that a person who is not likely to reoffend would be sent to jail and thus, their chance to rebuild and correct their mistakes gets taken away. A false Negative means potentially putting a criminal on the street.
+&lt;p&gt;This case study was mentioned by &lt;a href=&quot;https://arxiv.org/pdf/1901.02547.pdf&quot;&gt;(Passi and Barocas,2019)&lt;/a&gt; and is really good example of the whole data science process and how fairness would fit into that. In this case study, a 6 month ethnographic field study was conducted which included the involvement of a lot of data scientists, business analysts, product managers as well as executives. The case study revolves around a company called CarCorp which collects special financing data of people who need auto loans but have bad credit scores (300-600) or even limited credit scores. The company then sells this data to auto dealers, who use this data as a leads generation directory. Now, the company (CarCorp) wanted to improve the quality of leads that they were providing and thus, announced this ethnographic study.&lt;/p&gt;
 
-How would one even decide what to optimize in such cases?
+&lt;p&gt;Initially, they pondered upon the basic questions such as ‘What makes a lead high quality?’. The possible factors to this were the buyer’s salary, whether the car the buyer wanted was in stock at the dealer’s showroom and how did the buyer plan on financing the vehicle along with if the dealer supported that process of financing.&lt;/p&gt;
 
-## Is introducing fairness really that difficult?
+&lt;p&gt;However, the roadblock in building such quality of leads was that dealers didn’t want to share financing data. Along with this, the company found that the credit scores were segmented into various ranges such as 476-525, 526-575, etc. This resulted in the resources being diverted to predicting the credit score as the company estimated that this would be the ideal indicator of quality and thus, the problem was reduced to predicting if a particular client had a credit score above or below 500.In addition to this, the company also considered using high quality datasets with extremely accurate values. However, these datasets were very expensive and not really affordable for operations. Due to this, the whole project failed.&lt;/p&gt;
 
-Before going into this, a very good point was discussed. A student questioned that if no safeguards are set to ensure fairness, wouldn't this wreak havoc in the whole system? However, similarly, if we have a system of receiving 100% accurate data, wouldn't this prevent the underprivileged from getting access to healthcare and other such necessities?
+&lt;p&gt;As we observe here, the whole problem started with a good approach to the solution, but in the end got reduced to a basic classification problem and thus, the thought of considering fairness went out of the window (since credit scores aren’t really the epitome of unbiased indicators).&lt;/p&gt;
 
-#### CarCorp Conundrum
+&lt;p&gt;On discussing during the lecture, what could’ve done to consider bias and fairness in this scenario, a lot of good solutions were proposed. One of them answered that the ‘quality’ in itself was a subjective metric. The first important thing that they should’ve done would be to ensure that the definition of quality is in alignment among all the people involved. If that’s not the case then using machine learning to predict quality just becomes another example of what Pinboard creator &lt;a href=&quot;https://idlewords.com&quot;&gt;Maciej Cegłowski&lt;/a&gt; had proposed i.e. &lt;strong&gt;&lt;em&gt;Machine Learning is just money laundering for bias&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
 
-This case study was mentioned by [(Passi and Barocas,2019)](https://arxiv.org/pdf/1901.02547.pdf) and is really good example of the whole data science process and how fairness would fit into that. In this case study, a 6 month ethnographic field study was conducted which included the involvement of a lot of data scientists, business analysts, product managers as well as executives. The case study revolves around a company called CarCorp which collects special financing data of people who need auto loans but have bad credit scores (300-600) or even limited credit scores. The company then sells this data to auto dealers, who use this data as a leads generation directory. Now, the company (CarCorp) wanted to improve the quality of leads that they were providing and thus, announced this ethnographic study.
+&lt;p&gt;The other solution was that the business model should’ve been changed to how to sell more cars to more people. For doing this, instead of using opaque, biased systems like credit scores, the company could’ve looked for customers. The basic question to ask here was “Do you have $x in down payment and can you afford $y per month?”.&lt;/p&gt;
 
-Initially, they pondered upon the basic questions such as 'What makes a lead high quality?'. The possible factors to this were the buyer's salary, whether the car the buyer wanted was in stock at the dealer's showroom and how did the buyer plan on financing the vehicle along with if the dealer supported that process of financing.
+&lt;h2 id=&quot;what-are-the-solutions-to-these-problems&quot;&gt;What are the solutions to these problems?&lt;/h2&gt;
 
-However, the roadblock in building such quality of leads was that dealers didn't want to share financing data. Along with this, the company found that the credit scores were segmented into various ranges such as 476-525, 526-575, etc. This resulted in the resources being diverted to predicting the credit score as the company estimated that this would be the ideal indicator of quality and thus, the problem was reduced to predicting if a particular client had a credit score above or below 500.In addition to this, the company also considered using high quality datasets with extremely accurate values. However, these datasets were very expensive and not really affordable for operations. Due to this, the whole project failed.
+&lt;p&gt;In order to solve various biases and ensure fairness at all points in a pipeline process of the product, the following questions must be asked about the AI:&lt;/p&gt;
 
-As we observe here, the whole problem started with a good approach to the solution, but in the end got reduced to a basic classification problem and thus, the thought of considering fairness went out of the window (since credit scores aren't really the epitome of unbiased indicators).
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Should we even be doing this?&lt;/strong&gt; &lt;br /&gt;
+As an engineer, the first thought that comes to my mind whenever I see a problem is “What can we build to fix this?” However, sometimes the answer to this question would be NOTHING. This was the concept which was also proposed by &lt;a href=&quot;https://dl.acm.org/doi/10.1145/1978942.1979275&quot;&gt;(Baumer and Silberman, 2011)&lt;/a&gt;. Sometimes trying to solve some problems leads to other problems such as the one mentioned by &lt;a href=&quot;https://onlinelibrary.wiley.com/doi/abs/10.1002/widm.1278&quot;&gt;(Wang et al., 2019)&lt;/a&gt; where facial features could be used to detect ethnicity of the person. Some of these “solutions” could be a double ended sword i.e. it could be bad if they’re wrong and even worse if they’re right and one such example of those would be &lt;a href=&quot;https://qz.com/1078901/a-stanford-scientist-says-he-built-a-gaydar-using-the-lamest-ai-to-prove-a-point/&quot;&gt;this&lt;/a&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;What bias is in the data?&lt;/strong&gt; &lt;br /&gt;
+This is an important question to identify as well as solve. As discussed extensively before, identifying bias in the data is a crucial step to building a product.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Can the code and data be audited?&lt;/strong&gt; &lt;br /&gt;
+Building upon her undergrad specialization as an electronic engineer, &lt;a href=&quot;https://arxiv.org/pdf/1803.09010.pdf&quot;&gt;(Timnit Gebru et al.,2020)&lt;/a&gt; proposed a system to maintain kind of a datasheet for the data being used in a product. This datasheet would look like a part description sheet of an electric component where every aspect of the data being used is extensively stated. It would include questions such as &lt;em&gt;Who was involved in the data collection process (e.g., students, crowdworkers, contractors) and how were they compensated (e.g., how much were crowdworkers paid)?&lt;/em&gt; This kind of an open auditing mechanism would also help in identifying biases in the data. The prototype for the same datasheet can be found &lt;a href=&quot;https://arxiv.org/pdf/1803.09010.pdf&quot;&gt;here&lt;/a&gt;. Along with this, the auditing of code is important to prevent various other measurement and aggregation biases.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;What are the error rates for different sub-groups?&lt;/strong&gt; &lt;br /&gt;
+As observed in the facial recognition example and evaluation bias, we find out that this is quite important. Thus, &lt;strong&gt;&lt;em&gt;correct&lt;/em&gt;&lt;/strong&gt; error rates for every &lt;strong&gt;&lt;em&gt;sub-group&lt;/em&gt;&lt;/strong&gt; need to be kept on track.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;What is the accuracy of a simple rule-based alternative?&lt;/strong&gt; &lt;br /&gt;
+As observed during the criminal recidivism example, the complicated model had lesser accuracy than a simple linear classifier. So, it would also be wise to look at simple rule-based alternatives in order to keep it simple. It is as the quote says: &lt;strong&gt;&lt;em&gt;Don’t use BERT when regex can do the job!&lt;/em&gt;&lt;/strong&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;What processes are in place to handle appeals or mistakes?&lt;/strong&gt; &lt;br /&gt;
+An appeal system is necessary to deal with errors happening in the automated product. Appeals system could also work for a lot of systems such as the ones with completely automated ones which cannot handle clerical errors. At such times, human contact is often craved and even necessary to deal with these errors taking place and also finding out the gaps in the system.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;How diverse is the team that built it?&lt;/strong&gt; &lt;br /&gt;
+Team diversity is a significant aspect when deciding on product building as biases can only be eliminated if the people building the product understand the issues. These issues can be uncovered often in case of diverse teams and extensive testing of the product among these people.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
 
-On discussing during the lecture, what could've done to consider bias and fairness in this scenario, a lot of good solutions were proposed. One of them answered that the 'quality' in itself was a subjective metric. The first important thing that they should've done would be to ensure that the definition of quality is in alignment among all the people involved. If that's not the case then using machine learning to predict quality just becomes another example of what Pinboard creator [Maciej Cegłowski](https://idlewords.com) had proposed i.e. **_Machine Learning is just money laundering for bias_**
+&lt;p&gt;&lt;br /&gt;
+&lt;em&gt;This is the end of my article. This is the first time that I’ve written about bias and fairness and so if you feel I’ve offended you in some way or have made a mistake which needs to be corrected, please feel free to &lt;a href=&quot;mailto:thisisdeepgandhi@gmail.com&quot;&gt;&lt;strong&gt;reach out&lt;/strong&gt;&lt;/a&gt;. Thanks for reading, hope you liked it!&lt;/em&gt;&lt;/p&gt;</content><author><name>Deep Gandhi</name></author><category term="data ethics" /><summary type="html">The following article is an overview of my understanding of the Lesson 2: Bias &amp;amp; Fairness taught by Rachel Thomas. It also represents my notes for the course and is also an attempt at a blog post series to increase awareness about various concepts in fairness and ethics.</summary></entry><entry><title type="html">Is it really true or did you read it online?</title><link href="http://deep1401.github.io/data-ethics-1" rel="alternate" type="text/html" title="Is it really true or did you read it online?" /><published>2021-05-24T22:30:00+05:30</published><updated>2021-05-24T22:30:00+05:30</updated><id>http://deep1401.github.io/data-ethics-1</id><content type="html" xml:base="http://deep1401.github.io/data-ethics-1">&lt;blockquote&gt;
+  &lt;p&gt;The following article is an overview of my understanding of the &lt;a href=&quot;https://ethics.fast.ai/syllabus/#lesson-1-disinformation&quot;&gt;Lesson 1: Disinformation&lt;/a&gt; taught by &lt;a href=&quot;https://rachel.fast.ai&quot;&gt;Rachel Thomas&lt;/a&gt;. It also represents my notes for the course and also an attempt at a blog post series to increase awareness about various concepts in fairness and ethics.&lt;/p&gt;
+&lt;/blockquote&gt;
 
-The other solution was that the business model should've been changed to how to sell more cars to more people. For doing this, instead of using opaque, biased systems like credit scores, the company could've looked for customers. The basic question to ask here was &quot;Do you have $x in down payment and can you afford $y per month?&quot;.
+&lt;h2 id=&quot;what-is-disinformation&quot;&gt;What is Disinformation?&lt;/h2&gt;
 
-## What are the solutions to these problems?
-
-In order to solve various biases and ensure fairness at all points in a pipeline process of the product, the following questions must be asked about the AI:
-
-- **Should we even be doing this?** &lt;br/&gt;
-  As an engineer, the first thought that comes to my mind whenever I see a problem is &quot;What can we build to fix this?&quot; However, sometimes the answer to this question would be NOTHING. This was the concept which was also proposed by [(Baumer and Silberman, 2011)](https://dl.acm.org/doi/10.1145/1978942.1979275). Sometimes trying to solve some problems leads to other problems such as the one mentioned by [(Wang et al., 2019)](https://onlinelibrary.wiley.com/doi/abs/10.1002/widm.1278) where facial features could be used to detect ethnicity of the person. Some of these &quot;solutions&quot; could be a double ended sword i.e. it could be bad if they're wrong and even worse if they're right and one such example of those would be [this](https://qz.com/1078901/a-stanford-scientist-says-he-built-a-gaydar-using-the-lamest-ai-to-prove-a-point/).
-
-- **What bias is in the data?** &lt;br/&gt;
-  This is an important question to identify as well as solve. As discussed extensively before, identifying bias in the data is a crucial step to building a product.
-
-- **Can the code and data be audited?** &lt;br/&gt;
-  Building upon her undergrad specialization as an electronic engineer, [(Timnit Gebru et al.,2020)](https://arxiv.org/pdf/1803.09010.pdf) proposed a system to maintain kind of a datasheet for the data being used in a product. This datasheet would look like a part description sheet of an electric component where every aspect of the data being used is extensively stated. It would include questions such as _Who was involved in the data collection process (e.g., students, crowdworkers, contractors) and how were they compensated (e.g., how much were crowdworkers paid)?_ This kind of an open auditing mechanism would also help in identifying biases in the data. The prototype for the same datasheet can be found [here](https://arxiv.org/pdf/1803.09010.pdf). Along with this, the auditing of code is important to prevent various other measurement and aggregation biases.
-
-- **What are the error rates for different sub-groups?** &lt;br/&gt;
-  As observed in the facial recognition example and evaluation bias, we find out that this is quite important. Thus, **_correct_** error rates for every **_sub-group_** need to be kept on track.
-
-- **What is the accuracy of a simple rule-based alternative?** &lt;br/&gt;
-  As observed during the criminal recidivism example, the complicated model had lesser accuracy than a simple linear classifier. So, it would also be wise to look at simple rule-based alternatives in order to keep it simple. It is as the quote says: **_Don't use BERT when regex can do the job!_**.
-
-- **What processes are in place to handle appeals or mistakes?** &lt;br/&gt;
-  An appeal system is necessary to deal with errors happening in the automated product. Appeals system could also work for a lot of systems such as the ones with completely automated ones which cannot handle clerical errors. At such times, human contact is often craved and even necessary to deal with these errors taking place and also finding out the gaps in the system.
-
-- **How diverse is the team that built it?** &lt;br/&gt;
-  Team diversity is a significant aspect when deciding on product building as biases can only be eliminated if the people building the product understand the issues. These issues can be uncovered often in case of diverse teams and extensive testing of the product among these people.
-
-&lt;br/&gt;
-_This is the end of my article. This is the first time that I've written about bias and fairness and so if you feel I've offended you in some way or have made a mistake which needs to be corrected, please feel free to [**reach out**](mailto:thisisdeepgandhi@gmail.com). Thanks for reading, hope you liked it!_</content><author><name>Deep Gandhi</name></author><category term="data ethics" /><summary type="html">The following article is an overview of my understanding of the Lesson 2: Bias &amp;amp; Fairness taught by Rachel Thomas. It also represents my notes for the course and is also an attempt at a blog post series to increase awareness about various concepts in fairness and ethics.</summary></entry><entry><title type="html">Is it really true or did you read it online?</title><link href="http://deep1401.github.io/data-ethics-1" rel="alternate" type="text/html" title="Is it really true or did you read it online?" /><published>2021-05-24T22:30:00+05:30</published><updated>2021-05-24T22:30:00+05:30</updated><id>http://deep1401.github.io/data-ethics-1</id><content type="html" xml:base="http://deep1401.github.io/data-ethics-1">&gt; The following article is an overview of my understanding of the [Lesson 1: Disinformation](https://ethics.fast.ai/syllabus/#lesson-1-disinformation) taught by [Rachel Thomas](https://rachel.fast.ai). It also represents my notes for the course and also an attempt at a blog post series to increase awareness about various concepts in fairness and ethics.
-
-## What is Disinformation?
-
-Often, we come across various articles, memes or any other content while browsing social media that we consider as &quot;fake&quot; or &quot;misleading&quot;. These articles could've either purposely been posted on the platform to mislead users or it could've been a genuine mistake by the poster. This results in untrue information being forwarded to the audience either purposely or as an accident. Thus in such cases, there could be 3 major forms of information which can be observed from the following figure.
+&lt;p&gt;Often, we come across various articles, memes or any other content while browsing social media that we consider as “fake” or “misleading”. These articles could’ve either purposely been posted on the platform to mislead users or it could’ve been a genuine mistake by the poster. This results in untrue information being forwarded to the audience either purposely or as an accident. Thus in such cases, there could be 3 major forms of information which can be observed from the following figure.&lt;/p&gt;
 
 &lt;figure&gt;
-&lt;img  style=&quot;float:right&quot; src=&quot;/assets/images/misinfo-diag.png&quot; alt=&quot;misinfo-diag&quot; height=&quot;400&quot;&gt;
+&lt;img style=&quot;float:right&quot; src=&quot;/assets/images/misinfo-diag.png&quot; alt=&quot;misinfo-diag&quot; height=&quot;400&quot; /&gt;
 &lt;figcaption style=&quot;font-size: 12px;&quot;&gt;&lt;a href=&quot;https://www.brookings.edu/blog/up-front/2020/07/06/how-misinformation-spreads-on-twitter/&quot;&gt;Source&lt;/a&gt;&lt;/figcaption&gt;
 &lt;/figure&gt;
-&lt;br&gt;
-Thus, we can observe that the most dangerous kind of information to receive from such platforms or any source for that matter is disinformation as it is intended to harm the receiver deliberately.
+&lt;p&gt;&lt;br /&gt;
+Thus, we can observe that the most dangerous kind of information to receive from such platforms or any source for that matter is disinformation as it is intended to harm the receiver deliberately.&lt;/p&gt;
 
-However, the next point to observed is if this harm is intended by the algorithm processing the information or by the poster of the information. Intuitively, we have been wired to believe that algorithms are the ones who misinterpret everything and cause the spread of disinformation. This is not a general case but has been proven as the truth in many cases.
+&lt;p&gt;However, the next point to observed is if this harm is intended by the algorithm processing the information or by the poster of the information. Intuitively, we have been wired to believe that algorithms are the ones who misinterpret everything and cause the spread of disinformation. This is not a general case but has been proven as the truth in many cases.&lt;/p&gt;
 
-#### Case Studies on Misleading Information
+&lt;h4 id=&quot;case-studies-on-misleading-information&quot;&gt;Case Studies on Misleading Information&lt;/h4&gt;
 
-**1. Latanya Sweeney Ad Discrimination**
+&lt;p&gt;&lt;strong&gt;1. Latanya Sweeney Ad Discrimination&lt;/strong&gt;&lt;/p&gt;
 
-The first example is about the bias generated by digital ads while looking for various people on search engines. This was observed by [Dr.Latanya Sweeney](http://latanyasweeney.org) who is a professor at Harvard. While looking for her name on a search result, she found ambiguous ads such as the ones stating &quot;Latanya Sweeney, arrested&quot; and then she decided to investigate these search results. After conducting an experiment involving around 2000 variations of various names, she concluded that the search engine ads were biased towards a certain community of people and would show such results in order to increase the click rate. This was also properly summarised in the paper written [here](https://queue.acm.org/detail.cfm?id=2460278). An example of comparing such results can be observed below:
+&lt;p&gt;The first example is about the bias generated by digital ads while looking for various people on search engines. This was observed by &lt;a href=&quot;http://latanyasweeney.org&quot;&gt;Dr.Latanya Sweeney&lt;/a&gt; who is a professor at Harvard. While looking for her name on a search result, she found ambiguous ads such as the ones stating “Latanya Sweeney, arrested” and then she decided to investigate these search results. After conducting an experiment involving around 2000 variations of various names, she concluded that the search engine ads were biased towards a certain community of people and would show such results in order to increase the click rate. This was also properly summarised in the paper written &lt;a href=&quot;https://queue.acm.org/detail.cfm?id=2460278&quot;&gt;here&lt;/a&gt;. An example of comparing such results can be observed below:&lt;/p&gt;
 
 &lt;figure&gt;
-&lt;img style=&quot;float:left&quot; src=&quot;/assets/images/sweeney1.png&quot; alt=&quot;sweeney1&quot;&gt;
+&lt;img style=&quot;float:left&quot; src=&quot;/assets/images/sweeney1.png&quot; alt=&quot;sweeney1&quot; /&gt;
 &lt;figcaption style=&quot;font-size: 12px;&quot;&gt;&lt;a href=&quot;https://queue.acm.org/detail.cfm?id=2460278&quot;&gt;Source&lt;/a&gt;&lt;/figcaption&gt;
 &lt;/figure&gt;
-&lt;br&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
-Thus, a clear bias can be observed by the search results and the resulting ads. However, on asking the ad posters regarding the same, a claim was made that for every ad, both copies of the results as observed in the figure were submitted. On observing various ad clicks, the algorithm learnt that African-American names should be assigned one of the two submitted variations and similarly for all other names, a bias was introduced. Thus, in this case, the algorithm was at fault. This could be borderline classified as 'misinformation' on the human side.
+&lt;p&gt;Thus, a clear bias can be observed by the search results and the resulting ads. However, on asking the ad posters regarding the same, a claim was made that for every ad, both copies of the results as observed in the figure were submitted. On observing various ad clicks, the algorithm learnt that African-American names should be assigned one of the two submitted variations and similarly for all other names, a bias was introduced. Thus, in this case, the algorithm was at fault. This could be borderline classified as ‘misinformation’ on the human side.&lt;/p&gt;
 
-**2. Houston Protest Trollification**
+&lt;p&gt;&lt;strong&gt;2. Houston Protest Trollification&lt;/strong&gt;&lt;/p&gt;
 
-On 21&lt;sup&gt;st&lt;/sup&gt; May 2017, two non-violent groups of protestors gathered at the Islamic Da'wah Center in Houston. One of these groups was holding the signs stating that _&quot;White Lives Matter&quot;_. This group was led to believe that the new library in the religious center was publicly funded and thus, this group came to protest the opening for the same. The other group of protestors showed signs in support of the opening stating slogans like _&quot;Muslims are welcome here&quot;_. Even though, the protest wasn't violent, there was high tension among the people present.
+&lt;p&gt;On 21&lt;sup&gt;st&lt;/sup&gt; May 2017, two non-violent groups of protestors gathered at the Islamic Da’wah Center in Houston. One of these groups was holding the signs stating that &lt;em&gt;“White Lives Matter”&lt;/em&gt;. This group was led to believe that the new library in the religious center was publicly funded and thus, this group came to protest the opening for the same. The other group of protestors showed signs in support of the opening stating slogans like &lt;em&gt;“Muslims are welcome here”&lt;/em&gt;. Even though, the protest wasn’t violent, there was high tension among the people present.&lt;/p&gt;
 
-However the twist to this story was that the real instigators of this protest weren't even present in the country at that time. They were sitting at their homes in St.Petersburg, Russia. It was also found that the coordinators of these two Facebook events were two seemingly polarized Facebook groups — one called the &quot;Heart of Texas&quot; with 250,000 likes, and the other titled “United Muslims of America&quot; with 320,000 likes. But a federal investigation into Russia's influence on the 2016 election had linked both accounts to the same St. Petersburg troll hub.
+&lt;p&gt;However the twist to this story was that the real instigators of this protest weren’t even present in the country at that time. They were sitting at their homes in St.Petersburg, Russia. It was also found that the coordinators of these two Facebook events were two seemingly polarized Facebook groups — one called the “Heart of Texas” with 250,000 likes, and the other titled “United Muslims of America” with 320,000 likes. But a federal investigation into Russia’s influence on the 2016 election had linked both accounts to the same St. Petersburg troll hub.&lt;/p&gt;
 
-Thus, this is the case where people spread a form of **disinformation** in order to create chaos and harm 2 distinct groups of people. This is a major problem that has to be dealt with the increase in the usage of these social networks.
+&lt;p&gt;Thus, this is the case where people spread a form of &lt;strong&gt;disinformation&lt;/strong&gt; in order to create chaos and harm 2 distinct groups of people. This is a major problem that has to be dealt with the increase in the usage of these social networks.&lt;/p&gt;
 
-## More on Disinformation
+&lt;h2 id=&quot;more-on-disinformation&quot;&gt;More on Disinformation&lt;/h2&gt;
 
-After looking at various such examples, it can be said that disinformation isn't just about spreading fake news. It also includes memes, videos, social media posts. All of this is spread in the form of rumors, hoaxes, propaganda, misleading content, misleading context. It should be noted that it is not wise to use the terms &quot;fake news&quot; and &quot;disinformation&quot; interchangeably. As we observed with the case studies too, disinformation leads to misleading content majorly and not necessarily only fake content. Thus one should be careful while referring to disinformation.
+&lt;p&gt;After looking at various such examples, it can be said that disinformation isn’t just about spreading fake news. It also includes memes, videos, social media posts. All of this is spread in the form of rumors, hoaxes, propaganda, misleading content, misleading context. It should be noted that it is not wise to use the terms “fake news” and “disinformation” interchangeably. As we observed with the case studies too, disinformation leads to misleading content majorly and not necessarily only fake content. Thus one should be careful while referring to disinformation.&lt;/p&gt;
 
-Disinformation also doesn't just necessarily refer to one single content entity. It could be a whole campaign of planned manipulation of an entire community. There is a general framework to how this manipulation is carried out and how it reaches the masses. This framework proposed by [Dr. Claire Wardle](https://cyber.harvard.edu/people/dr-claire-wardle) was called &quot;Trumpet of Amplification&quot; and can be represented as:
+&lt;p&gt;Disinformation also doesn’t just necessarily refer to one single content entity. It could be a whole campaign of planned manipulation of an entire community. There is a general framework to how this manipulation is carried out and how it reaches the masses. This framework proposed by &lt;a href=&quot;https://cyber.harvard.edu/people/dr-claire-wardle&quot;&gt;Dr. Claire Wardle&lt;/a&gt; was called “Trumpet of Amplification” and can be represented as:&lt;/p&gt;
 
 &lt;figure&gt;
-&lt;img src=&quot;/assets/images/trumpet-claire.png&quot; alt=&quot;trumpet&quot;&gt;
+&lt;img src=&quot;/assets/images/trumpet-claire.png&quot; alt=&quot;trumpet&quot; /&gt;
 &lt;figcaption style=&quot;font-size: 12px;&quot;&gt;&lt;a href=&quot;https://medium.com/1st-draft/5-lessons-for-reporting-in-an-age-of-disinformation-9d98f0441722&quot;&gt;Source&lt;/a&gt;&lt;/figcaption&gt;
 &lt;/figure&gt;
-&lt;br&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
-This trumpet represents how any misleading information starts with anonymous websites such as 4chan or 8chan. After this the information is passed on and starts doing rounds on social media networks such as Whatsapp, Telegram or Facebook Messenger groups. After gaining some traction, it is posted and shared on various conspiracy groups on Reddit and even YouTube videos are made on the same. After this, the influential social media handles start covering these misleading information tracks and thus, eventually it results in being covered by social media. Due to such widespread of this misleading information already, the end stages of the trumpet aren't able to verify completely the authenticity of the information at times. Such frameworks often undermine democracy.
+&lt;p&gt;This trumpet represents how any misleading information starts with anonymous websites such as 4chan or 8chan. After this the information is passed on and starts doing rounds on social media networks such as Whatsapp, Telegram or Facebook Messenger groups. After gaining some traction, it is posted and shared on various conspiracy groups on Reddit and even YouTube videos are made on the same. After this, the influential social media handles start covering these misleading information tracks and thus, eventually it results in being covered by social media. Due to such widespread of this misleading information already, the end stages of the trumpet aren’t able to verify completely the authenticity of the information at times. Such frameworks often undermine democracy.&lt;/p&gt;
 
-#### The Issue of Verification
+&lt;h4 id=&quot;the-issue-of-verification&quot;&gt;The Issue of Verification&lt;/h4&gt;
 
-There is also a very good piece in a [blog post](https://www.wired.com/story/zeynep-tufekci-facts-fake-news-verification/) written by [Zeynep Tufekci](https://sils.unc.edu/people/faculty/profiles/Zeynep-Tufekci). This piece is regarding the verification of facts and the threat of surveillance arising out of it and was written as:
+&lt;p&gt;There is also a very good piece in a &lt;a href=&quot;https://www.wired.com/story/zeynep-tufekci-facts-fake-news-verification/&quot;&gt;blog post&lt;/a&gt; written by &lt;a href=&quot;https://sils.unc.edu/people/faculty/profiles/Zeynep-Tufekci&quot;&gt;Zeynep Tufekci&lt;/a&gt;. This piece is regarding the verification of facts and the threat of surveillance arising out of it and was written as:&lt;/p&gt;
 
-&gt; When people argue against verification efforts, they often raise the issue of authoritarian regimes surveilling dissidents. There’s good reason for that concern, but dissidents probably need verification more than anyone else. Indeed, when I talk to dissidents around the world, they rarely ask me how they can post information anonymously, but do often ask me how to authenticate the information they post—“yes, the picture was taken at this place and on this date by me.” When it’s impossible to distinguish facts from fraud, actual facts lose their power. Dissidents can end up putting their lives on the line to post a picture documenting wrongdoing only to be faced with an endless stream of deliberately misleading claims: that the picture was taken 10 years ago, that it’s from somewhere else, that it’s been doctored.
+&lt;blockquote&gt;
+  &lt;p&gt;When people argue against verification efforts, they often raise the issue of authoritarian regimes surveilling dissidents. There’s good reason for that concern, but dissidents probably need verification more than anyone else. Indeed, when I talk to dissidents around the world, they rarely ask me how they can post information anonymously, but do often ask me how to authenticate the information they post—“yes, the picture was taken at this place and on this date by me.” When it’s impossible to distinguish facts from fraud, actual facts lose their power. Dissidents can end up putting their lives on the line to post a picture documenting wrongdoing only to be faced with an endless stream of deliberately misleading claims: that the picture was taken 10 years ago, that it’s from somewhere else, that it’s been doctored.&lt;/p&gt;
+&lt;/blockquote&gt;
 
-## Hack, Leak, Authenticate!
+&lt;h2 id=&quot;hack-leak-authenticate&quot;&gt;Hack, Leak, Authenticate!&lt;/h2&gt;
 
-An information dump or leak is generally when a load of documents are leaked online. One such example of the information dump is the &quot;Hilary Clinton email leak&quot; which came into light during the 2016 U.S. Presidential Elections.
+&lt;p&gt;An information dump or leak is generally when a load of documents are leaked online. One such example of the information dump is the “Hilary Clinton email leak” which came into light during the 2016 U.S. Presidential Elections.&lt;/p&gt;
 
-Often in such cases, misuse of information could happen in two ways. One of the ways would be misrepresenting or mixing fake documents in a large dump of real documents. Due to the quite accurate nature of the real documents leaked, the audience would often fall into a state similar to the hot hand fallacy principle and believe all documents to be real. This is what happened in the case of the attack and leak of World Anti-Doping Agency data during the cyberattack by a Russian hacker collective called Fancy Bear. This hacker group was agitated as there were talks of barring Russian athletes from the Olympic games due to the doping incidents. Thus, they leaked the test documents of several athletes who had received therapeutic use exemptions, including gymnast Simone Biles, tennis players Venus and Serena Williams and basketball player Elena Delle Donne. Thus, such athletes were portrayed in the wrong light and Russia was portrayed as the victim. This was later proven to be false.
+&lt;p&gt;Often in such cases, misuse of information could happen in two ways. One of the ways would be misrepresenting or mixing fake documents in a large dump of real documents. Due to the quite accurate nature of the real documents leaked, the audience would often fall into a state similar to the hot hand fallacy principle and believe all documents to be real. This is what happened in the case of the attack and leak of World Anti-Doping Agency data during the cyberattack by a Russian hacker collective called Fancy Bear. This hacker group was agitated as there were talks of barring Russian athletes from the Olympic games due to the doping incidents. Thus, they leaked the test documents of several athletes who had received therapeutic use exemptions, including gymnast Simone Biles, tennis players Venus and Serena Williams and basketball player Elena Delle Donne. Thus, such athletes were portrayed in the wrong light and Russia was portrayed as the victim. This was later proven to be false.&lt;/p&gt;
 
-The other method of manipulation is Narrative Laundering. This method is when a story is made up out of the real documents. The story is often misleading or even fake and generally uses certain specific facts from the documents to prove its authenticity. An example of such incident would be if only a certain excerpt was considered from a medical paper and the treatment was provided using that method. Thus, even if the original paper would've said later on that this particular method in the excerpt is not recommended, the excerpt signifies something else and thus, misleads the audience who are fed this laundered story. Even generalisation of facts taken from similar medical papers, which have experimented only on a certain sub-group of population and not the whole world leads to improper practices and may cause fatal results.
+&lt;p&gt;The other method of manipulation is Narrative Laundering. This method is when a story is made up out of the real documents. The story is often misleading or even fake and generally uses certain specific facts from the documents to prove its authenticity. An example of such incident would be if only a certain excerpt was considered from a medical paper and the treatment was provided using that method. Thus, even if the original paper would’ve said later on that this particular method in the excerpt is not recommended, the excerpt signifies something else and thus, misleads the audience who are fed this laundered story. Even generalisation of facts taken from similar medical papers, which have experimented only on a certain sub-group of population and not the whole world leads to improper practices and may cause fatal results.&lt;/p&gt;
 
-## Virtual Content, Real Influence
+&lt;h2 id=&quot;virtual-content-real-influence&quot;&gt;Virtual Content, Real Influence&lt;/h2&gt;
 
-While looking at social media content, we often find out based on the earlier case studies that these systems promote and incentivise disinformation. Since we don't really live in an Orwellian world right now, it would be safe to say that this is a design flaw and isn't done purposefully.
+&lt;p&gt;While looking at social media content, we often find out based on the earlier case studies that these systems promote and incentivise disinformation. Since we don’t really live in an Orwellian world right now, it would be safe to say that this is a design flaw and isn’t done purposefully.&lt;/p&gt;
 
-- Social Media Networks are designed in such a way that instant feedback (quantified in the form of # of likes) is instantly rewarded.
-- Consuming more content leads to the algorithm assuming satisfaction in that particular category and thus, recommending content without further verification or a general feedback loop to the user.
-- Business models designed to increase user consumption also push these propagandas of disinformation
+&lt;ul&gt;
+  &lt;li&gt;Social Media Networks are designed in such a way that instant feedback (quantified in the form of # of likes) is instantly rewarded.&lt;/li&gt;
+  &lt;li&gt;Consuming more content leads to the algorithm assuming satisfaction in that particular category and thus, recommending content without further verification or a general feedback loop to the user.&lt;/li&gt;
+  &lt;li&gt;Business models designed to increase user consumption also push these propagandas of disinformation&lt;/li&gt;
+&lt;/ul&gt;
 
-As it was rightly said by Renee DiResta, Mozfest 2018 @ noUpside:
+&lt;p&gt;As it was rightly said by Renee DiResta, Mozfest 2018 @ noUpside:&lt;/p&gt;
 
-&gt; &quot;Our political conversations are happening on an infrastructure built for viral advertising.&quot;
+&lt;blockquote&gt;
+  &lt;p&gt;“Our political conversations are happening on an infrastructure built for viral advertising.”&lt;/p&gt;
+&lt;/blockquote&gt;
 
-Such content is also used to heavily influence humans consuming the said content. Humans often drop a viewpoint when faced with extreme criticism and thus, this leads to easier manipulation of the audience when there's already a prominent community supporting a misleading context point. This can also be observed in case of the KKK (Ku Klux Klan). When a particular neighbourhood participates in such racially discriminating practices, the people who are open-minded start receiving backlash and thus, give-in to such extremist thoughts and the use of social networks amplifies this factors as it is very easy to generate a fake &quot;fan following&quot; with the help of fake accounts and whatnot.
-This can be represented by
+&lt;p&gt;Such content is also used to heavily influence humans consuming the said content. Humans often drop a viewpoint when faced with extreme criticism and thus, this leads to easier manipulation of the audience when there’s already a prominent community supporting a misleading context point. This can also be observed in case of the KKK (Ku Klux Klan). When a particular neighbourhood participates in such racially discriminating practices, the people who are open-minded start receiving backlash and thus, give-in to such extremist thoughts and the use of social networks amplifies this factors as it is very easy to generate a fake “fan following” with the help of fake accounts and whatnot.
+This can be represented by&lt;/p&gt;
 
-&gt; &quot;Extreme viewpoints can be normalized when we think there are others around us who hold the same views&quot;
+&lt;blockquote&gt;
+  &lt;p&gt;“Extreme viewpoints can be normalized when we think there are others around us who hold the same views”&lt;/p&gt;
+&lt;/blockquote&gt;
 
-A very good question raised during the [lecture](https://ethics.fast.ai/syllabus/#lesson-1-disinformation) was that
+&lt;p&gt;A very good question raised during the &lt;a href=&quot;https://ethics.fast.ai/syllabus/#lesson-1-disinformation&quot;&gt;lecture&lt;/a&gt; was that&lt;/p&gt;
 
-_&quot;If Big Tech companies build effective tools to detect such fake accounts or extremist propaganda accounts and shut them down completely with the help of their superior engineering workforce, wouldn't it lower the daily active user count significantly and would that in turn make them hesitant in taking action?&quot;_
+&lt;p&gt;&lt;em&gt;“If Big Tech companies build effective tools to detect such fake accounts or extremist propaganda accounts and shut them down completely with the help of their superior engineering workforce, wouldn’t it lower the daily active user count significantly and would that in turn make them hesitant in taking action?”&lt;/em&gt;&lt;/p&gt;
 
-This is indeed a very good point to think about as not every organisation is 100% evil or even 100% ethical.
+&lt;p&gt;This is indeed a very good point to think about as not every organisation is 100% evil or even 100% ethical.&lt;/p&gt;
 
-## We know the problems now, how can we solve them?
+&lt;h2 id=&quot;we-know-the-problems-now-how-can-we-solve-them&quot;&gt;We know the problems now, how can we solve them?&lt;/h2&gt;
 
-#### The Pinterest Pandemonium
+&lt;h4 id=&quot;the-pinterest-pandemonium&quot;&gt;The Pinterest Pandemonium&lt;/h4&gt;
 
-Recently during the Covid19 pandemic panic, there was a huge fallout regarding the authenticity of vaccine and the people identified as anti-vaxxers were dubious about what was in the vaccines as they were created rather quickly according to them. This led to such groups relying on the mighty social media articles, the utmost &quot;reliable&quot; sources of information for these vaccines. In order to prevent the spread of disinformation, Pinterest implemented a feature in which any such vaccine query would be redirected automatically to verified sources such as CDC, WHO, etc.
+&lt;p&gt;Recently during the Covid19 pandemic panic, there was a huge fallout regarding the authenticity of vaccine and the people identified as anti-vaxxers were dubious about what was in the vaccines as they were created rather quickly according to them. This led to such groups relying on the mighty social media articles, the utmost “reliable” sources of information for these vaccines. In order to prevent the spread of disinformation, Pinterest implemented a feature in which any such vaccine query would be redirected automatically to verified sources such as CDC, WHO, etc.&lt;/p&gt;
 
-However, this didn't go as expected. The redirection led to the anti-vaxxers becoming more paranoid and believing that the vaccines did have something to hide which the &quot;higher-ups&quot; didn't want them to know. Also, this revealed that such authoritarian control was possible on such social media networks to the extent that content search was completely manipulated (even if it was done for good). Thus, giving authoritative power to social networks is definitely not the solution to ending disinformation and infact, this could be the factor which might increase dissent among the users.
+&lt;p&gt;However, this didn’t go as expected. The redirection led to the anti-vaxxers becoming more paranoid and believing that the vaccines did have something to hide which the “higher-ups” didn’t want them to know. Also, this revealed that such authoritarian control was possible on such social media networks to the extent that content search was completely manipulated (even if it was done for good). Thus, giving authoritative power to social networks is definitely not the solution to ending disinformation and infact, this could be the factor which might increase dissent among the users.&lt;/p&gt;
 
-#### The _Ctrl + F_ solution
+&lt;h4 id=&quot;the-ctrl--f-solution&quot;&gt;The &lt;em&gt;Ctrl + F&lt;/em&gt; solution&lt;/h4&gt;
 
-Instead of looking at the intricate faults of such humongous networks, the users could increase the digital literacy among themselves. The ultimate verification of any article or any digital content for that matter can be carried out by the people consuming them in a sheer duration of 30 seconds. The approach to do this was proposed by [Mike Caulfield](https://twitter.com/holden) in [Check, Please!](http://lessons.checkplease.cc). This approach is often considered to be better than researching various other websites and finding more misleading information on the same topic. This course could be used as an exhaustive method to verify doubtful content and thus, decreasing the disinformation being spread among the people.
+&lt;p&gt;Instead of looking at the intricate faults of such humongous networks, the users could increase the digital literacy among themselves. The ultimate verification of any article or any digital content for that matter can be carried out by the people consuming them in a sheer duration of 30 seconds. The approach to do this was proposed by &lt;a href=&quot;https://twitter.com/holden&quot;&gt;Mike Caulfield&lt;/a&gt; in &lt;a href=&quot;http://lessons.checkplease.cc&quot;&gt;Check, Please!&lt;/a&gt;. This approach is often considered to be better than researching various other websites and finding more misleading information on the same topic. This course could be used as an exhaustive method to verify doubtful content and thus, decreasing the disinformation being spread among the people.&lt;/p&gt;
 
-A point can be raised that since the approach is that simple, why is it not automated and built into the networks themselves. Although, it is true that the approach is simple but it is very context specific and it would be better if the users run the test themselves instead of scanning the content. Though scanning the content would be considered okay on public platforms such as Twitter but it isn't accepted on end-to-end encrypted platforms like Whatsapp as this would lead to a possible leak in the sensitive messages and thus, the app would lose its crucial usability feature.
+&lt;p&gt;A point can be raised that since the approach is that simple, why is it not automated and built into the networks themselves. Although, it is true that the approach is simple but it is very context specific and it would be better if the users run the test themselves instead of scanning the content. Though scanning the content would be considered okay on public platforms such as Twitter but it isn’t accepted on end-to-end encrypted platforms like Whatsapp as this would lead to a possible leak in the sensitive messages and thus, the app would lose its crucial usability feature.&lt;/p&gt;
 
-### Large Scale Issues
+&lt;h3 id=&quot;large-scale-issues&quot;&gt;Large Scale Issues&lt;/h3&gt;
 
-On a large scale level, even information-centric platforms like Wikipedia have appointed fact-checkers who verify the content posted. However, on observing the revision history on such platforms, one can observe that there is an arms race going on between the disinformationists and the fact-checkers. Thus, it is the responsibility of the tech companies as well as the consumers to fight this serious problem and prevent critical circumstances such as the [Brazil Election Issue](https://americasquarterly.org/article/misinformation-is-threatening-brazils-elections-too/).
+&lt;p&gt;On a large scale level, even information-centric platforms like Wikipedia have appointed fact-checkers who verify the content posted. However, on observing the revision history on such platforms, one can observe that there is an arms race going on between the disinformationists and the fact-checkers. Thus, it is the responsibility of the tech companies as well as the consumers to fight this serious problem and prevent critical circumstances such as the &lt;a href=&quot;https://americasquarterly.org/article/misinformation-is-threatening-brazils-elections-too/&quot;&gt;Brazil Election Issue&lt;/a&gt;.&lt;/p&gt;
 
-&lt;br/&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
-Thanks for reading! Hope you liked it :)</content><author><name>Deep Gandhi</name></author><category term="data ethics" /><summary type="html">The following article is an overview of my understanding of the Lesson 1: Disinformation taught by Rachel Thomas. It also represents my notes for the course and also an attempt at a blog post series to increase awareness about various concepts in fairness and ethics.</summary></entry><entry><title type="html">Motivation for this Blog</title><link href="http://deep1401.github.io/motivation-for-this-blog" rel="alternate" type="text/html" title="Motivation for this Blog" /><published>2020-07-05T15:30:00+05:30</published><updated>2020-07-05T15:30:00+05:30</updated><id>http://deep1401.github.io/motivation-for-this-blog</id><content type="html" xml:base="http://deep1401.github.io/motivation-for-this-blog">## Why is writing necessary a part of tech?
+&lt;p&gt;Thanks for reading! Hope you liked it :)&lt;/p&gt;</content><author><name>Deep Gandhi</name></author><category term="data ethics" /><summary type="html">The following article is an overview of my understanding of the Lesson 1: Disinformation taught by Rachel Thomas. It also represents my notes for the course and also an attempt at a blog post series to increase awareness about various concepts in fairness and ethics.</summary></entry><entry><title type="html">Motivation for this Blog</title><link href="http://deep1401.github.io/motivation-for-this-blog" rel="alternate" type="text/html" title="Motivation for this Blog" /><published>2020-07-05T15:30:00+05:30</published><updated>2020-07-05T15:30:00+05:30</updated><id>http://deep1401.github.io/motivation-for-this-blog</id><content type="html" xml:base="http://deep1401.github.io/motivation-for-this-blog">&lt;h2 id=&quot;why-is-writing-necessary-a-part-of-tech&quot;&gt;Why is writing necessary a part of tech?&lt;/h2&gt;
 
-Recently, a friend of mine started his own [blog](https://jashmehta3300.github.io) and me being curious asked him why?
-At that point he showed me some famous blogs by [Anish Athalye](https://www.anishathalye.com) and [Rachel Thomas](https://www.fast.ai/topics/).
-Both of these, are people that we admire and follow a lot and then he explained to me the importance of blogging by mentioning a quote from Rachel Thomas
+&lt;p&gt;Recently, a friend of mine started his own &lt;a href=&quot;https://jashmehta3300.github.io&quot;&gt;blog&lt;/a&gt; and me being curious asked him why?
+At that point he showed me some famous blogs by &lt;a href=&quot;https://www.anishathalye.com&quot;&gt;Anish Athalye&lt;/a&gt; and &lt;a href=&quot;https://www.fast.ai/topics/&quot;&gt;Rachel Thomas&lt;/a&gt;.
+Both of these, are people that we admire and follow a lot and then he explained to me the importance of blogging by mentioning a quote from Rachel Thomas&lt;/p&gt;
 
-&gt; You are best positioned to help people one step behind you. The material is still fresh in your mind. Many experts have forgotten what it was like to be a beginner (or an intermediate) and have forgotten why the topic is hard to understand when you first hear it. The context of your particular background, your particular style, and your knowledge level will give a different twist to what you’re writing about.
+&lt;blockquote&gt;
+  &lt;p&gt;You are best positioned to help people one step behind you. The material is still fresh in your mind. Many experts have forgotten what it was like to be a beginner (or an intermediate) and have forgotten why the topic is hard to understand when you first hear it. The context of your particular background, your particular style, and your knowledge level will give a different twist to what you’re writing about.&lt;/p&gt;
+&lt;/blockquote&gt;
 
-## An introduction to me and my journey till now!
+&lt;h2 id=&quot;an-introduction-to-me-and-my-journey-till-now&quot;&gt;An introduction to me and my journey till now!&lt;/h2&gt;
 
-So since you are here, you might know that my name is Deep Gandhi. I am currently a Computer Engineering undergrad at D.J.
+&lt;p&gt;So since you are here, you might know that my name is Deep Gandhi. I am currently a Computer Engineering undergrad at D.J.
 Sanghvi College of Engineering. However for me, engineering has not been just a degree but more of a self-exploration period.
 Finding out what I love to do and then doing that as long as I can.
-Someone once rightly said:
+Someone once rightly said:&lt;/p&gt;
 
-&gt; It is a truly lucky man who knows what he wants to do in this world, because that man will never work a day in his life.
+&lt;blockquote&gt;
+  &lt;p&gt;It is a truly lucky man who knows what he wants to do in this world, because that man will never work a day in his life.&lt;/p&gt;
+&lt;/blockquote&gt;
 
-I guess that's what we're all looking for in life, tech, etc.
+&lt;p&gt;I guess that’s what we’re all looking for in life, tech, etc.&lt;/p&gt;
 
-Okay, enough philosophy now!
+&lt;p&gt;Okay, enough philosophy now!&lt;/p&gt;
 
-## Let's talk tech?
+&lt;h2 id=&quot;lets-talk-tech&quot;&gt;Let’s talk tech?&lt;/h2&gt;
 
-So my interests primarily lie in the field of Data Science. That is one of the major reasons why I made up my mind to start this blog.
+&lt;p&gt;So my interests primarily lie in the field of Data Science. That is one of the major reasons why I made up my mind to start this blog.
 I have a lot of juniors and peers as well who are interested in getting into this field but Data Science being a lucrative field,
 people often run scams in the name of courses and a lot of my contemporaries have fallen for these scams and wasted a lot of
 money.
-My belief is that if we're trying to teach ourselves programming then we should find a way to learn everything for free. It's an
+My belief is that if we’re trying to teach ourselves programming then we should find a way to learn everything for free. It’s an
 open source world after all :P
-But, my point here isn't to be a know-it-all but to write blogs so that my juniors know things that **I wish I knew last year**.
-You know so they don't waste their time and make the same mistakes. After all, it's all about helping the person right behind you!
+But, my point here isn’t to be a know-it-all but to write blogs so that my juniors know things that &lt;strong&gt;I wish I knew last year&lt;/strong&gt;.
+You know so they don’t waste their time and make the same mistakes. After all, it’s all about helping the person right behind you!&lt;/p&gt;
 
-So I'm gonna end it here and I promise to keep it to the point in the upcoming ones :P (hope so)
-My blogs are going to be about a lot of topics and I'll just list down some of them below:
+&lt;p&gt;So I’m gonna end it here and I promise to keep it to the point in the upcoming ones :P (hope so)
+My blogs are going to be about a lot of topics and I’ll just list down some of them below:&lt;/p&gt;
 
-- Projects that I build
-- My journey through this amazing tech world
-- My GRE prep
+&lt;ul&gt;
+  &lt;li&gt;Projects that I build&lt;/li&gt;
+  &lt;li&gt;My journey through this amazing tech world&lt;/li&gt;
+  &lt;li&gt;My GRE prep&lt;/li&gt;
+&lt;/ul&gt;
 
-and many more to come....
+&lt;p&gt;and many more to come….&lt;/p&gt;
 
-That's all for now!</content><author><name>Deep Gandhi</name></author><category term="Getting started" /><summary type="html">Why is writing necessary a part of tech?</summary></entry></feed>
+&lt;p&gt;That’s all for now!&lt;/p&gt;</content><author><name>Deep Gandhi</name></author><category term="Getting started" /><summary type="html">Why is writing necessary a part of tech?</summary></entry></feed>
