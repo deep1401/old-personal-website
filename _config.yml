@@ -34,8 +34,10 @@ disqus: True
 disqus_shortname: deep1401 # replace with your disqus username
 
 # Google Analytics
-google_analytics: G-EX5N2N6EB5 # replace with your GA tracking identifier
+google_analytics: G-218DBSCBC0 # replace with your GA tracking identifier
 
+# 218DBSCBC0
+# 
 # Permalinks
 permalink: /:title
 # permalink: /author/:author
